@@ -1,6 +1,7 @@
 <Cabbage>
 form caption("Untitled") size(400, 300), colour(58, 110, 182), pluginid("def1")
 rslider bounds(296, 162, 100, 100), channel("gain"), range(0, 1, 0, 1, .01), text("Gain"), trackercolour("red"), outlinecolour(0, 0, 0, 50), textcolour("black")
+button bounds(10, 100,100, 30), channel("button1")
 
 </Cabbage>
 <CsoundSynthesizer>
@@ -16,6 +17,9 @@ nchnls = 2
 
 instr 1
 kGain chnget "gain"
+printk2 kGain
+kbutton chnget "button1"
+printk2 kbutton
 
 a1 inch 1
 a2 inch 2
