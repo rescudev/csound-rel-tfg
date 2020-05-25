@@ -16,7 +16,7 @@ nchnls = 2
 ;instrument will be triggered by keyboard widget
 instr 1
 a1 oscili p5, p4, 1 ;p5 is from midi-velocity-amp, p4 from midi-key-cps, 1 is from f1
-outs a1, a1
+outs a1, a1 ;testing
 endin
 
 </CsInstruments>
