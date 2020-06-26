@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  24 JUN 2020 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  25 JUN 2020 18:19
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -375,7 +375,11 @@ d\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box53
-) (proyect.aux)
+) (proyect.aux
+
+LaTeX Warning: Label `sec:intro' multiply defined.
+
+)
 \openout1 = `proyect.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -527,13 +531,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] (Capitulos/capitulo1.tex
 Cap\'{\i }tulo 1.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 8
-.
-
-("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
-t1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1
+[1
 
 
 ]) (Capitulos/capitulo2.tex
@@ -547,7 +545,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Cap\'{\i }tulo 2.
 [3
 
-] [4]
+]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
+2.
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+t1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [4]
 Cap\'{\i }tulo 3.
 (lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -572,37 +577,51 @@ File: lstlang3.sty 2004/09/05 1.3 listings language file
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 (codigo/macrotabla.tex)
+Overfull \hbox (3.4796pt too wide) in paragraph at lines 103--104
+[]\OT1/ptm/m/n/10.95 Este es un ejem-plo de in-clu-si[]on de fi-gu-ra en el tex
+-to (v[]ease la fi-gu-ra 3.1Ada Lovelacefigure.3.1[]). 
+ []
+
 <img/AdaLovelace.jpg, id=41, 281.05pt x 387.4475pt>
 File: img/AdaLovelace.jpg Graphic file (type jpg)
 <use img/AdaLovelace.jpg>
 Package pdftex.def Info: img/AdaLovelace.jpg  used on input line 105.
 (pdftex.def)             Requested size: 213.39568pt x 294.17938pt.
- [5
-
-]) [6 <./img/AdaLovelace.jpg>] (proyect.bbl) [7
-
+[5
 
 ]
-(proyect.aux) ) 
+Overfull \hbox (19.2622pt too wide) in paragraph at lines 118--119
+[]\OT1/ptm/m/n/10.95 Este es un ejem-plo de in-clu-si[]on de cua-dro en el tex-
+to. V[]ease el cua-dro 3.1Cua-dro de pruebatable.3.1[] 
+ []
+
+) [6 <./img/AdaLovelace.jpg>] (proyect.bbl) [7
+
+
+] (proyect.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8537 strings out of 480799
- 114937 string characters out of 2891114
- 466878 words of memory out of 3000000
- 24342 multiletter control sequences out of 15000+200000
- 564332 words of font info for 95 fonts, out of 3000000 for 9000
+ 8548 strings out of 480799
+ 116244 string characters out of 2891114
+ 467306 words of memory out of 3000000
+ 24355 multiletter control sequences out of 15000+200000
+ 562608 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,11n,77p,311b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/base/8r.enc}<C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rafael.escudero/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/rafael
-.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb
-><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/ti
-mes/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proyect.pdf (13 pages, 161849 bytes).
+ 47i,12n,77p,579b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
+ase/8r.enc}<C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rafael.escudero/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/rafael.escudero/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/ra
+fael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
+b><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proyect.pdf (13 pages, 165574 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
