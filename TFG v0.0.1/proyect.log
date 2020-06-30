@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  25 JUN 2020 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  30 JUN 2020 19:04
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -379,6 +379,12 @@ File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 
 LaTeX Warning: Label `sec:intro' multiply defined.
 
+
+LaTeX Warning: Label `sec:intro' multiply defined.
+
+
+LaTeX Warning: Label `sec:intro' multiply defined.
+
 )
 \openout1 = `proyect.aux'.
 
@@ -534,16 +540,22 @@ Cap\'{\i }tulo 1.
 [1
 
 
-]) (Capitulos/capitulo2.tex
+]
+<img/1.1-Barry-Vercoe.jpg, id=29, 622.325pt x 350.30875pt>
+File: img/1.1-Barry-Vercoe.jpg Graphic file (type jpg)
+<use img/1.1-Barry-Vercoe.jpg>
+Package pdftex.def Info: img/1.1-Barry-Vercoe.jpg  used on input line 23.
+(pdftex.def)             Requested size: 213.39568pt x 120.11899pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+[2 <./img/1.1-Barry-Vercoe.jpg>]) (Capitulos/capitulo2.tex [3]
 Cap\'{\i }tulo 2.
-[3
+[4
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
@@ -552,7 +564,7 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
 ("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
 t1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [4]
+) [5]
 Cap\'{\i }tulo 3.
 (lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -577,37 +589,27 @@ File: lstlang3.sty 2004/09/05 1.3 listings language file
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 (codigo/macrotabla.tex)
-Overfull \hbox (3.4796pt too wide) in paragraph at lines 103--104
-[]\OT1/ptm/m/n/10.95 Este es un ejem-plo de in-clu-si[]on de fi-gu-ra en el tex
--to (v[]ease la fi-gu-ra 3.1Ada Lovelacefigure.3.1[]). 
- []
-
-<img/AdaLovelace.jpg, id=41, 281.05pt x 387.4475pt>
+<img/AdaLovelace.jpg, id=45, 281.05pt x 387.4475pt>
 File: img/AdaLovelace.jpg Graphic file (type jpg)
 <use img/AdaLovelace.jpg>
 Package pdftex.def Info: img/AdaLovelace.jpg  used on input line 105.
 (pdftex.def)             Requested size: 213.39568pt x 294.17938pt.
-[5
+ [6
+
+]) [7 <./img/AdaLovelace.jpg>] (proyect.bbl) [8
+
 
 ]
-Overfull \hbox (19.2622pt too wide) in paragraph at lines 118--119
-[]\OT1/ptm/m/n/10.95 Este es un ejem-plo de in-clu-si[]on de cua-dro en el tex-
-to. V[]ease el cua-dro 3.1Cua-dro de pruebatable.3.1[] 
- []
-
-) [6 <./img/AdaLovelace.jpg>] (proyect.bbl) [7
-
-
-] (proyect.aux)
+(proyect.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8548 strings out of 480799
- 116244 string characters out of 2891114
- 467306 words of memory out of 3000000
- 24355 multiletter control sequences out of 15000+200000
+ 8545 strings out of 480799
+ 116281 string characters out of 2891114
+ 466950 words of memory out of 3000000
+ 24349 multiletter control sequences out of 15000+200000
  562608 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,12n,77p,579b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -621,9 +623,9 @@ b><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proyect.pdf (13 pages, 165574 bytes).
+Output written on proyect.pdf (14 pages, 187129 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

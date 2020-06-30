@@ -1,57 +1,49 @@
 % !TEX root = ../proyect.tex
 
-\chapter{Introducción al Lenguaje}\label{cap1}
+\chapter{Introducción al Lenguaje y Fundamentos del Sonido}\label{cap1}
 \section{¿Qué es Csound?}\label{sec:intro}
 
 Csound es un lenguaje de programación de alto nivel orientado a objetos dedicado a la síntesis, edición y producción de sonido. Su sintaxis es concreta y su compilador está codificado en lenguaje C. Entre los usos prácticos del lenguaje podemos encontrar ejemplos en la página oficial (https://csound.com/projects.html) de proyectos dedicados a la síntesis de música en directo, edición de sonido mediante efectos generados programáticamente y creación de interfaces VST o instrumentos virtuales entre otros.
-Podemos referirnos a Csound como un "Compilador de Sonido".
 
+Podemos referirnos a Csound como un ``Compilador de Sonido''.
 
 \section{¿Por qué usar Csound?}\label{sec:intro}
 
 Hay muchas buenas razones para usar Csound. Csound es software libre de código abierto con licencia LGPL, está en constante desarrollo y tiene una comunidad de desarrolladores que crece día a día,proporciona además un punto de conexión entre la disciplina informática y el ámbito de la música y el sonido. 
 Es además una gran herramienta científica al facilitar la exposición y experimentación de conceptos relacionados a las ondas del sonido, con una amplia librería de funciones y objetos útiles para ello. 
+En lo que se refiere a la composición musical, Csound se ha usado principalmente para generar música electrónica a lo largo de su historia aunque podemos encontrar a compositores de cualquier género músical o tipo de instrumento sacándole provecho al lenguaje. No es de extrañar vistas las tendencias actuales en el mundo de la música, donde para triunfar a nivel multitudinario es prácticamente imprescindible contar con un buen productor que sepa embellecer el sonido.
+Es frecuente ver a usuarios del lenguaje interpretando su música en directo con ayuda directa de éste.
+Y por último debo destacar que Csound es compatible con los principales sistemas operativos del mercado, desde Windows a iOS pasándo por distrbuciones Linux. Y como veremos más adelante en esta guía, sus funciones pueden llamarse desde el código de otros lenguajes como Python, java o C.
+\pagebreak
 
+\section{Breve historia de Csound}\label{sec:intro}
 
-\section{Cuerpo y tipos de letra}\label{sec:letra}
+De manera resumida, Csound fue desarrollado en un principio por Barry Vercoe (véase la figura 1.1) en 1985 en el MIT\footnote{Massachusetts Institute of Technology} Media Lab. Y desde la década de los años 1990, una amplia variedad de desarrolladores ha colaborado a su código abierto, aportando además documentación, ejemplos y artículos sobre el lenguaje.
 
-Se recomienda utilizar, dada su simplicidad, claridad y legibilidad, los tipos de letra
-Arial (preferiblemente en caja alta) o Helv\'etica, en un tamaño para el cuerpo del texto de 11 pt,
-con un interlineado sencillo o de 1,5.
+\figura{0.5}{img/1.1-Barry-Vercoe}{Barry Vercoe}{fig:barry}{}
 
-Los t{\'\i}tulos de cap{\'\i}tulos, secciones y subsecciones, as{\'\i} como las notas al pie de texto\footnote{Por favor, no abusad de las notas a pie de texto}
-y las cabeceras o pies de cuadros, figuras y trozos de c\'odigo quedan a libertad del redactor de la memoria.
-Sin embargo, es buena idea que los t{\'\i}tulos tengan un tamaño igual o superior a 11pt. y los pies y cabeceras
-sean de tama{\~n}o igual o inferior a 11pt. Se ruega encarecidamente que, en lo posible, se evite el \underline{subrayado}.
-Este puede sustituirse por el uso de \textbf{negritas} o \textit{cursivas} o por el cambio de formato del tipo de letra
-(Se recomienda prestar atenci\'on y no abusar del cambio de {\color{blue}{color}}, 
-pues puede dar problemas de accesibilidad).
+Para hablar de los verdaderos orígenes de Csound debemos remontarnos a la década de los años 1970, a los orígenes de la producción informática de sonido. 
+Matt Mathews creó MUSIC, el primer lenguaje informático para la generación de ondas de audio digital. En éste se basarían sus posteriores iteraciones: Music1, Music2, Music3, Music4, Music4B... Hasta llegar a Music11, desarrollado por el mentado Barry Vercoe, y del cual Csound es sucesor directo.
+Posteriormente el desarrollo del lenguaje ha continuado gracias a su comunidad con John Fitch de la University of Bath a la cabeza y como dueño del repositorio de código abierto en la plataforma GitHub.
+En la actualidad se realizan periódicamente las ICSC\footnote{International Csound Conference}, conferencias dedicadas a Csound a nivel internacional de manera periódica, siendo la última fecha de realización el 27 de septiembre de 2019 en la actualidad del presente documento.
 
- 
+\section{Las características del lenguaje}\label{sec:intro}
 
-\section{Márgenes y párrafos}\label{sec:margenes}
-
-Es necesario configurar la página seleccionando los márgenes siguientes:
+A continuación se muestra una lista de las características principales y técnicas del lenguaje:
 \begin{itemize}
- \item Márgenes superior e inferior: 2,5 cm. 
- \item Márgenes laterales (izquierdo y derecho): 3 cm.
+ \item Usado para la síntesis, edición y análisis de sonido y música.
+ \item Lenguaje de código abierto.
+ \item Programación funcional.
+ \item Licencia de distribución LGPL.
+ \item Orientado a objetos.
+ \item Compilador programado en lenguaje C.
+ \item 30 años de desarrollo.
+ \item Compatibilidad con otros lenguajes y retrocompatibilidad de versiones.
 \end{itemize}
 
-En el caso de no usar cabeceras, las páginas deber\'an ir numeradas en el centro del pie.
-Si se usan cabeceras, no se utilizarán estas en las p\'aginas que comienzan capítulo, las cuales
-se numerar\'an en el centro del pie. Las restantes p\'aginas pueden ir numeradas en el pie o en la cabecera,
-pero deber\'an mantener coherencia de formato a lo largo de todo el cap{\'\i}tulo.
 
-Las p\'aginas previas al cuerpo de la memoria del Trabajo fin de Grado (agradecimientos, resumen, {\'\i}ndices,\dots) 
-pueden no numerarse o
-numerarse independientemente de la misma, en cuyo caso se numerar\'an con n\'umeros romanos. 
-Se recuerda que los n\'umeros romanos
-se escriben con letras may\'usculas (la numeraci\'on i,ii,iii,iv\dots es propia del idioma ingl\'es 
-y no es admisible en espa{\~n}ol, ni siquiera para enumeraciones)
 
-Los p\'arrafos comenzar\'an con sangrado. El espacio entre los mismos no debe ser excesivo.
-
-\section{Lengua}\label{sec:lengua}
+\section{Alternativas a Csound}\label{sec:intro}
 
 La Normativa académica de los Trabajos fin de Grado indica:
 
