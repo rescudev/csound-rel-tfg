@@ -5,3 +5,6 @@ Cap 1:
 Music-N: https://en.wikipedia.org/wiki/MUSIC-N
 
 Conferencia: https://csound.com/icsc2019/
+
+alternativas: https://alternativeto.net/software/csound/
+http://write.flossmanuals.net/pure-data/wireless-connections/
