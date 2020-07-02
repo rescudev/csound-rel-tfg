@@ -11,15 +11,19 @@
 \contentsline {section}{\numberline {1.5}Alternativas a Csound}{3}%
 \contentsline {subsection}{\numberline {1.5.1}Max/MSP}{3}%
 \contentsline {subsection}{\numberline {1.5.2}PureData}{3}%
-\contentsline {subsection}{\numberline {1.5.3}SuperCollider}{3}%
-\contentsline {chapter}{\numberline {2}Partes y plantillas}{5}%
-\contentsline {section}{\numberline {2.1}Partes}{5}%
-\contentsline {section}{\numberline {2.2}Impresión}{6}%
-\contentsline {section}{\numberline {2.3}Plantillas}{6}%
-\contentsline {chapter}{\numberline {3}Ejemplos}{7}%
-\contentsline {section}{\numberline {3.1}Manejo de la bibliograf{\'\i }a}{7}%
-\contentsline {section}{\numberline {3.2}C\'odigo}{7}%
-\contentsline {section}{\numberline {3.3}Im\'agenes}{7}%
-\contentsline {section}{\numberline {3.4}Cuadros (mal llamados Tablas)}{8}%
-\contentsline {chapter}{Referencias}{9}%
+\contentsline {subsection}{\numberline {1.5.3}SuperCollider}{4}%
+\contentsline {section}{\numberline {1.6}IDEs para usar Csound}{4}%
+\contentsline {subsection}{\numberline {1.6.1}CsoundQT}{4}%
+\contentsline {subsection}{\numberline {1.6.2}Blue}{5}%
+\contentsline {subsection}{\numberline {1.6.3}Cabbage}{6}%
+\contentsline {chapter}{\numberline {2}Partes y plantillas}{7}%
+\contentsline {section}{\numberline {2.1}Partes}{7}%
+\contentsline {section}{\numberline {2.2}Impresión}{8}%
+\contentsline {section}{\numberline {2.3}Plantillas}{8}%
+\contentsline {chapter}{\numberline {3}Ejemplos}{9}%
+\contentsline {section}{\numberline {3.1}Manejo de la bibliograf{\'\i }a}{9}%
+\contentsline {section}{\numberline {3.2}C\'odigo}{9}%
+\contentsline {section}{\numberline {3.3}Im\'agenes}{10}%
+\contentsline {section}{\numberline {3.4}Cuadros (mal llamados Tablas)}{11}%
+\contentsline {chapter}{Referencias}{12}%
 \contentsfinish 

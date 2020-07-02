@@ -8,3 +8,9 @@ Conferencia: https://csound.com/icsc2019/
 
 alternativas: https://alternativeto.net/software/csound/
 http://write.flossmanuals.net/pure-data/wireless-connections/
+
+IDEs: https://csound.com/frontends.html
+
+https://pygments.org/docs/lexers/
+
+https://www.vice.com/en_us/article/pga53v/know-your-language-csound-may-be-ancient-but-its-the-audio-hacking-future

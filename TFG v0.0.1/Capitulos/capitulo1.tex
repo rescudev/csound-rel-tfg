@@ -3,7 +3,7 @@
 \chapter{Introducción al Lenguaje y Fundamentos del Sonido}\label{cap1}
 \section{¿Qué es Csound?}\label{sec:intro}
 
-Csound es un lenguaje de programación de alto nivel orientado a objetos dedicado a la síntesis, edición y producción de sonido. Su sintaxis es concreta y su compilador está codificado en lenguaje C. Entre los usos prácticos del lenguaje podemos encontrar ejemplos en la página oficial (https://csound.com/projects.html) de proyectos dedicados a la síntesis de música en directo, edición de sonido mediante efectos generados programáticamente y creación de interfaces VST o instrumentos virtuales entre otros.
+Csound es un lenguaje de programación de alto nivel orientado a objetos dedicado a la síntesis, edición y producción de sonido. Su sintaxis es concreta y su compilador está codificado en lenguaje C. Entre los usos prácticos del lenguaje podemos encontrar ejemplos en la página oficial \url{https://csound.com/projects.html} de proyectos dedicados a la síntesis de música en directo, edición de sonido mediante efectos generados programáticamente y creación de interfaces VST o instrumentos virtuales entre otros.
 
 Podemos referirnos a Csound como un ``Compilador de Sonido''.
 
@@ -47,24 +47,68 @@ A continuación se muestra una lista de las características principales y técn
 
 Voy a hablar de tres principales alternativas a Csound, siendo estos lenguajes dedicados principalmente a la síntesis, edición y análisis del sonido.\bigskip
 
-\textbf{Lenguajes Gráficos} 
+\textbf{Lenguajes Gráficos}		
 \begin{itemize}
- \item Max/MSP
- \item PureData
+    \item Max/MSP
+    \item PureData
 \end{itemize}
-\bigskip
 
 \textbf{Lenguaje Escrito} 
 \begin{itemize}
- \item SuperCollider
+    \item SuperCollider
+    \item[\vspace{\fill}]
 \end{itemize}
 
 \subsection{Max/MSP}
+Max es un lenguaje de programación gráfico (véase figura 1.2) dedicado a la música y sonido al igual que Csound pero a diferencia de éste, no es de código abierto. Lo desarrolla y mantiene la empresa Cycling '74 y actualmente puede probarse gratuitamente durante los primeros 30 días de uso.
+Podría decirse que es por excelencia el lenguaje comercial para el desarrollo de aplicaciones comerciales destinadas al ámbito musical.
 \figura{0.8}{img/1.2-MaxMsp-Example}{Ejemplo Max/Msp}{fig:Max}{}
 
 \subsection{PureData}
+PureData podría ser considerado el contraparte de código abierto a Max/MSP, pues al igual que éste se trata de un lenguaje gráfico (véase la figura 1.3) pero en esta ocasión de libre desarrollo como Csound.
+La principal ventaja de este lenguaje respecto a Csound es su paradigma gráfico que puede resultar atractivo a profesionales del ámbito musical o científico que no estén totalmente acostumbrados a usar los tradicionales lenguajes escritos y encuentren en PureData un acercamiento más amigable al mundo de la programación
 \figura{0.8}{img/1.3-PureData-Example}{Ejemplo PureData}{fig:PureData}{}
 
 \subsection{SuperCollider}
+SuperCollider es de entre las alternativas aquí descritas la más parecida a Csound puesto que además de tener una sintaxis de lenguaje escrito, es también de código abierto.
+Cuenta además con una sintaxis parecida a lenguajes muy conocidos como C o Ruby, de esta forma parecería más atractivo a iniciados y profesionales de la programación en una primera instancia.
+Por tanto para observar las verdaderas diferencias entre lenguajes como Csound y SuperCollider tendremos que indagar más a fondo en estos lenguajes y aprender sus características más concretas como haremos en esta ocasión con Csound.
+
+\section{IDEs para usar Csound}\label{sec:intro}
+Existen varias alternativas en lo que respecta a entornos de desarrollo de Csound, a continuación se describen 3 opciones\footnote{En los ejemplos de código de este documento se ha usado principalmente el IDE Cabbage, no obstante se especificará el IDE usado en cada ocasión en caso de ser necesario por diferencias de uso sustanciales.}:
+
+\subsection{CsoundQT}
+CsoundQT es el entorno de desarrollo predeterminado de Csound, prueba de ello es que se instala automáticamente cuando instalamos Csound en el equipo. Tiene una interfaz sencilla, una librería muy completa de ejemplos y capacidad de ampliación con extensiones. Es un buen entorno para tomar una aproximación lo más simplificada posible al lenguaje.\bigskip
+
+\textbf{Versión actual: }	0.9.6\bigskip
+
+\textbf{Plataformas disponibles: } Windows, OSX, Debian/Ubuntu.\bigskip
+
+\textbf{Página principal: } \url{http://csoundqt.github.io/}
+
+\figura{0.8}{img/1.4-CsoundQt090}{CsoundQt}{fig:CsoundQt}{}
+
+\subsection{Blue}
+Blue está enfocado al uso intermedio/avanzado del lenguaje Csound contando con varios plugins por defecto y una interfaz más recargada pero no por ello más difícil de usar o menos legible. Posee varias ventajas tipo framework como los Polyobject, NoteProcessors o el Orchestra manager y es de nuevo una gran opción para tener una primera toma de contacto con el Lenguaje.\bigskip
+
+\textbf{Versión actual: }	2.8.0\bigskip
+
+\textbf{Plataformas disponibles: } Windows, OSX, Linux.\bigskip
+
+\textbf{Página principal: } \url{https://blue.kunstmusik.com/}
+
+\figura{0.8}{img/1.5-Blue}{Blue}{fig:Blue}{}
+
+\subsection{Cabbage}
+Cabbage es un IDE muy completo, posee una gran librería con utilidades de interfaz gráfica de manera que se facilita el desarrollo completo de instrumentos y plugins musicales existiendo incluso la opción de exportar el código que estamos programando como VST. Cuenta además con una interfaz personalizable y su instalador proporciona la opción de instalar la última versión de Csound si no lo teníamos instalado previamente. Por último cuenta con un instalador para sistemas android para que podamos usar los plugins que programemos con cabbage en estos sistemas.\bigskip
+
+\textbf{Versión actual: }	2.3.0\bigskip
+
+\textbf{Plataformas disponibles: } Windows, OSX, Linux.\bigskip
+
+\textbf{Página principal: } \url{https://cabbageaudio.com/}
+
+\figura{0.8}{img/1.6-Cabbage}{Cabbage}{fig:Cabbage}{}
+
 
  
