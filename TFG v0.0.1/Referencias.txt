@@ -14,3 +14,9 @@ IDEs: https://csound.com/frontends.html
 https://pygments.org/docs/lexers/
 
 https://www.vice.com/en_us/article/pga53v/know-your-language-csound-may-be-ancient-but-its-the-audio-hacking-future
+
+Ondas: http://www.emba.com.ar/biblioteca/Frecuencia%20-%20Periodo%20-%20Longuitud%20de%20Onda%20-%20(%20RESUMEN%20).pdf
+
+https://definicion.de/frecuencia-de-onda/#:~:text=La%20idea%20de%20frecuencia%20de,oscilaci%C3%B3n%20en%20un%20tiempo%20espec%C3%ADfico.
+
+http://cmm.cenart.gob.mx/tallerdeaudio/cursos/cursoardour/Teoria_y_tecnicas/Audiodigital.html

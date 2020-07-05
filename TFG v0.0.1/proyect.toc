@@ -16,14 +16,19 @@
 \contentsline {subsection}{\numberline {1.6.1}CsoundQT}{4}%
 \contentsline {subsection}{\numberline {1.6.2}Blue}{5}%
 \contentsline {subsection}{\numberline {1.6.3}Cabbage}{6}%
-\contentsline {chapter}{\numberline {2}Partes y plantillas}{7}%
+\contentsline {chapter}{\numberline {2}La Sintaxis del Lenguaje}{7}%
 \contentsline {section}{\numberline {2.1}Partes}{7}%
 \contentsline {section}{\numberline {2.2}Impresión}{8}%
 \contentsline {section}{\numberline {2.3}Plantillas}{8}%
 \contentsline {chapter}{\numberline {3}Ejemplos}{9}%
 \contentsline {section}{\numberline {3.1}Manejo de la bibliograf{\'\i }a}{9}%
 \contentsline {section}{\numberline {3.2}C\'odigo}{9}%
-\contentsline {section}{\numberline {3.3}Im\'agenes}{10}%
-\contentsline {section}{\numberline {3.4}Cuadros (mal llamados Tablas)}{11}%
-\contentsline {chapter}{Referencias}{12}%
+\contentsline {section}{\numberline {3.3}Im\'agenes}{9}%
+\contentsline {section}{\numberline {3.4}Cuadros (mal llamados Tablas)}{10}%
+\contentsline {chapter}{\numberline {4}Fundamentos del Sonido}{11}%
+\contentsline {section}{\numberline {4.1}Introducción}{11}%
+\contentsline {section}{\numberline {4.2}El Audio Digital}{11}%
+\contentsline {subsection}{\numberline {4.2.1}¿Qué es el sonido y cómo se transmite?}{11}%
+\contentsline {subsection}{\numberline {4.2.2}La onda de sonido y sus características}{12}%
+\contentsline {chapter}{Referencias}{13}%
 \contentsfinish 

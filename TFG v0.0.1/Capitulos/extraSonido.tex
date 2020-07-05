@@ -1,0 +1,43 @@
+% !TEX root = ../proyect.tex
+
+\chapter{Fundamentos del Sonido}
+
+\section{Introducción}\label{sec:intro}
+Este capítulo tiene como función dar una breve introducción a la teoría física del sonido, en concreto a los conceptos fundamentalmente necesarios para entender los ejemplos expuestos en esta guía de Csound.
+Se presenta por ello como capítulo anexado o capítulo extra de modo que sirva de referencia rápida en otras partes del documento y de manera que un lector con manejo en estos términos pueda saltar su contenido cómodamente.
+
+
+\section{El Audio Digital}\label{sec:DigAud} 
+Para definir el audio digital debemos empezar por saber qué es el sonido:\bigskip
+
+\subsection{¿Qué es el sonido y cómo se transmite?}
+
+\textbf{Sonido}: ``\textsl{Sensación producida en el órgano del oído por el movimiento vibratorio de los cuerpos, transmitido por un medio elástico, como el aire.}''\footnote{REAL ACADEMIA ESPAÑOLA: Diccionario de la lengua española, 23.ª ed., [versión 23.3 en línea]. <https://dle.rae.es> [05 de julio de 2020].}\bigskip
+
+A ese movimiento vibratorio que se transmite y viaja por el medio podemos llamarlo ``Onda de Sonido''. Y la forma más simple de describir un movimiento vibratorio, es decir, la onda más simple de todas; es mediante la forma senoidal:
+
+\figura{0.8}{img/S.1-senoidal}{Onda Senoidal}{fig:Senoidal}{}
+
+Como sabemos, los medios transmisores están formador por moléculas que ocupan un determinado espacio. Podemos por lo tanto imaginar a una molécula que describe el movimiento vibratorio descrito anteriormente. Podríamos también dedir que cuando la molécula sobrepasa el punto inicial o punto 0 que definimos en la gráfica, la molécula está empujando al resto de moléculas que encuentra en su camino. De forma análoga, cuando la posición de la molécula tiene un valor menor al inicial decimos que la molécula está tirando del resto de moléculas de su entorno.
+
+De esta manera se produce la transmisión del sonido.
+
+\subsection{La onda de sonido y sus características}\label{sec:Ondas} 
+
+Quedaba definida la onda de sonido en el apartado anterior. Si a continuación le añadimos la información de esa vibración de la que hablábamos es constante se producirá lo que llamamos ``Onda Periódica''.
+
+Toda onda periódica posee 4 características:
+
+\begin{itemize}
+	\item \textbf{Periodo}: Es la cantidad de tiempo que tarda la forma de la onda en repetirse, lo llamaremos T y lo expresaremos en segundos.
+	 \item \textbf{Amplitud}: Distancia máxima de los puntos de la onda respecto a la posición de eje Y (eje ``Tiempo'' en la figura). Podemos definirla también como la fuerza con la que las moléculas del medio consiguen empujar o tirar del resto de moléculas de su entorno.
+\figura{0.6}{img/S.2-Periodo}{Periodo y Amplitud}{fig:Periodo}{}
+    \item \textbf{Frecuencia}: La frecuencia de una onda expresa la cantidad numérica de veces que repite su movimiento durante un tiempo determinado. Si la definimos respecto al periodo decimos que es la cantidad numérica de periodos (o repeticiones de la forma de la onda) que ocurren durante un segundo. Se mide en Hercios o Hz, la representaremos con f y podremos calcularla fácilmento puesto que es la inversa del periodo:
+    \begin{itemize}
+    \item Frecuencia = 1/Periodo
+    \item Periodo = 1/Frecuencia   
+    \end{itemize}
+    \item \textbf{Longitud de Onda}: Se trata de la distancia que va del punto inicial al punto final del recorrido de la onda marcada por un periodo. Se mide en metros.
+\end{itemize} 
+
+
