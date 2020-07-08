@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'Indice general}{II}%
-\contentsline {chapter}{{\'I}ndice de cuadros}{III}%
-\contentsline {chapter}{\'{I}ndice de figuras}{IV}%
-\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{V}%
+\contentsline {chapter}{{\'I}ndice de cuadros}{IV}%
+\contentsline {chapter}{\'{I}ndice de figuras}{V}%
+\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{VI}%
 \contentsline {chapter}{\numberline {1}Introducción al Lenguaje y Fundamentos del Sonido}{1}%
 \contentsline {section}{\numberline {1.1}¿Qué es Csound?}{1}%
 \contentsline {section}{\numberline {1.2}¿Por qué usar Csound?}{1}%
@@ -17,9 +17,11 @@
 \contentsline {subsection}{\numberline {1.6.2}Blue}{5}%
 \contentsline {subsection}{\numberline {1.6.3}Cabbage}{6}%
 \contentsline {chapter}{\numberline {2}La Sintaxis del Lenguaje}{7}%
-\contentsline {section}{\numberline {2.1}Partes}{7}%
-\contentsline {section}{\numberline {2.2}Impresión}{8}%
-\contentsline {section}{\numberline {2.3}Plantillas}{8}%
+\contentsline {section}{\numberline {2.1}Hello Csound!}{7}%
+\contentsline {section}{\numberline {2.2}A tener en cuenta}{7}%
+\contentsline {section}{\numberline {2.3}División por etiquetas}{8}%
+\contentsline {section}{\numberline {2.4}}{8}%
+\contentsline {section}{\numberline {2.5}Plantillas}{8}%
 \contentsline {chapter}{\numberline {3}Ejemplos}{9}%
 \contentsline {section}{\numberline {3.1}Manejo de la bibliograf{\'\i }a}{9}%
 \contentsline {section}{\numberline {3.2}C\'odigo}{9}%

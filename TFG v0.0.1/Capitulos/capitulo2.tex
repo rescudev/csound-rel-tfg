@@ -2,68 +2,36 @@
 
 \chapter{La Sintaxis del Lenguaje}
 
-\section{Partes}\label{sec:partes}
+\section{Hello Csound!}\label{sec:hello}
 
-Todas las memorias de Trabajo fin de Grado deberán constar de las siguientes partes 
+Empecemos por mostrar cómo sería el clásico \textsl{Hello World!} en Csound. Así tendremos un código básico al que hacer referencia a los largo de este capítulo\footnote{Durante el resto del presente capítulo se hará referencia a la figura de código anterior siempre que se hable de líneas concretas de código.}:
+\codigofuente{TeX}{Hello World! en Csound}{codigo/helloWorld}
+
+\section{A tener en cuenta}\label{sec:cuenta}
+
+Estas son algunas consideraciones básicas del lenguaje que debemos tener presentes:
 \begin{itemize}
- \item Portada (seg\'un formato oficial). No debe incluir n\'umero de p\'agina. Debe incluir:
- \begin{itemize}
- \item Sello de la universidad de Sevilla a dos tintas
- \item ESCUELA T\'ECNICA SUPERIOR DE INGENIER\'IA INFORM\'ATICA
- \item Trabajo fin de Grado
- \item \emph{Denominaci\'on del Grado}
- \item Realizado por: \emph{Nombre y apellidos del estudiante}
- \item Dirigido por: \emph{Nombre y apellidos del tutor o tutores}
- \item Departamento \emph{Nombre del departamento en el que se lee el TfG}
- \item Sevilla, \emph{Mes y año de la convocatoria de entrega}
- \end{itemize}
-  \item Preliminares: las p\'aginas no se numeran o se numeran con n\'umeros romanos.
- \begin{itemize} 
-\item Resumen en castellano (m\'aximo una hoja)
- \item Abstract (resumen en ingl\'es, obligatorio para el caso de las memorias escritas en ingl\'es, opcional
- para las escritas en castellano)
- \item Agradecimientos (opcional)
- \item \'Indice general (contenido de la memoria, con menci\'on de las partes en que está dividida)
- \item \'Indice de figuras (opcional)
- \item \'Indice de cuadros (mal llamados en general, tablas) (opcional)
- \item \'Indice de c\'odigo o algoritmos (opcional). 
- \end{itemize}
- \item Cuerpo de la memoria, dividida en cap{\'\i}tulos. El contenido de la memoria ha de incluir 
-los elementos característicos de un proyecto de ingeniería o de un estudio o trabajo en el ámbito de una investigación, 
-los cuales, en el sentido más amplio, son:
- \begin{itemize}
- \item Definición de objetivos.
-\item Análisis de antecedentes y aportación realizada.
-\item Análisis temporal y de costes de desarrollo.
-\item Análisis de requisitos, diseño e implementación.
-\item Manual de usuario, en su caso.
-\item Pruebas.
-\item Comparación con otras alternativas.
-\item Conclusiones y desarrollos futuros
- \end{itemize}
-Estos puntos podrán ser ajustados y modificados en función de la naturaleza del proyecto realizado.
- \item Bibliograf{\'\i}a: se deben documentar las fuentes bibliográficas utilizadas en el formato APA 2009.
- \item  Índice alfabético o glosario (Lista ordenada de los conceptos, los nombres propios, etc.; 
- que aparecen en la memoria, con las indicaciones necesarias para su localización)(opcional)
- \item Ap'endices: Si la memoria contiene alg\'un art{\'\i}culo de investigaci\'on o similar, 
- este se incluir\'a en los Ap\'endices. 
- Es necesario, en ese caso, incluir en la página anterior una hoja con la citación bibliográfica. 
- En esta citación, el título del artículo se debe enlazar con la página web de la revista 
- en la que aparecen el resumen o abstract y el acceso al texto completo. 
- \end{itemize}
- La numeraci\'on de las p\'aginas de la bibliograf{\'\i}a y del glosario debe continuar la del cuerpo de la memoria.
- Los ap\'endices pueden llevar su propia numeraci\'on independiente o usar la general del cuerpo de la memoria.
-
-
-\section{Impresión}\label{sec:impresion} 
-La entrega del memoria y en su caso, el dep\'osito en biblioteca, se hacen en formato electr\'onico. Debido a ello, la memoria se presentará \emph{a una cara}. Si se requiriera
-por alg\'un motivo la impresi\'on de la misma, se recomienda vivamente preparar la memoria adecuadamente para su impresi\'on. Algunas sugerencias:
-\begin{itemize}
- \item Dejar una p\'agina en blanco cuando sea necesario para que los cap{\'\i}tulos comiencen siempre en p\'agina impar (derecha)
- \item Ajustar los m\'argentes para que el exterior sea ligeramente m\'as grande que el interior.
- \item Ajustar las cabeceras y pies de p\'agina (en su caso). Por ejemplo, si el n\'umero de p\'agina ocurriese en un lateral
- de la cabecera o pie, este debe ser siempre el exterior (derecho para las p\'aginas impares, izquierdo para las pares)
+ \item Es sensible a mayúsculas/minúsculas.
+ \item Usa especificadores de formato al imprimir variables.
+ \item Para realizar comentarios en el código usaremos ; al inicio de la línea o usar /* y */ para comentar varias líneas.
+ \item Partes del código divididas en etiquetas XML.
 \end{itemize}
+
+\section{División por etiquetas}\label{sec:etq}
+
+Csound divide la estructura de su código con etiquetas XML, empezaremos por hablar de las más básicas: \textless CsInstruments\textgreater y \textless CsScore\textgreater. Hasta llegar a etiquetas más exclusivas como \textless Cabbage\textgreater.
+
+\begin{itemize}
+ \item \textbf{Etiqueta \textless CsInstruments\textgreater}: En esta etiqueta se incluirán las definiciones de los instrumentos que crearemos. Un poco más adelante trataremos de entender qué es un instrumento en Csound. En nuestro ejemplo la etiqueta \textless CsInstruments\textgreater abarca desde la línea 4 a la línea 12, y podemos observar la definición de un instrumentos entre las líneas 6 y 10.
+ \item \textbf{Etiqueta \textless CsScore\textgreater}: Aquí haremos uso práctico de nuestros instrumentos, les diremos cómo ejecutarse y durante cuánto tiempo. En el código del que disponemos, la etiqueta \textless CsScore\textgreater abarca desde la línea 13 a la 15 y tenemos un ejemplo sencillo de ejecución en la línea 14 al que volveremos más adelante.
+ \item \textbf{Etiqueta \textless CsOptions\textgreater}: Se inclurán aquí las especificaciones técnicas para interactuar con hardware u otros dispositivos.
+ \item \textbf{Etiqueta \textless CsoundSynthesizer\textgreater}: Todo el código, incluidas las etiquetas mencionadas anteriormente, debe estar incluido en \textless CsoundSynthesizer\textgreater. Es la forma que tiene el compilador de saber dónde empieza y dónde acaba el código Csound.
+ \item \textbf{Etiqueta especial \textless Cabbage\textgreater}: Es la única etiqueta que no debe estar dentro de \textless CsoundSynthesizer\textgreater puesto que es exlusiva de Cabbage, IDE que usaremos principalmente en este documento. En esta etiqueta incluiremos el código referente a las opciones de personalización de interfaz gráfica de nuestro programa, hablaremos más de ella en secciones referentes al uso del IDE Cabbage.
+\end{itemize}
+
+\section{Palabras reservadas}\label{sec:reservadas} 
+
+
 
 \section{Plantillas}\label{sec:plantillas} 
 

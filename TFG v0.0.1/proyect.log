@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  6 JUL 2020 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  8 JUL 2020 11:47
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -520,31 +520,39 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )) [1
 
 
-] (proyect.toc)
+] (proyect.toc [2
+
+])
 \tf@toc=\write3
 \openout3 = `proyect.toc'.
 
- [2
 
-] (proyect.lot)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.20308pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] (proyect.lot)
 \tf@lot=\write4
 \openout4 = `proyect.lot'.
 
- [3
+ [4
 
 ] (proyect.lof)
 \tf@lof=\write5
 \openout5 = `proyect.lof'.
 
- [4
+ [5
 
 ] (proyect.lol)
 \tf@lol=\write6
 \openout6 = `proyect.lol'.
 
- [5
+ [6
 
-] (Capitulos/capitulo1.tex
+]
+(Capitulos/capitulo1.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 .
@@ -556,53 +564,42 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
-<img/1.1-Barry-Vercoe.jpg, id=30, 622.325pt x 350.30875pt>
+<img/1.1-Barry-Vercoe.jpg, id=34, 622.325pt x 350.30875pt>
 File: img/1.1-Barry-Vercoe.jpg Graphic file (type jpg)
 <use img/1.1-Barry-Vercoe.jpg>
 Package pdftex.def Info: img/1.1-Barry-Vercoe.jpg  used on input line 23.
 (pdftex.def)             Requested size: 213.39568pt x 120.11899pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2 <./img/1.1-Barry-Vercoe.jpg>]
-<img/1.2-MaxMsp-Example.png, id=35, 730.73pt x 544.0325pt>
+ [2 <./img/1.1-Barry-Vercoe.jpg>]
+<img/1.2-MaxMsp-Example.png, id=38, 730.73pt x 544.0325pt>
 File: img/1.2-MaxMsp-Example.png Graphic file (type png)
 <use img/1.2-MaxMsp-Example.png>
 Package pdftex.def Info: img/1.2-MaxMsp-Example.png  used on input line 65.
 (pdftex.def)             Requested size: 341.43437pt x 254.20108pt.
-<img/1.3-PureData-Example.png, id=37, 505.89pt x 324.21124pt>
+<img/1.3-PureData-Example.png, id=40, 505.89pt x 324.21124pt>
 File: img/1.3-PureData-Example.png Graphic file (type png)
 <use img/1.3-PureData-Example.png>
 Package pdftex.def Info: img/1.3-PureData-Example.png  used on input line 70.
 (pdftex.def)             Requested size: 341.43437pt x 218.8183pt.
  [3 <./img/1.2-MaxMsp-Example.png>]
-<img/1.4-CsoundQt090.png, id=42, 1380.15625pt x 755.82375pt>
+<img/1.4-CsoundQt090.png, id=45, 1380.15625pt x 755.82375pt>
 File: img/1.4-CsoundQt090.png Graphic file (type png)
 <use img/1.4-CsoundQt090.png>
 Package pdftex.def Info: img/1.4-CsoundQt090.png  used on input line 89.
 (pdftex.def)             Requested size: 341.43437pt x 186.98334pt.
  [4 <./img/1.3-PureData-Example.png>]
-<img/1.5-Blue.png, id=46, 1399.2275pt x 891.33pt>
+<img/1.5-Blue.png, id=49, 1399.2275pt x 891.33pt>
 File: img/1.5-Blue.png Graphic file (type png)
 <use img/1.5-Blue.png>
 Package pdftex.def Info: img/1.5-Blue.png  used on input line 100.
 (pdftex.def)             Requested size: 341.43437pt x 217.48692pt.
  [5 <./img/1.4-CsoundQt090.png> <./img/1.5-Blue.png>]
-<img/1.6-Cabbage.png, id=52, 1003.75pt x 602.25pt>
+<img/1.6-Cabbage.png, id=55, 1003.75pt x 602.25pt>
 File: img/1.6-Cabbage.png Graphic file (type png)
 <use img/1.6-Cabbage.png>
 Package pdftex.def Info: img/1.6-Cabbage.png  used on input line 111.
 (pdftex.def)             Requested size: 341.43437pt x 204.86337pt.
 ) (Capitulos/capitulo2.tex [6 <./img/1.6-Cabbage.png>]
 Cap\'{\i }tulo 2.
-[7
-
-] [8]
-Cap\'{\i }tulo 3.
 (lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) (lstlang2.sty
@@ -625,11 +622,36 @@ File: lstlang3.sty 2004/09/05 1.3 listings language file
 ) (lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
+(codigo/helloWorld.tex)
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 2
+2.
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+mlptm.fd"
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 22.
+ [7
+
+]
+LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 25.
+
+Overfull \hbox (27.87943pt too wide) in paragraph at lines 29--30
+[]\OT1/ptm/b/n/10.95 Etiqueta es-pe-cial \OML/cmm/b/it/10.95 <\OT1/ptm/b/n/10.9
+5 Cab-ba-ge\OML/cmm/b/it/10.95 >\OT1/ptm/m/n/10.95 : Es la []uni-ca eti-que-ta 
+que no de-be es-tar den-tro de \OML/cmm/m/it/10.95 <\OT1/ptm/m/n/10.95 CsoundSy
+nthe-
+ []
+
+[8]
+Cap\'{\i }tulo 3.
 (codigo/macrotabla.tex)
-<img/AdaLovelace.jpg, id=65, 281.05pt x 387.4475pt>
+<img/AdaLovelace.jpg, id=71, 281.05pt x 387.4475pt>
 File: img/AdaLovelace.jpg Graphic file (type jpg)
 <use img/AdaLovelace.jpg>
-Package pdftex.def Info: img/AdaLovelace.jpg  used on input line 105.
+Package pdftex.def Info: img/AdaLovelace.jpg  used on input line 79.
 (pdftex.def)             Requested size: 213.39568pt x 294.17938pt.
  [9
 
@@ -648,7 +670,7 @@ Underfull \hbox (badness 1442) in paragraph at lines 15--15
 .
  []
 
-<img/S.1-senoidal.png, id=72, 853.1875pt x 305.14pt>
+<img/S.1-senoidal.png, id=78, 853.1875pt x 305.14pt>
 File: img/S.1-senoidal.png Graphic file (type png)
 <use img/S.1-senoidal.png>
 Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
@@ -656,7 +678,7 @@ Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
 [11
 
  <./img/S.1-senoidal.png>]
-<img/S.2-Periodo.jpg, id=78, 312.16624pt x 162.6075pt>
+<img/S.2-Periodo.jpg, id=83, 312.16624pt x 162.6075pt>
 File: img/S.2-Periodo.jpg Graphic file (type jpg)
 <use img/S.2-Periodo.jpg>
 Package pdftex.def Info: img/S.2-Periodo.jpg  used on input line 34.
@@ -671,27 +693,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8666 strings out of 480799
- 118598 string characters out of 2891114
- 467321 words of memory out of 3000000
- 24445 multiletter control sequences out of 15000+200000
- 566697 words of font info for 99 fonts, out of 3000000 for 9000
+ 8710 strings out of 480799
+ 119365 string characters out of 2891114
+ 477711 words of memory out of 3000000
+ 24482 multiletter control sequences out of 15000+200000
+ 567055 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,77p,648b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,12n,77p,648b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
 ase/8r.enc}<C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rafael.escudero/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/rafael.escudero/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/ra
-fael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
-b><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proyect.pdf (19 pages, 664007 bytes).
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rafael.escudero/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/rafael.escu
+dero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/c
+ourier/ucrr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/rafael.escudero/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/rafael
+.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
+:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
+/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on proyect.pdf (20 pages, 682300 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
