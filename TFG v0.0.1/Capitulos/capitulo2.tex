@@ -31,55 +31,21 @@ Csound divide la estructura de su código con etiquetas XML, empezaremos por hab
 
 \section{Palabras reservadas}\label{sec:reservadas} 
 
+Las palabras reservadas son variables globales con una funcionalidad especial para Csound como delimitar bloques de código o determinando valores configurables. Pueden inicializarse a un valor determinado en nuestro código que queda posteriormente grabado en el tiempo  de compilación.
+Veamos algunas de las palabras reservadas más comunes en Csound:
 
-
-\section{Plantillas}\label{sec:plantillas} 
-
-Se encuentra disponible una plantilla LaTex en la secci\'on de documentos de la plataforma
-de la aplicaci\'on de TfG de la ETSII 
-\url{https://tfc.eii.us.es/TfG/}. Esa plantilla ha sido utilizada para preparar este documento.
-Se espera en breve disponer de plantillas de ejemplo para las aplicaciones OpenOffice Writer y Office Word.
-
-Nota: Las plantillas se proporcionan como ejemplo, las condiciones obligatorias son las que constan en este procedimiento.
-
-\chapter{Ejemplos}\label{cap2} 
-					
-\section{Manejo de la bibliograf{\'\i}a}
-En esta secci\'on mostramos brevemente ejemplos de referencia a la bibliograf{\'\i}a 
-citando un libro~\cite{desousa}, un art{\'\i}culo~\cite{guiatitlesec} 
-y una p\'agina web~\cite{informatica}. 
-
-Se recuerda que son campos obligatorios
-en todos los {\'\i}tems de la bibliograf{\'\i}a: 
-autor(es), t{\'\i}tulo del libro o art{\'\i}culo 
-% editorial (en su caso, tambi\'en revista) 
-y a{\~n}o de publicaci\'on.
-En el caso de p\'aginas web, 
-es obligatoria la fecha de la \'ultima consulta. 
-En general, la bibliograf{\'\i}a debe ayudar al lector a encontrar f\'acilmente los {\'\i}tems citados.
-
-\section{C\'odigo}
-
-En general se debe evitar incluir c\'odigo o seudoc\'odigo en la memoria. Si fuese preciso, se destacar\'a de forma
-que sea f\'acilmente identificable y se indexar\'an los trozos de c\'odigo incluidos. Un ejemplo puede verse
-a continuaci\'on.
-
-\codigofuente{TeX}{Código de ejemplo en LaTeX}{codigo/macrotabla}
-
-\section{Im\'agenes}
-
-Este es un ejemplo de inclusi\'on de figura en el texto (v\'ease la figura~\ref{fig:ada}). 
-
-\figura{0.5}{img/AdaLovelace}{Ada Lovelace}{fig:ada}{}
-
-Figuras y cuadros se colocar\'an preferentemente tras el p\'arrafo en el que
-son llamados por primera vez. Si no cupieran, se colocar\'an (en orden de preferencia):
 \begin{itemize}
- \item Al final de la p\'agina en que se llaman
- \item Al principio de la siguiente p\'agina
- \item Al final del cap{\'\i}tulo
+ \item \textbf{instr/endin}: Las palabras reservadas instr y endin sirven para determinar el comienzo y el final del bloque de código necesario para crear un instrumento en Csound. Podemos ver un ejemplo de uso en las líneas 6 y 10 de la figura de código 2.1.
+ Además debemos asignar un nombre o identificador al instrumento acompañando a la palabra reservada instr, en nuestro ejemplo de código le damos el nombre ``1'' \ a nuestro instrumento.
+ 
+ \item \textbf{sr}: Indica el valor del sample rate. Wl valor predeterminado es de 44100Hz, es decir, 44100 veces cada segundo. Normalmente usaremos un valor 44100 o de 48000 según la compatibilidad de la tarjeta de sonido de nuestro equipo.\footnote{Para mayor entendimiento de los conceptos relacionados al sampleo véase el apartado ``El Sampleo y Sample Rate'' del capítulo ``Fundamentos del Sonido''}
+ 
+ \item \textbf{nchnls}: Se trata del número de canales de salida de audio que usamos en nuestro programa. Con nchnls = 1 conseguimos sonido mono, con nchnls = 2 stereo, nchnls = 4 cuadrafónico. (véase figura 2.1)
+ \figura{0.8}{img/2.1-Cuadrafonico}{Sonido cuadrafónico}{fig:quadra}{}
+
+ \item \textbf{0dbfs}: Determina el valor relativo que usaremos en el programa como 0 decibelios y a partir del cual aumentaremos o disminuiremos los decibelios de volumen. Por defecto tiene un valor de 32767. \footnote{Para mayor entendimiento del concepto de decibelio, ir a la sección ``El decibelio'' del capítulo ``Fundamentos del Sonido''}
 \end{itemize}
-siempre respetando el orden de aparici\'on en el texto.
+
 
 \section{Cuadros (mal llamados Tablas)}
 

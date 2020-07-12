@@ -40,4 +40,35 @@ Toda onda periódica posee 4 características:
     \item \textbf{Longitud de Onda}: Se trata de la distancia que va del punto inicial al punto final del recorrido de la onda marcada por un periodo. Se mide en metros.
 \end{itemize} 
 
+\subsection{El Sampleo y Sample Rate}\label{sec:sr} 
+
+Para representar de manera digital una onda de sonido acústica necesitamos convertir sus valores analógicos a digitales. Esta onda tendrá un valor distinto por cada instante de tiempo y para conseguir recoger de alguna manera estos datos en un computador necesitaremos el concepto de sampleo.
+
+El sampleo consiste en recoger un número determinado de valores en formato digital de una onda sonora por cada segundo de duración.
+
+\figura{0.8}{img/S.3-Sampleo}{Ejemplo de sampleo de una onda}{fig:Sampleo}{}
+
+Aquí entra el concepto de ``sample rate'', que determina la frecuencia de muestreo en la recogida de datos de la onda. En la figura anterior podemos observaruna misma onda de sonido a la que se le realiza un sampleo primero con sample rate menor (izquierda), y con un sample rate mayor (derecha).
+
+Por último debe destacarse que un sample rate mayor no implica necesariamente una coversión digital más feaciente para nosotros a un nivel pragmático puesto que el nivel máximo de frecuencia de datos sonoros que puede captar en oído humano ronda los 20Khz. 
+
+Contamos además con que debe respetarse el \textbf{Teorema de muestreo de Nyquist-Shannon}:\bigskip
+
+\textsl{``Para representar una onda de manera digital que contenga frecuencias de hasta X Hz, es necesario usar un sample rate de al menos 2X muestras por segundo.''}\bigskip
+
+De otra manera, los valores digitales no representarían la onda de manera correcta dando lugar al aliasing y al muestreo incorrecto.
+
+Se muestra a continuación una figura de ejemplo de sampleo en la que se toma un sample rate de 40000Hz. De la primera onda, que es de 10KHz observamos que recogemos los datos suficiente cada segundo como para captar toda la información contenida en ella. De hecho podemos observar también que con un sample rate de 20KHz en lugar de 40KHz también captaríamos toda la información necesaria como para recoger la onda al completo en su formato digital cumpliéndose así el Teorema de muestreo de Nyquist-Shannon.
+
+Sin embargo la onda del segundo gráfico tiene una frecuencia de 30KHz y esto implica que con un sample rate de 40KHz como el mostrado, daría resultado una conversión de onda errónea. Dando incluso para este ejemplo una muestra de onda digital idéntica a la del primer gráfico. Sería necesario un sample rate de al menos 60KHz para recoger feacientemente los datos y conseguir una conversión digital satisfactoria de la onda.\pagebreak
+
+\figura{0.8}{img/S.4-Aliasing}{Un mismo sample rate para ondas distintas}{fig:difSamples}{}
+
+\section{Conceptos interesantes}\label{sec:Conceptos} 
+
+Hablemos a continuación de algunos conceptos no necesariamente intrínsecos al sonido digital pero interesantes para entender mejor los conceptos necesarios para el uso adecuado de Csound.
+
+\subsection{El decibelio}\label{sec:db} 
+
+El decibelio es una unidad de medida que representa la intensidad de un sonido. 
 

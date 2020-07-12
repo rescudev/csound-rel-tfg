@@ -20,3 +20,9 @@ Ondas: http://www.emba.com.ar/biblioteca/Frecuencia%20-%20Periodo%20-%20Longuitu
 https://definicion.de/frecuencia-de-onda/#:~:text=La%20idea%20de%20frecuencia%20de,oscilaci%C3%B3n%20en%20un%20tiempo%20espec%C3%ADfico.
 
 http://cmm.cenart.gob.mx/tallerdeaudio/cursos/cursoardour/Teoria_y_tecnicas/Audiodigital.html
+
+https://en.wikibooks.org/wiki/Sound_in_the_Digital_Domain
+
+https://musicaysonido.es/2019/02/11/aliasing/
+
+https://www.youtube.com/watch?v=37OCZd8aZ0E

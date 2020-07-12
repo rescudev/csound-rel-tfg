@@ -7,9 +7,10 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Blue}}{5}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Cabbage}}{6}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sonido cuadrafónico}}{9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ada Lovelace}}{10}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Onda Senoidal}}{11}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodo y Amplitud}}{12}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Onda Senoidal}}{10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Periodo y Amplitud}}{11}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de sampleo de una onda}}{12}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{13}%
 \contentsfinish 
