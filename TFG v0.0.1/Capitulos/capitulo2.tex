@@ -101,7 +101,25 @@ Observemos un uso práctico del opcode \textbf{oscils} en la figura de código 2
 
 Como podemos observar, una vez comprendida, la sintaxis de uso de los opcodes es sencilla pero muy concreta al no parecerse del todo a la sintaxis de lenguajes más convencionales. Para usar de forma satisfactoria los opcodes debemos tener presente la librería de referencia canónica de Csound: \url{http://www.csounds.com/manual/html/PartReference.html} donde encontraremos un librería muy amplia de ejemplos de uso concreto de cada uno de los opcodes disponibles.
 
-\section{Usando lo aprendido en un Sintetizador}\label{sec:usandoAprendido}
+\section{Usando lo aprendido en un Sintetizador MIDI}\label{sec:usandoAprendido}
+
+Para afianzar lo aprendido sobre la sintaxis de Csound, vamos a programar un sintetizador MIDI básico que haga uso de las funcionalidades más elementales del lenguaje.
+
+\section{El instrumento base \textless CsInstruments\textgreater}\label{sec:instSinte}
+
+Vamos a usar el opcode \textbf{vco2}, que genera una onda oscilatoria limitada por banda. Veamos en primer lugar cómo usar este opcode: \textbf{ares vco2 kamp, kcps}. Tenemos dos atributos de entrada obligatorios, \textbf{kamp} que define la amplitud de la onda y \textbf{kcps} para determinar su frecuencia.
+Para nuestro ejemplo, \textbf{aOut} contedrá la información referente a una de amplitud 1 y frecuencia 440Hz. Con la línea \textbf{out aOut} se indica que el valor de salida que se devuelve al usar nuestro instrumento es el de \textbf{aOut}.
+
+Y aquí nuestro instrumento en su forma base:
+\codigofuente{TeX}{Instrumento base del sintetizador}{codigo/InstBaseSinte}
+
+Inicialicemos además algunas variable globales y retoquemos algunas variables internas de nuestro instrumento:
+
+\codigofuente{TeX}{Variables globales inicializadas}{codigo/InstVarSinte}
+
+Usaremos el opcode de esta manera: \textbf{aOut vco2 iAmp, iFreq}, siendo \textbf{iFreq = p4} y \textbf{iAmp = p5}. Estas variables, p5 y p4, las determinan los valores de entrada MIDI con el objetivo de usar nuestro sintetizador de forma dinámica.
+
+\section{Las opciones de configuración \textless CsOptions\textgreater}\label{sec:optSinte}
 
 \section{Cuadros (mal llamados Tablas)}
 

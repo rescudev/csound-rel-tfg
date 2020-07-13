@@ -24,8 +24,10 @@
 \contentsline {section}{\numberline {2.5}Las variables en Csound}{9}%
 \contentsline {section}{\numberline {2.6}Los Opcodes}{10}%
 \contentsline {subsection}{\numberline {2.6.1}Sintaxis del Opcode}{10}%
-\contentsline {section}{\numberline {2.7}Usando lo aprendido en un Sintetizador}{11}%
-\contentsline {section}{\numberline {2.8}Cuadros (mal llamados Tablas)}{11}%
+\contentsline {section}{\numberline {2.7}Usando lo aprendido en un Sintetizador MIDI}{11}%
+\contentsline {section}{\numberline {2.8}El instrumento base \textless CsInstruments\textgreater }{11}%
+\contentsline {section}{\numberline {2.9}Las opciones de configuración \textless CsOptions\textgreater }{11}%
+\contentsline {section}{\numberline {2.10}Cuadros (mal llamados Tablas)}{11}%
 \contentsline {chapter}{\numberline {3}Cabbage: Guía de uso}{12}%
 \contentsline {section}{\numberline {3.1}Instalación de Cabbage}{12}%
 \contentsline {section}{\numberline {3.2}La etiqueta \textless Cabbage\textgreater }{13}%
