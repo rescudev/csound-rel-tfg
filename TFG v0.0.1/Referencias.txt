@@ -26,3 +26,7 @@ https://en.wikibooks.org/wiki/Sound_in_the_Digital_Domain
 https://musicaysonido.es/2019/02/11/aliasing/
 
 https://www.youtube.com/watch?v=37OCZd8aZ0E
+
+http://azimadli.com/vibman-spanish/elconceptodefase.htm
+
+https://cabbageaudio.com/docs/cabbage_syntax/

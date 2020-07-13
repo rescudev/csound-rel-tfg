@@ -26,7 +26,7 @@ Csound divide la estructura de su código con etiquetas XML, empezaremos por hab
  \item \textbf{Etiqueta \textless CsScore\textgreater}: Aquí haremos uso práctico de nuestros instrumentos, les diremos cómo ejecutarse y durante cuánto tiempo. En el código del que disponemos, la etiqueta \textless CsScore\textgreater abarca desde la línea 13 a la 15 y tenemos un ejemplo sencillo de ejecución en la línea 14 al que volveremos más adelante.
  \item \textbf{Etiqueta \textless CsOptions\textgreater}: Se inclurán aquí las especificaciones técnicas para interactuar con hardware u otros dispositivos.
  \item \textbf{Etiqueta \textless CsoundSynthesizer\textgreater}: Todo el código, incluidas las etiquetas mencionadas anteriormente, debe estar incluido en \textless CsoundSynthesizer\textgreater. Es la forma que tiene el compilador de saber dónde empieza y dónde acaba el código Csound.
- \item \textbf{Etiqueta especial \textless Cabbage\textgreater}: Es la única etiqueta que no debe estar dentro de \textless CsoundSynthesizer\textgreater puesto que es exlusiva de Cabbage, IDE que usaremos principalmente en este documento. En esta etiqueta incluiremos el código referente a las opciones de personalización de interfaz gráfica de nuestro programa, hablaremos más de ella en secciones referentes al uso del IDE Cabbage.
+ \item \textbf{Etiqueta especial \textless Cabbage\textgreater}: Es la única etiqueta que no debe estar dentro de \textless CsoundSynthesizer\textgreater puesto que es exlusiva de Cabbage, IDE que usaremos principalmente en este documento. En esta etiqueta incluiremos el código referente a las opciones de personalización de interfaz gráfica de nuestro programa, hablaremos más de ella en secciones referentes al uso del IDE Cabbage. Para mayor referencia y guía de uso de esta etiqueta y su contenido, visitar la sección ``La etiqueta \textless Cabbage\textgreater'' del capítulo ``Cabbage: Guía de uso''.
 \end{itemize}
 
 \section{Palabras reservadas}\label{sec:reservadas} 
@@ -43,9 +43,65 @@ Veamos algunas de las palabras reservadas más comunes en Csound:
  \item \textbf{nchnls}: Se trata del número de canales de salida de audio que usamos en nuestro programa. Con nchnls = 1 conseguimos sonido mono, con nchnls = 2 stereo, nchnls = 4 cuadrafónico. (véase figura 2.1)
  \figura{0.8}{img/2.1-Cuadrafonico}{Sonido cuadrafónico}{fig:quadra}{}
 
- \item \textbf{0dbfs}: Determina el valor relativo que usaremos en el programa como 0 decibelios y a partir del cual aumentaremos o disminuiremos los decibelios de volumen. Por defecto tiene un valor de 32767. \footnote{Para mayor entendimiento del concepto de decibelio, ir a la sección ``El decibelio'' del capítulo ``Fundamentos del Sonido''}
+ \item \textbf{0dbfs}: Determina el valor relativo que usaremos en el programa como 0 decibelios y a partir del cual aumentaremos o disminuiremos los decibelios de volumen. Por defecto tiene un valor de 32767 aunque lo más lógico al usar un computador para determinar este valor es dar un valor absoluto de 0dbfs = 1 puesto que la intensidad final del sonido no depende únicamente de nuestro código sino de nuestros altavoces, la configuración de nuestra tarjeta de sonido o la configuación de nuestro IDE de Csound. Darle un valor 1 a 0dbfs nos permite tener una referencia útil y muy manejable además de ser la usada por convenio en los programas de audio digital en lugar de dar valores absolutos que bien pueden desembocar en resultados distintos a lo que deseábamos según el equipo en el que ejecutemos nuestro código. \footnote{Para mayor entendimiento del concepto de decibelio, ir a la sección ``El decibelio''  del capítulo ``Fundamentos del Sonido''}
 \end{itemize}
 
+\section{Las variables en Csound}\label{sec:variables}
+
+En Csound encontramos 3 tipos principales de variable: \textbf{i}, \textbf{k} y \textbf{a}, que representan diferentes ratios de refresco para su valor. Para definir una variable de cualquiera de estos tipos basta con escribir i, k o a como primera letra del nombre de nuestra variable. Algunos ejemplos serían: iFreq, kAux, aCualquierNombre, etc...
+
+Veamos a continuación qué implica elegir uno u otro tipo:
+
+Cuando ejecutamos código Csound, una vez compilado el código e inicializada la configuración, el tiempo de ejecución se pasa recorriendo el código contenido de nuestros instrumentos en bucle. Podemos decir que nuestro código se recorre con una determinada frecuencia mientras se ejecuta, y dentro de esta frecuencia podemos seleccionar cómo de frecuentemente volveremos a determinar el valor de nuestra variables. Para determinar ese ratio usamos i,k y a.
+
+\begin{itemize}
+ \item \textbf{Variables i}: Las variables refrescan su valor una única vez, cuando el instrumento es inicializado. A efectos prácticos se trata de constantes internas a los instrumentos.
+ 
+ \item \textbf{Variables k}: Tienes una frecuencia de refresco media. Mayor a las variables i, menor a las variables a.
+ 
+ \item \textbf{Variables a}: Tienen el mayor ratio de los 3 tipos puesto que estas variables refrescan su valor cada vez que Csound recorre su código.
+
+\end{itemize}
+
+La principal razón para que tengamos estas diferente opciones es poder jugar con la optimización de nuestro código. Bien podríamos hacer que todas nuestras variables fuesen de tipo `\ a' pero esto implicaría en la mayoría de los casos un aumento de carga innecesario durante el tiempo de ejecución, que puede ser crucial si nuestro objetivo pasa por ejecutar código en directo al interpretar una pieza musical.
+
+\section{Los Opcodes}\label{sec:Opcodes}
+
+Los Opcodes realizan diferentes funciones predefinidas, son de hecho el equivalente más parecido a una función de librería en un lenguaje de alto nivel convencional. Por ejemplo el Opcode \textbf{reverb} aplica reverberación a la señal entrante, el opcode \textbf{poscil} produce una señal oscilatoria de alta precisión. Existe una gran variedad de Opcodes (Actualmente más de 1500) con funcionalidades muy concretas y útiles en el mundo del sonido.
+
+\subsection{Sintaxis del Opcode}\label{sec:SyntaxOpcodes}
+
+Veamos primero la sintaxis generalizada y después un ejemplo sencillo de uso de opcode. Analicemos su sintaxis para comprenderla:
+
+\codigofuente{TeX}{Sintaxis generalizada de un Opcode}{codigo/opcodeGeneral}
+
+Refiriéndonos a la figura de código 2.2. \textbf{opcode} es el nombre del opcode que queremos usar, \textbf{input1}, \textbf{inpu2} e \textbf{input3} representan los diferentes atrbutos de entrada al opcode, son generalmente valores numéricos y su cantidad es indeterminada. Existen opcodes sin atributos de entrada. Por último \textbf{aOutput} es la variable de salida del opcode en la que vamos a guardar nuestro resultado esperado a la que haremos referencia más adelante en nuestro código.
+Podríamos resumir la sintaxis básica de uso de opcodes en: \textbf{salida $\leftarrow$ función $\leftarrow$ entrada/s} 
+
+\codigofuente{TeX}{Ejemplo de uso del Opcode oscils}{codigo/opcodeEx}
+
+Observemos un uso práctico del opcode \textbf{oscils} en la figura de código 2.3:
+
+\begin{itemize}
+ \item \textbf{Salida}: La variable de salida es \textbf{aSin} (variable de tipo `\ a') en la que quedará guardada la información de la onda generada y cuyo valor se refrescará cada vez que Csound recorra el instrumento contenedor.
+ 
+ \item \textbf{Función}: El opcode es \textbf{oscils} cuya funcionalidad es generar una señal oscilatoria sinoidal, este opcode requiere de 3 variables de entrada de las que hablaremos a continuación.
+ 
+ \item \textbf{Entradas}: Observamos 3 entradas, \textbf{0dbfs/4, 440, 0} $\rightarrow$ \textbf{iamp, icps, iphs}. Hablemos  de cada una de ellas: 0dbfs/4 (recordemos el uso de 0dbfs como palabra reservada) 
+ \begin{itemize}
+ \item \textbf{iamp}: Cuyo valor es 0dbfs/4. Se trata del valor de la amplitud de onda de salida, es decir, la amplitud de la onda de salida tendrá el valor de un cuarto del valor marcado en nuestro código como 0 decibelios (\textbf{0dbfs}).
+ 
+ \item \textbf{icps}: Frecuencia de la onda de salida en Hz. El valor en nuestro ejemplo es de 440, por lo tanto obtendremos una frecuencia de onda de salida de 440Hz.
+ 
+ \item \textbf{iphs}: Determina la fase de onda de la onda de salida, nuestro valor es 0 por lo que nuestra onda de salida comienza en su fase 0.\footnote{Para comprender el concepto de fase de onda, acudir al capítulo ``Fundamentos del sonido`` sección ``La onda y sus características''}
+
+ \end{itemize}
+
+\end{itemize}
+
+Como podemos observar, una vez comprendida, la sintaxis de uso de los opcodes es sencilla pero muy concreta al no parecerse del todo a la sintaxis de lenguajes más convencionales. Para usar de forma satisfactoria los opcodes debemos tener presente la librería de referencia canónica de Csound: \url{http://www.csounds.com/manual/html/PartReference.html} donde encontraremos un librería muy amplia de ejemplos de uso concreto de cada uno de los opcodes disponibles.
+
+\section{Usando lo aprendido en un Sintetizador}\label{sec:usandoAprendido}
 
 \section{Cuadros (mal llamados Tablas)}
 

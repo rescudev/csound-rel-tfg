@@ -1,0 +1,47 @@
+% !TEX root = ../proyect.tex
+
+\chapter{Cabbage: Guía de uso}
+
+Cabbage es un IDE para el lenguaje Csound. Es de código abierto y está desarrollado por Rory Walsh.
+
+Será el principal IDE que usaremos a lo largo de este documento puesto que además de contar con todas las comodidades necesarias para el funcionamiento del lenguaje, aporta además funcionalidades para crear interfaces gráficas para nuestro software de manera muy simple pero vistosa.
+
+Se presenta el siguiente capítulo con la intención de dar una guía básica referencial de funcionamiento a la que acudir en caso de ser necesario durante el curso del resto de contenidos.
+
+\section{Instalación de Cabbage}\label{sec:CabbageInst}
+
+Cabbage puede instalarse en sistemas Windows, OSX y Linux. Posee incluso un instalador en versión beta para sistemas Android.
+
+Pasos para la instalación en Windows y OSX:
+
+\begin{itemize}
+ \item Acudir a la página \url{https://cabbageaudio.com/download/} donde encontraremos los enlaces de descarga.
+ \item Seleccionar la versión adecuada para nuestro sistema, en este caso Windows u OSX.
+ 
+  \figura{0.6}{img/C.1-InstaVersion}{Versiones disponibles}{fig:InstCabbage}{}
+  
+ \item Ejecutamos el archivo descargado y seguimos los pasos de instalación. Para los instaladores de Windows y OSX se incluye una instalación automática del lenguaje Csound en nuestro sistema por lo que una vez instalado Cabbage todo estará listo para usar.
+ \figura{0.6}{img/C.2-InstaPasos}{Pasos de la instalación}{fig:InstPasos}{}
+ \item Por último podemos ejecutar el acceso directo que se instala automáticamente en nuestro escritorio y empezar a usar Csound. Como se observa, Csound tiene una instalación muy fácil en estos sistemas.
+\end{itemize}
+
+\section{La etiqueta \textless Cabbage\textgreater}\label{sec:CabbageInst}
+
+A diferencia del resto de etiquetas, la etiqueta \textless Cabbage\textgreater es exclusiva al IDE y proporciona funcionalidades para el diseño de la interfaz de usuario. Veamos algunos de sus usos:
+
+\subsection{Los Witgets}
+
+Llamaremos a los diferentes elementos de interfaz gráfica que aporta Cabbage, widgets. Podemos dividirlos en dos tipos: interactivos (botones, sliders, barras de selección, etc...) y no interactivos (imágenes, indicadores, etc...).
+
+Empecemos por un ejemplo de uso de un slider para comprender la sintaxis:
+
+\codigofuente{TeX}{Ejemplo básico de un widget}{codigo/CabbageSyntax}
+
+En nuestra figura vemos que para hacer uso de un widget empezamos por escribir su nombre identificativo de tipo, en este caso \textbf{rslider}. Mástarde podemos definir una serie de identificadores para personalizar nuetro widget. Para especificar la posición de nuestro widget y su tamaño usaremos \textbf{bounds(x, y, width, height)}. En el caso de nuestro ejemplo estamos posicionando nuestro slider en las coodernadas XY (10,10) y le estamos dando un tamaño de 100*100 píxeles.
+
+Podemos usar también el identificador \textbf{range(min, max, value, skew, incr)}. Sus valores min y max marcan el mínimo y máximo valor del slider en cuestión, el resto de parámetros son opcionales. \textbf{value} indica el valor inicial del slider. \textbf{skew} puede usarse para determinar la salida de datos del slider de forma no lineal, su valor predeterminado es 1 pero al darle un valor por ejemplo de 0.5 conseguiríamos una salida de datos exponencial. \textbf{incr} determina el tamaño de los pasos incrementales que da el slider a usarlo, por ejemplo con un valor 0.4, de un valor cualquiera del slider a sus adyacentes habría necesariamente una distacia en valor a 0.4.
+
+En nuestro ejemplo hemos creado un slider cuyo rango de valores va del 0 al 1 y cuyo valor inicial es 0.5.
+
+
+

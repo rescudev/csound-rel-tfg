@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'Indice general}{II}%
-\contentsline {chapter}{{\'I}ndice de cuadros}{III}%
-\contentsline {chapter}{\'{I}ndice de figuras}{IV}%
-\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{V}%
+\contentsline {chapter}{{\'I}ndice de cuadros}{IV}%
+\contentsline {chapter}{\'{I}ndice de figuras}{V}%
+\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{VI}%
 \contentsline {chapter}{\numberline {1}Introducción al Lenguaje y Fundamentos del Sonido}{1}%
 \contentsline {section}{\numberline {1.1}¿Qué es Csound?}{1}%
 \contentsline {section}{\numberline {1.2}¿Por qué usar Csound?}{1}%
@@ -21,13 +21,22 @@
 \contentsline {section}{\numberline {2.2}A tener en cuenta}{7}%
 \contentsline {section}{\numberline {2.3}División por etiquetas}{8}%
 \contentsline {section}{\numberline {2.4}Palabras reservadas}{8}%
-\contentsline {section}{\numberline {2.5}Cuadros (mal llamados Tablas)}{9}%
-\contentsline {chapter}{\numberline {3}Fundamentos del Sonido}{10}%
-\contentsline {section}{\numberline {3.1}Introducción}{10}%
-\contentsline {section}{\numberline {3.2}El Audio Digital}{10}%
-\contentsline {subsection}{\numberline {3.2.1}¿Qué es el sonido y cómo se transmite?}{10}%
-\contentsline {subsection}{\numberline {3.2.2}La onda de sonido y sus características}{11}%
-\contentsline {subsection}{\numberline {3.2.3}El Sampleo y Sample Rate}{11}%
-\contentsline {section}{\numberline {3.3}El Decibelio}{13}%
-\contentsline {chapter}{Referencias}{14}%
+\contentsline {section}{\numberline {2.5}Las variables en Csound}{9}%
+\contentsline {section}{\numberline {2.6}Los Opcodes}{10}%
+\contentsline {subsection}{\numberline {2.6.1}Sintaxis del Opcode}{10}%
+\contentsline {section}{\numberline {2.7}Usando lo aprendido en un Sintetizador}{11}%
+\contentsline {section}{\numberline {2.8}Cuadros (mal llamados Tablas)}{11}%
+\contentsline {chapter}{\numberline {3}Cabbage: Guía de uso}{12}%
+\contentsline {section}{\numberline {3.1}Instalación de Cabbage}{12}%
+\contentsline {section}{\numberline {3.2}La etiqueta \textless Cabbage\textgreater }{13}%
+\contentsline {subsection}{\numberline {3.2.1}Los Witgets}{13}%
+\contentsline {chapter}{\numberline {4}Fundamentos del Sonido}{15}%
+\contentsline {section}{\numberline {4.1}Introducción}{15}%
+\contentsline {section}{\numberline {4.2}El Audio Digital}{15}%
+\contentsline {subsection}{\numberline {4.2.1}¿Qué es el sonido y cómo se transmite?}{15}%
+\contentsline {subsection}{\numberline {4.2.2}La onda de sonido y sus características}{16}%
+\contentsline {subsection}{\numberline {4.2.3}El Sampleo y Sample Rate}{17}%
+\contentsline {section}{\numberline {4.3}Conceptos interesantes}{18}%
+\contentsline {subsection}{\numberline {4.3.1}El decibelio}{18}%
+\contentsline {chapter}{Referencias}{19}%
 \contentsfinish 

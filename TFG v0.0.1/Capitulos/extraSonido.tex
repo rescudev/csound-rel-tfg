@@ -38,6 +38,7 @@ Toda onda periódica posee 4 características:
     \item Periodo = 1/Frecuencia   
     \end{itemize}
     \item \textbf{Longitud de Onda}: Se trata de la distancia que va del punto inicial al punto final del recorrido de la onda marcada por un periodo. Se mide en metros.
+    \item \textbf{Fase}: Punto de partida de la onda. Podemos observar al representar la onda en un gráfico y fijarnos en que el valor inicial del eje Y que no tiene que ser nesesariamente 0.
 \end{itemize} 
 
 \subsection{El Sampleo y Sample Rate}\label{sec:sr} 
@@ -70,5 +71,14 @@ Hablemos a continuación de algunos conceptos no necesariamente intrínsecos al 
 
 \subsection{El decibelio}\label{sec:db} 
 
-El decibelio es una unidad de medida que representa la intensidad de un sonido. 
+El decibelio o `db'\ es una unidad de medida que representa la intensidad de un sonido. Es la décima parte de un belio y siempre que hablamos de decibelio lo hacemos respecto a un valor de referencia preestablecido de intensidad, normalmente el marcado por el límite por debajo del oído humano en su capacidad para oír: \( I_{0} = 10^{-12}W/m^2 \) que se da en los 1000Hz.
+
+La fórmula para calcular los decibelios es: \( 10*log_{10}* \frac{I}{I_{0}} \), es por tanto una fórmula logarítmica que depende de su valor de referencia 
+\( I_{0} \). Para una relación \( \frac{I}{I_{0}} \) de 10 tenemos 10db, para una relación de 100 tendremos 20db, para 1000 30db, etc...
+
+Un dato útil a tener en cuenta es que al doblar la amplitud de una onda de sonido obtenemos una diferencia de +6db. De manera análoga si partimos por la mitad el valor de la amplitud de la onda obtenemos un cambio de -6db.
+
+
+
+
 
