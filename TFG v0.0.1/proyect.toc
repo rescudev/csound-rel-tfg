@@ -42,23 +42,27 @@
 \contentsline {subsection}{\numberline {3.4.1}Sentencias if-else}{19}%
 \contentsline {subsection}{\numberline {3.4.2}Bucles While/Until}{19}%
 \contentsline {subsection}{\numberline {3.4.3}El timout}{19}%
-\contentsline {chapter}{\numberline {4}Cabbage: Guía de uso}{21}%
-\contentsline {section}{\numberline {4.1}Instalación de Cabbage}{21}%
-\contentsline {section}{\numberline {4.2}Opciones del IDE}{22}%
-\contentsline {subsection}{\numberline {4.2.1}Creando un nuevo archivo}{23}%
-\contentsline {section}{\numberline {4.3}La etiqueta \textless Cabbage\textgreater }{23}%
-\contentsline {subsection}{\numberline {4.3.1}Los Witgets}{23}%
-\contentsline {section}{\numberline {4.4}Exportando nuestros instrumentos}{24}%
-\contentsline {chapter}{\numberline {5}Fundamentos del Sonido}{26}%
-\contentsline {section}{\numberline {5.1}Introducción}{26}%
-\contentsline {section}{\numberline {5.2}El Audio Digital}{26}%
-\contentsline {subsection}{\numberline {5.2.1}¿Qué es el sonido y cómo se transmite?}{26}%
-\contentsline {subsection}{\numberline {5.2.2}La onda de sonido y sus características}{27}%
-\contentsline {subsection}{\numberline {5.2.3}El Sampleo y Sample Rate}{28}%
-\contentsline {section}{\numberline {5.3}Conceptos interesantes}{29}%
-\contentsline {subsection}{\numberline {5.3.1}El decibelio}{29}%
-\contentsline {subsection}{\numberline {5.3.2}El ADSR}{29}%
-\contentsline {subsection}{\numberline {5.3.3}El Cutoff y la resonancia}{30}%
-\contentsline {subsection}{\numberline {5.3.4}La ganancia o gain y sus diferencias con el volumen}{31}%
-\contentsline {chapter}{Referencias}{32}%
+\contentsline {section}{\numberline {3.5}Los Arrays de datos}{20}%
+\contentsline {subsection}{\numberline {3.5.1}Propiedades de los Arrays}{20}%
+\contentsline {subsection}{\numberline {3.5.2}Opcodes útiles}{21}%
+\contentsline {subsection}{\numberline {3.5.3}Opreaciones con arrays}{21}%
+\contentsline {chapter}{\numberline {4}Cabbage: Guía de uso}{22}%
+\contentsline {section}{\numberline {4.1}Instalación de Cabbage}{22}%
+\contentsline {section}{\numberline {4.2}Opciones del IDE}{23}%
+\contentsline {subsection}{\numberline {4.2.1}Creando un nuevo archivo}{24}%
+\contentsline {section}{\numberline {4.3}La etiqueta \textless Cabbage\textgreater }{24}%
+\contentsline {subsection}{\numberline {4.3.1}Los Witgets}{24}%
+\contentsline {section}{\numberline {4.4}Exportando nuestros instrumentos}{25}%
+\contentsline {chapter}{\numberline {5}Fundamentos del Sonido}{27}%
+\contentsline {section}{\numberline {5.1}Introducción}{27}%
+\contentsline {section}{\numberline {5.2}El Audio Digital}{27}%
+\contentsline {subsection}{\numberline {5.2.1}¿Qué es el sonido y cómo se transmite?}{27}%
+\contentsline {subsection}{\numberline {5.2.2}La onda de sonido y sus características}{28}%
+\contentsline {subsection}{\numberline {5.2.3}El Sampleo y Sample Rate}{29}%
+\contentsline {section}{\numberline {5.3}Conceptos interesantes}{30}%
+\contentsline {subsection}{\numberline {5.3.1}El decibelio}{30}%
+\contentsline {subsection}{\numberline {5.3.2}El ADSR}{30}%
+\contentsline {subsection}{\numberline {5.3.3}El Cutoff y la resonancia}{31}%
+\contentsline {subsection}{\numberline {5.3.4}La ganancia o gain y sus diferencias con el volumen}{32}%
+\contentsline {chapter}{Referencias}{33}%
 \contentsfinish 

@@ -84,5 +84,41 @@ Entendamos el uso de \textbf{timout} con un ejemplo práctico:
 
 Hemos definido una variable \textbf{idur} a la que damos un valor aleatorio entre (0,5 y 3) mediante el opcode \textbf{random}. Acto seguido usamos el opcode \textbf{timout} para saltar desde el instante \textbf{0}, durante ese \textbf{valor aleatorio de segundos}, a la etiqueta \textbf{play} donde se ejecuta el opcode \textbf{poscil} que genera una onda de sonido. Una vez acabado ese periodo de tiempo se ejecuta el opcode \textbf{reinit} que nos hace saltar a la etiqueta \textbf{loop} y vuelta a empezar.
 
+\section{Los Arrays de datos}
 
+Al igual que en cualquier lenguaje con cierto nivel de complejidad, en Csound existen los \textbf{Arrays} o vectores de datos. Veamos las peculiaridades del lenguaje en el uso de este tipo de estructuras.
 
+\subsection{Propiedades de los Arrays}
+
+En Csound podemos pensar en cinco propiedades características al definir un Array:
+
+\begin{itemize}
+ \item \textbf{Dimensiones}: Los elementos de un array pueden leerse mediante la sintaxis \textbf{kArr[i]} siendo \textbf{i} la posición del elemento al que queremos acceder en un array unidimensional. De igual manera podemos acceder a los elementos de un array de dos dimensiones con la sintaxis \textbf{kArr[i][j]}. De forma análoga para arrays tridimensionales.
+ \item \textbf{i- o k-Rate}: Los arrays son variables y como tal pueden definirse como variable i-rate o k-rate.
+ \item \textbf{Local o Global}: De la misma manera podemos hacer de nuestro array una variabe global añadiendo la letra \textbf{g} al principio del nombre.
+ \item \textbf{Arrays de Strings}: Los arrays de Csound pueden contener variables String además de número por lo que podemos clasificarlos también de esta manera.
+ \item \textbf{Arrays de señales digitales}: Por último podemos conectar canales y salidas de opcodes a las posiciones de un array para facilitar el trabajo con las señales de audio.
+\end{itemize}
+\pagebreak
+
+\subsection{Opcodes útiles}
+
+Estos son algunos de los opcodes que podemos usar al trabajar con arrays:
+
+\begin{itemize}
+ \item \textbf{init}: El opcode que usamos para inicializar un array, para su sintexis únicamente necesitamos aportar el tamaño de cada una de las dimensiones del array que estamos definiendo. Por ejemplo: \textbf{kArr[]   init 5} para un array unidimensional de longitud 5.
+ \item \textbf{fillarray}: Para añadir una serie de valores a nuestro array. Veamos un ejemplo: \textbf{kArr[] fillarray 1, 2, 3, 4, 5} que añade los valores 1, 2, 3, 4 y 5 al array.
+ \item \textbf{genarray}: Genera un array al que se le añaden los valores comprendidos entre los valores de entrada del opcode. Un ejemplo de uso: \textbf{kArr[] genarray   1, 5} que crea un array al que se le añaden los valores 1, 2, 3, 4 y 5.
+ \item \textbf{lenarray}: Devuelve el tamaño actual de un array. \textbf{kTam  lenarray  kArr} devolvería el tamaño de kArr. 
+ \item \textbf{slicearray}: Nos sirve para generar un subarray desde un índice inicial hasta un índice final del array original introducido como parámetro de entrada en el opcode. Su sintaxis base es: \textbf{kSlice[] slicearray kArr, iStart, iEnd}. Y un ejemplo de uso sería \textbf{kSub[]  slicearray kArr, 0, 2} que para el array \textbf{kArr=[4,3,2,1,0]} devolvería como resultado \textbf{kSub=[4,3,2]}
+  \item \textbf{minarray}: 
+  \item \textbf{maxarray}: 
+  \item \textbf{sumarray}: 
+  \item \textbf{scalearray}: 
+\end{itemize}
+
+\subsection{Operaciones con arrays}
+
+Se pueden usar los cuatro operadores básicos (\textbf{+, -, *, /}) para sumar, restar, multiplicar y dividir arrays. Si el operador se aplica entre el array y un número, la operación se realiza a todos los elementos del array, por lo que guardar los resultados en un nuevo array es una buena práctica. Por ejemplo si tenemos el array \textbf{kArr=[1,1,1]} y realizamos la operación \textbf{kSuma = Karr + 1} obtendremos \textbf{kSuma=[2,2,2]}.
+
+Por otra parte, si realizamos la operación entre dos arrays del mismo tamaño, el cálculo tendrá en cuenta cada pareja de valores de la misma posición de cada array. Si tenemos el array \textbf{kArr1=[10,10,10]} y el array \textbf{kArr2=[1,2,3]} y realizamos la operación \textbf{kArr3 = kArr1 + kArr2} obtenemos \textbf{kArr3=[11,12,13]}.
