@@ -101,11 +101,23 @@ Observemos un uso práctico del opcode \textbf{oscils} en la figura de código 2
 
 Como podemos observar, una vez comprendida, la sintaxis de uso de los opcodes es sencilla pero muy concreta al no parecerse del todo a la sintaxis de lenguajes más convencionales. Para usar de forma satisfactoria los opcodes debemos tener presente la librería de referencia canónica de Csound: \url{http://www.csounds.com/manual/html/PartReference.html} donde encontraremos un librería muy amplia de ejemplos de uso concreto de cada uno de los opcodes disponibles.
 
+\section{Los Score events}\label{sec:scores}
+
+Los \textbf{Score events} son las líneas de código que van dentro de la etiqueta \textless CsScore\textgreater. Por ejemplo, volvamos a nuestro ``Hola mundo'' (figura de código 2.1), revisemos el score ``\textbf{i 1 0 1}'' y comprendamos su sintaxis: 
+
+Para ejecutar un instrumento usaremos la siguiente sintaxis base: \bigskip
+
+\textbf{[i identificador instanteInicial duración]}\bigskip
+
+ Siendo \textbf{identificador} el nombre del instrumento que vamos a usar, \textbf{instanteInicial} el tiempo desde el momento de ejecución del código que tarda en iniciarse nuestro instrumento y \textbf{duración} la cantidad de tiempo durante la cual se ejecuta el instrumento.
+
+
+
 \section{Usando lo aprendido en un Sintetizador MIDI}\label{sec:usandoAprendido}
 
 Para afianzar lo aprendido sobre la sintaxis de Csound, vamos a programar un sintetizador MIDI básico que haga uso de las funcionalidades más elementales del lenguaje.
 
-\section{El instrumento base \textless CsInstruments\textgreater}\label{sec:instSinte}
+\subsection{El instrumento base \textless CsInstruments\textgreater}\label{sec:instSinte}
 
 Vamos a usar el opcode \textbf{vco2}, que genera una onda oscilatoria limitada por banda. Veamos en primer lugar cómo usar este opcode: \textbf{ares vco2 kamp, kcps}. Tenemos dos atributos de entrada obligatorios, \textbf{kamp} que define la amplitud de la onda y \textbf{kcps} para determinar su frecuencia.
 Para nuestro ejemplo, \textbf{aOut} contedrá la información referente a una de amplitud 1 y frecuencia 440Hz. Con la línea \textbf{out aOut} se indica que el valor de salida que se devuelve al usar nuestro instrumento es el de \textbf{aOut}.
@@ -119,10 +131,78 @@ Inicialicemos además algunas variable globales y retoquemos algunas variables i
 
 Usaremos el opcode de esta manera: \textbf{aOut vco2 iAmp, iFreq}, siendo \textbf{iFreq = p4} y \textbf{iAmp = p5}. Estas variables, p5 y p4, las determinan los valores de entrada MIDI con el objetivo de usar nuestro sintetizador de forma dinámica.
 
-\section{Las opciones de configuración \textless CsOptions\textgreater}\label{sec:optSinte}
+\subsection{Las opciones de configuración \textless CsOptions\textgreater}\label{sec:optSinte}
 
-\section{Cuadros (mal llamados Tablas)}
+Veamos qué opciones de configuración podemos añadir a nuestro sintetizador. Será importante para que el uso de señales MIDI sea funcional así que usaremos la opción \textbf{-+rtmidi=NULL -M0 -m0d}. No usaremos plgins MIDI de tiempo real en este ejemplo así daremos el valor \textbf{NULL} a \textbf{-+rtmidi}, con -M seguido de un identificador podremos seleccionar qué dispositivo vamos a usar. Como sólo tendremos disponible el dispositivo virtual de Cabbage, usaremos \textbf{-M0}. 
 
-Este es un ejemplo de inclusi\'on de cuadro en el texto. V\'ease el cuadro~\ref{tab:prueba}
+Para relacionar las variables de nuestro instrumento como comentamos anteriormente usaremos \textbf{--midi-key-cps=4} para pasar la frecuencia de la nota MIDI actual a \textbf{p4} y \textbf{--midi-velocity-amp=5} para pasar la velocidad de pulsación a |textbf{p5}.
 
-\cuadro{|r||c|c|}{Cuadro de prueba}{tab:prueba}{elemento & elemento & elemento \\ elemento & elemento & elemento \\}
+Bastará de momento con tener un entendimiento básico de la etiqueta \textless CsOptions\textgreater de momento, aunque profundizaremos en ella más adelante.
+
+Quedaría así nuestro código:
+
+\codigofuente{TeX}{Opciones de configuración}{codigo/InstOptSinte}
+
+\subsection{Ejecutando nuestro instrumento \textless CsScore\textgreater}\label{sec:scoreSinte}
+
+La etiqueta \textless CsScore\textgreater contiene nuestros \textbf{score events} auqnue en esta ocasión no vamos a necesitarlos como tal, únicamente usaremos el score \textbf{f0 z} que sirve para indicar a Csound que se quede esperando eventos tanto tiempo como queramos. Esto ideal para el caso puesto que queremos que Csound escuche nuestros eventos de señal MIDI.
+
+\subsection{Creando una interfaz \textless Cabbage\textgreater}\label{sec:UISinte}
+
+Usaremos dos widgets de forma sencilla\footnote{Se recomienda revisar la sección ``Los widgets'' del capítulo ``Cabbage: Guía de uso''.}. En primer lugar un widget \textbf{form} para crear la ventana base de la interfaz, que tendrá un identificador \textbf{size(Width, Height)} para definir el tamaño de la ventana, un identificador \textbf{colour(r, g, b)} para dar un color personalizado al fondo de la ventana en formato rgb y por último un identificador \textbf{pluginid(id)} (único identificador obligatorio) para dar un nombre identificativo a la ventana y poder hacer referencia a ella en el resto del código.
+
+En segundo lugar usaremos un widget tipo \textbf{keyboard} para crear nuestro teclado virtual que hará las veces de instrumento MIDI. Tendrá un único identificador \textbf{bounds(x, y, width, height)} para determinar la posición de coordenadas y el tamaño del teclado.
+
+Un posible ejemplo quedaría tal que así:
+
+
+\codigofuente{TeX}{La interfaz del teclado}{codigo/InstCabUISinte}
+\pagebreak
+Y el resultado al ejecutar esta parte del código será algo parecido a esto:
+
+\figura{0.5}{img/2.2-PrimerSinte}{Nuestro primer sintetizador}{fig:sinte1}{}
+ 
+\subsection{El teclado básico}\label{sec:SinteBasico}
+
+Si unimos todas las partes, nuestro código queda de esta manera:
+
+\codigofuente{TeX}{Un teclado básico funcional}{codigo/InstSinteBasico}
+
+Este teclado es ya ciertamente funcional pero para tener un ejemplo más completo y poder llamar `sintetizador' \ a este instrumento vamos a añadirle un envelope ADSR\footnote{Se recomienda revisar la sección ``El ADSR'' del capítulo ``Fundamentos del sonido''}. Así conseguiremos las funcionalidades básicas de cualquier instrumento eléctrico.
+
+\subsection{Convirtiendo el teclado en un sintetizador}\label{sec:SinteReal}
+
+En primer lugar, para añadir un envelope ADSR, podemos seleccionar alguna de las muchas opciones que ofrece Csound en materia de opcodes. Uno de los más sencillos y que puede servirnos perfectamente es el opcode \textbf{madsr} cuya sintaxis es \textbf{kenv madsr iatt, idec, islev, irel}. Siendo \textbf{iatt} el valor de ataque, \textbf{idec} el valor de decay, \textbf{islev} el valor de sustain u \textbf{irel} el valor de release. Recordemos también que las variables i son a efectos prácticos variables constantes del instrumento, que refescarán su valor en este caso entre pulsación y pulsación de una nota.
+
+Bastaría ahora con aplicar este envelope a nuestra onda de salida, una de tantas maneras es multiplicando la salida del opcode \textbf{madsr} a los canales de salida de nuestro instrumento de esta forma: \textbf{outs aOut*kEnv, aOut*kEnv}.
+
+Necesitamos también dar un valor a los parámetros \textbf{iatt}, \textbf{idec}, \textbf{islev} y \textbf{irel}. Podríamos dar valores fijos aunque esto no tendría un uso demasiado funcional, por lo tanto vamos a aprovechar las opciones de interfaz que proporciona Cabbage para vincular estos valores a 4 widgets de tipo slider.
+Veamos cómo crear el slider para el valor de ataque:
+
+\codigofuente{TeX}{El slider para el valor de ataque}{codigo/SliderAttack}
+
+El widget slider no es nuevo, aunque debe destacarse el identificador \textbf{channel(chan)} que se usa para otorgar al slider un nombre de canal al que se vincula su valor de salida y que más tarde podremos usar en nuestro código.
+
+Se omite la especificación de los otros 3 sliders que añadiremos pues su sintaxis es análoga cuidándonos únicamente de dar un nombre de canal distinto en cada ocasión.
+
+Haremos uso también del sencillo opcode \textbf{chnget} para vincular los canales que hemos creado en los sliders con variables que Csound pueda procesar. Su sintaxis es básica: \textbf{ival chnget Sname} siendo Sname el nombre del canal asociado.
+
+Quedaría nuestro código de vinculación de la siguiente manera:
+
+\codigofuente{TeX}{Vinculación de canales a variables}{codigo/SliderVinc}
+
+\subsection{Últimos detalles}\label{sec:detalles}
+
+Para concluir vamos a añadir un par de efectos útiles a nuestro sintetizador, el \textbf{cutoff} y la \textbf{resonancia}. Una forma sencilla de conseguirlo es usando el opcode \textbf{moogladder}, cuya sintaxis es: \textbf{asig moogladder ain, kcf, kres}. Siendo \textbf{ain} la onda a la que añadir los efectos, \textbf{kcf} el valor del cuttoff y \textbf{kres} el valor de resonancia.
+
+Para el caso vamos a darle a \textbf{ain} el valor de aOut, es decir, nuestra onda resultante de usar el opcode vco2. Para los valores de cuttoff y resonancia crearemos simplemente un par de sliders y vincularemos sus valores a variables de Csound del mismo modo que hicimos antes.
+\pagebreak
+
+\subsection{El resultado final}\label{sec:SinteCompleto}
+
+Y aquí tenemos al fin el código completo de nuestro sintetizador con efectos:
+
+\codigofuente{TeX}{Un sintetizador funcional}{codigo/SinteCompleto}
+
+Con esto termina la introducción a la sintaxis del lenguaje. Como puede observarse, aunque Csound parezca algo enrevesado a primera vista y sin conociemientos previos, una vez entendido el esquema básico y la lógica sintáctica es fácil entender y escribir código lo suficientemente elaborado como para obtener instrumentos completamente funcionales sin no demasiado esfuerzo.
+Seguiremos profundizando en el potencial de Csound en posteriores capítulos ahora que hemos alcanzado el nivel fundamental para poder seguir las lecciones sin perdernos.

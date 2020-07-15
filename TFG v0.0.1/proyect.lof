@@ -8,12 +8,15 @@
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Cabbage}}{6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sonido cuadrafónico}}{9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Nuestro primer sintetizador}}{13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Versiones disponibles}}{12}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pasos de la instalación}}{13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Onda Senoidal}}{15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodo y Amplitud}}{16}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplo de sampleo de una onda}}{17}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{18}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Versiones disponibles}}{18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pasos de la instalación}}{19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Onda Senoidal}}{21}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Periodo y Amplitud}}{22}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Ejemplo de sampleo de una onda}}{23}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{24}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces El envolvente ADSR de una onda}}{25}%
 \contentsfinish 

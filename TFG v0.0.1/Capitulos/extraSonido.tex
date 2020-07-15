@@ -78,6 +78,31 @@ La fórmula para calcular los decibelios es: \( 10*log_{10}* \frac{I}{I_{0}} \),
 
 Un dato útil a tener en cuenta es que al doblar la amplitud de una onda de sonido obtenemos una diferencia de +6db. De manera análoga si partimos por la mitad el valor de la amplitud de la onda obtenemos un cambio de -6db.
 
+\subsection{El ADSR}\label{sec:ADSR} 
+
+\textbf{ADSR} son las siglas de \textbf{A}ttack, \textbf{D}ecay, \textbf{S}ustain y \textbf{R}elease en una onda y conforman la opción más común de envelope o envolvente sonoro, es decir, proporcionan parámetros para poder controlar una onda de sonido.
+
+Veamos cada uno de estos parámetros para entenderlos en conjunto:
+
+\begin{itemize}
+    \item \textbf{Attack}: El Attack o Ataque sería lo ocurrido antes de que la onda decaiga y se estabilice. Por ejemplo, un golpe de platillo produce un sonido con mucho ataque, el sonido de una nota tocada en una flauta dulce tendría normalmente poco ataque.
+    \item \textbf{Decay}: El decay o decaimiento es lo sucedido entre el ataque ensu máximo punto y la fase estable de la onda. Al rasgar las cuerdas de una guitarra con una púa se produce un sonido con bastante decay.
+    \item \textbf{Sustain}: El sustain o sostenibilidad es lo referido a la parte estable de la onda, su duración e intensidad máxima. Un golpe de caja tiene poco sustain, una nota tocada al aire en la cuerda de un bajo eléctrico tiene mucho sustain.
+    \item \textbf{Release}: El release es la parte de la onda comprendida entre la fase estable o de sustain y la llegada al valor 0 de intensidad. Los instrumentos de cuerda tienen por lo gerenar una fase de release notable.
+\end{itemize}
+
+\figura{0.8}{img/S.5-ADSR}{El envolvente ADSR de una onda}{fig:difSamples}{}
+
+Es común en el sonido digital poder modificar estos parámetros a placer en instrumentos como los sintetizadores o en prácticamente cualquier instrumento con componentes eléctricos.
+
+\subsection{El Cutoff y la resonancia}\label{sec:Cutoff} 
+
+Veamos este par de conceptos útiles para completar y mejorar nuestro sonido:
+
+\begin{itemize}
+    \item \textbf{Cuttoff}: Se trata de un filtro de frecuencias. Normalmente se usa para bloquear determinados rangos de frecuencias altas, siendo esto de tipo LP (LOW PASS) aunque en instrumentos modernos pueden encontrar Cutoffs de tipo HP (HIGH PASS) que bloquearían en este caso frecuencias más bajas de lo deseado.
+    \item \textbf{Resonancia}: Es el efecto que ocurre por ejemplo cuando la mesa que sujeta unos altavoces en marcha empieza a vibrar mientras algunos sonidos son producidos, querrá decir que el sonido que sale de esos altavoces producen una frecuencia coincidente con la frecuencia de resonancia de la tabla de la mesa y el sonido por tanto se ve amplificado. En el audio digital puede encontrarse la resonancia como un efecto más a añadir a nuestro arsenal de producción musical. 
+\end{itemize}
 
 
 

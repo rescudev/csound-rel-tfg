@@ -1,0 +1,26 @@
+<Cabbage>
+form caption("Primer Sinte") size(450, 300), colour(250, 110, 20), pluginID("sin1")
+keyboard bounds(30, 150, 380, 100)
+</Cabbage>
+<CsoundSynthesizer>
+<CsOptions>
+-+rtmidi=NULL -M0 -m0d --midi-key-cps=4 --midi-velocity-amp=5
+</CsOptions>
+<CsInstruments>
+sr = 44100
+ksmps = 32
+nchnls = 2
+0dbfs = 1
+
+instr 1
+iFreq = p4
+iAmp = p5
+aOut vco2 iAmp, iFreq
+outs aOut, aOut
+endin
+
+</CsInstruments>
+<CsScore>
+f0 z
+</CsScore>
+</CsoundSynthesizer>

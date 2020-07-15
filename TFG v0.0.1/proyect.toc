@@ -24,21 +24,31 @@
 \contentsline {section}{\numberline {2.5}Las variables en Csound}{9}%
 \contentsline {section}{\numberline {2.6}Los Opcodes}{10}%
 \contentsline {subsection}{\numberline {2.6.1}Sintaxis del Opcode}{10}%
-\contentsline {section}{\numberline {2.7}Usando lo aprendido en un Sintetizador MIDI}{11}%
-\contentsline {section}{\numberline {2.8}El instrumento base \textless CsInstruments\textgreater }{11}%
-\contentsline {section}{\numberline {2.9}Las opciones de configuración \textless CsOptions\textgreater }{11}%
-\contentsline {section}{\numberline {2.10}Cuadros (mal llamados Tablas)}{11}%
-\contentsline {chapter}{\numberline {3}Cabbage: Guía de uso}{12}%
-\contentsline {section}{\numberline {3.1}Instalación de Cabbage}{12}%
-\contentsline {section}{\numberline {3.2}La etiqueta \textless Cabbage\textgreater }{13}%
-\contentsline {subsection}{\numberline {3.2.1}Los Witgets}{13}%
-\contentsline {chapter}{\numberline {4}Fundamentos del Sonido}{15}%
-\contentsline {section}{\numberline {4.1}Introducción}{15}%
-\contentsline {section}{\numberline {4.2}El Audio Digital}{15}%
-\contentsline {subsection}{\numberline {4.2.1}¿Qué es el sonido y cómo se transmite?}{15}%
-\contentsline {subsection}{\numberline {4.2.2}La onda de sonido y sus características}{16}%
-\contentsline {subsection}{\numberline {4.2.3}El Sampleo y Sample Rate}{17}%
-\contentsline {section}{\numberline {4.3}Conceptos interesantes}{18}%
-\contentsline {subsection}{\numberline {4.3.1}El decibelio}{18}%
-\contentsline {chapter}{Referencias}{19}%
+\contentsline {section}{\numberline {2.7}Los Score events}{11}%
+\contentsline {section}{\numberline {2.8}Usando lo aprendido en un Sintetizador MIDI}{11}%
+\contentsline {subsection}{\numberline {2.8.1}El instrumento base \textless CsInstruments\textgreater }{11}%
+\contentsline {subsection}{\numberline {2.8.2}Las opciones de configuración \textless CsOptions\textgreater }{12}%
+\contentsline {subsection}{\numberline {2.8.3}Ejecutando nuestro instrumento \textless CsScore\textgreater }{12}%
+\contentsline {subsection}{\numberline {2.8.4}Creando una interfaz \textless Cabbage\textgreater }{12}%
+\contentsline {subsection}{\numberline {2.8.5}El teclado básico}{13}%
+\contentsline {subsection}{\numberline {2.8.6}Convirtiendo el teclado en un sintetizador}{14}%
+\contentsline {subsection}{\numberline {2.8.7}Últimos detalles}{14}%
+\contentsline {subsection}{\numberline {2.8.8}El resultado final}{15}%
+\contentsline {chapter}{\numberline {3}Siguiente capítulo}{17}%
+\contentsline {section}{\numberline {3.1}Cuadros (mal llamados Tablas)}{17}%
+\contentsline {chapter}{\numberline {4}Cabbage: Guía de uso}{18}%
+\contentsline {section}{\numberline {4.1}Instalación de Cabbage}{18}%
+\contentsline {section}{\numberline {4.2}La etiqueta \textless Cabbage\textgreater }{19}%
+\contentsline {subsection}{\numberline {4.2.1}Los Witgets}{19}%
+\contentsline {chapter}{\numberline {5}Fundamentos del Sonido}{21}%
+\contentsline {section}{\numberline {5.1}Introducción}{21}%
+\contentsline {section}{\numberline {5.2}El Audio Digital}{21}%
+\contentsline {subsection}{\numberline {5.2.1}¿Qué es el sonido y cómo se transmite?}{21}%
+\contentsline {subsection}{\numberline {5.2.2}La onda de sonido y sus características}{22}%
+\contentsline {subsection}{\numberline {5.2.3}El Sampleo y Sample Rate}{23}%
+\contentsline {section}{\numberline {5.3}Conceptos interesantes}{24}%
+\contentsline {subsection}{\numberline {5.3.1}El decibelio}{24}%
+\contentsline {subsection}{\numberline {5.3.2}El ADSR}{24}%
+\contentsline {subsection}{\numberline {5.3.3}El Cutoff y la resonancia}{25}%
+\contentsline {chapter}{Referencias}{26}%
 \contentsfinish 
