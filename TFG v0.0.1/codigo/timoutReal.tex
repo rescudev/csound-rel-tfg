@@ -1,0 +1,10 @@
+instr 1
+loop:
+idur      random    .5, 3
+          timout    0, idur, play
+          reinit    loop
+play:
+kFreq     expseg    400, idur, 600
+aTone     poscil    .2, kFreq, giSine
+          outs      aTone, aTone
+endin

@@ -10,13 +10,17 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sonido cuadrafónico}}{9}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Nuestro primer sintetizador}}{13}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces La duración de los K-Cycles}}{17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Versiones disponibles}}{18}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pasos de la instalación}}{19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Versiones disponibles}}{21}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pasos de la instalación}}{22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplos disponibles en el IDE}}{22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Las opciones de exportación del IDE}}{24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Onda Senoidal}}{21}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Periodo y Amplitud}}{22}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Ejemplo de sampleo de una onda}}{23}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{24}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces El envolvente ADSR de una onda}}{25}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Onda Senoidal}}{26}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Periodo y Amplitud}}{27}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Ejemplo de sampleo de una onda}}{28}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{29}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces El envolvente ADSR de una onda}}{30}%
 \contentsfinish 

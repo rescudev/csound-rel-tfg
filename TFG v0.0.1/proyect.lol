@@ -9,4 +9,8 @@
 \contentsline {lstlisting}{\numberline {2.9}El slider para el valor de ataque}{14}%
 \contentsline {lstlisting}{\numberline {2.10}Vinculación de canales a variables}{14}%
 \contentsline {lstlisting}{\numberline {2.11}Un sintetizador funcional}{15}%
-\contentsline {lstlisting}{\numberline {4.1}Ejemplo básico de un widget}{19}%
+\contentsline {lstlisting}{\numberline {3.1}Sintaxis base de la sentencia if-else}{19}%
+\contentsline {lstlisting}{\numberline {3.2}Sintaxis base de los bucles while-until}{19}%
+\contentsline {lstlisting}{\numberline {3.3}Sintaxis base del timout}{19}%
+\contentsline {lstlisting}{\numberline {3.4}Ejemplo real de uso del timout}{20}%
+\contentsline {lstlisting}{\numberline {4.1}Ejemplo básico de un widget}{23}%

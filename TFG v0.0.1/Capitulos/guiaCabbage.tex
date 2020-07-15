@@ -25,6 +25,28 @@ Pasos para la instalación en Windows y OSX:
  \item Por último podemos ejecutar el acceso directo que se instala automáticamente en nuestro escritorio y empezar a usar Csound. Como se observa, Csound tiene una instalación muy fácil en estos sistemas.
 \end{itemize}
 
+\section{Opciones del IDE}\label{sec:OpcionesCabbage}
+
+La extensión de los archivos de código Csound es \textbf{.csd}. Por supuesto, Cabbage puede abrir y ejecutar estos archivos además de que podemos encontrar una enorme librería de ejemplos que trae la instalación del IDE por defecto:
+
+  \figura{0.6}{img/C.3-CabbageEjemplos}{Ejemplos disponibles en el IDE}{fig:EjemplosCabbage}{}
+
+\subsection{Creando un nuevo archivo}
+
+Para crear un nuevo archivo .csd basta con clicar el icono correspondiente en la barra superior(el primero empezando por la izquierda) o clicando en \textbf{File\textgreater New Csound File}. Aparecerá una ventana con cuatro posibles opciones:
+
+\figura{0.6}{img/C.4-CabbageNewFile}{Sintetizador, Efecto, Archivo Csound y VCV Rack}{fig:NewFileCabbage}{}
+
+Se trata de cuatro plantillas que nos aporta Cabbage para facilitarnos el desarrollo de nuevos instrumentos, hablemos de cada una de estas opciones:
+
+\begin{itemize}
+ \item \textbf{Sintetizador}: Aporta el código fundamental de un teclado funcional sin efectos, del cual podemos partir como base para crear nuestros sintetizadores y añadir la serie de modificadores que deseemos.
+ \item \textbf{Efecto}: Aporta el código de un efecto básico de ganancia. En base a este código podemos crear el efecto que deseemos para poder modificar a gusto las ondas de sonido generadas por nuestros instrumentos.
+ \item \textbf{Archivo Csound}: Genera un archivo .csd completamente vacío, es la opción que escogeríamos si no tenemos predilección por las demás o si nuestro objetivo es crear un software no totalmente convencional a lo que suele verse en Csound.
+ \item \textbf{VCV Rack}: Esta es la plantilla más novedosa hasta la fecha en Cabbage. Nos da facilidades para exportar nuestro código como módulos \textbf{VCV Rack} y al usarla genera el código base de un efecto de ganancia modular listo para ser exportado y usado en softwares de estación de trabajo digital (EAD) o (DAW) por sus siglas en inglés.
+\end{itemize}
+
+
 \section{La etiqueta \textless Cabbage\textgreater}\label{sec:CabbageInst}
 
 A diferencia del resto de etiquetas, la etiqueta \textless Cabbage\textgreater es exclusiva al IDE y proporciona funcionalidades para el diseño de la interfaz de usuario. Veamos algunos de sus usos:
@@ -33,7 +55,7 @@ A diferencia del resto de etiquetas, la etiqueta \textless Cabbage\textgreater e
 
 Llamaremos a los diferentes elementos de interfaz gráfica que aporta Cabbage, widgets. Podemos dividirlos en dos tipos: interactivos (botones, sliders, barras de selección, etc...) y no interactivos (imágenes, indicadores, etc...).
 
-Empecemos por un ejemplo de uso de un slider para comprender la sintaxis:
+Empecemos con un ejemplo de uso de un slider para comprender la sintaxis:
 
 \codigofuente{TeX}{Ejemplo básico de un widget}{codigo/CabbageSyntax}
 
@@ -43,5 +65,27 @@ Podemos usar también el identificador \textbf{range(min, max, value, skew, incr
 
 En nuestro ejemplo hemos creado un slider cuyo rango de valores va del 0 al 1 y cuyo valor inicial es 0.5.
 
+\section{Exportando nuestros instrumentos}\label{sec:ExportCabbage}
+
+Una vez hemos terminado de programar el código de un instrumento, necesitamos alguna manera de hacer que ese código sea útil en el mundo real. Para ello Cabbage ofrece una serie de opciones de exportación del instrumento para que podamos usarlos donde queramos (ya sea sobre un software de terceros o de forma unitaria) y saquemos provecho de ellos.
+
+Estas son las opciones de exportación de Cabbage:
+
+\figura{0.6}{img/C.5-CabbageExport}{Las opciones de exportación del IDE}{fig:ExportCabbage}{}
+
+En primer lugar averigüemos qué es un \textbf{VST}: 
+
+Un plugin \textbf{VST} (\textbf{Virtual Studio Technology}) es una interfaz, en este caso digital, capaz de simular un instrumento o aportar un módulo entrada/salida para añadir efectos de sonido. Para usar un \textbf{VST} necesitamos un software compatible con este formato que sirva de base y desde el que ejecutemos nuestro \textbf{VST}. 
+También es interesante destacar que \textbf{VST3} es el formato más moderno de \textbf{VST} con un código fuente más robusto y de fiar. El cual es también una de las opciones de exportación de Cabbage.
+
+Será nuestro estándar de exportación, aunque Cabbage ofrece otras opciones como:
+
+\begin{itemize}
+ \item \textbf{VCV RackModule}: Siendo parecido al formato VST, es el tipo de módulo del que hablábamos en la sección de plantillas de creación de archivos en Cabbage. Es un formato de código abierto con una amplia comunidad y una documentación robusta en su web \url{https://vcvrack.com/Fundamental}
+ \item \textbf{Standalone application}: Para generar un archivo ejecutable .exe que podremos usar en cualquier momento siempre y cuando tengamos Cabbage instalado en el equipo. Es interesante si por ejemplo codificamos un instrumento que pueda usarse como tal sin necesidad de otros softwares como un teclado digital.
+ \item \textbf{FMOD Sound Plugin}: El formato usados por FMOD, \textbf{https://www.fmod.com/} y que está dedicado a la composición de sonido para juegos. Usando este formato, podremos generar plugins directamente compatibles con FMOD Studio.
+\end{itemize}
+
+En cualquier caso, Cabbage generará los archivos convenientes de exportación incluidos archivos .csd y .dll en el caso de sistemas windows. Será importante que mantengamos todos los archivos generados para un instrumento en el mismo directorio y así evitemos conflictos en la ejecución.
 
 

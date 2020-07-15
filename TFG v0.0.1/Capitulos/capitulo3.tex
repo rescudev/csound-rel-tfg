@@ -1,10 +1,88 @@
 % !TEX root = ../proyect.tex
 
-\chapter{Siguiente capítulo}
+\chapter{Profundizando en los conceptos básicos}
+
+Profundicemos en algunos conceptos que crean normalmente confusión entre los usuarios de Csound.
+
+\section{Las diferencias entre variables i-rate y k-rate}
+
+Es común confundir el uso de variables \textbf{i-rate} con el de variables \textbf{k-rate}. Vamos a resolver algunas dudas y a exponer ejemplos de casos en los que usar normalmente cada tipo.
+
+En primer lugar  debemos entender que, como en cualquier lenguaje al uso, las variables en Csound se inicializan al comenzar la ejecuación. La diferencia radical que podemos encontrar a partir de este momento entre variables \textbf{i-rate} y \textbf{k-rate} es que las \textbf{i-rate} van a quedarse con este valor de inicialización. Esto es fácil de entender pero, ¿Qué pasa entonces con las variables \textbf{k-rate}?\bigskip
+
+La duración de un \textbf{k-cycle}, es decir, el tiempo (que puede medirse en cantidad de samples) que pasa desde la útima vez que se refrescaron los valores de las variables \textbf{k-rate} hasta la siguiente vez que se refrescan.
+
+Este valor, \textbf{k-cycle}, es dinámico. Depende de la cantidad de variables tipo k de nuestro código, del valor que le demos a la palabra reservada \textbf{ksmps} y del sample rate seleccionado. Veámoslo con un ejemplos:
 
 
-\section{Cuadros (mal llamados Tablas)}
+\figura{1}{img/3.1-kCycles}{La duración de los K-Cycles}{fig:kCycles}{}
 
-Este es un ejemplo de inclusi\'on de cuadro en el texto. V\'ease el cuadro~\ref{tab:prueba}
+Para el gráfico anterior hemos seleccionado un sr (sample rate) de 44100 y un Block Size (cuyo equivalente en Csound sería la palabra reservada \textbf{ksmps} que mencionamos antes) con valor 10.
 
-\cuadro{|r||c|c|}{Cuadro de prueba}{tab:prueba}{elemento & elemento & elemento \\ elemento & elemento & elemento \\}
+Sabemos que el tiempo que tarda en realizarse una muestra o sample es un segundo dividido por el número total de tomas, es decir:\( 1/44100\) que da 0.0000227s.
+Y sabemos también que el \textbf{k-cycle} dura 10 samples (también podemos llamarlos ticks), es decir: \( 0.0000227*10= 0.000227s \).
+
+Por lo tanto, en un código con la configuración anterior y un valor de \textbf{ksmps = 10} podremos decir que:
+
+\begin{itemize}
+ \item Las variables \textbf{i-rate} determinarán su valor en la inicialización y lo mantendrán durante el tiempo total de ejecución del código.
+ \item Las variables \textbf{k-rate} refrescarán su valor cada 10 samples o ticks (que podemos llamar bloque de control), en este caso, se refrescarán cada 0.000227 segundos.
+ \item Las variables \textbf{a-rate} refrescarán su valor un vez por cada sample, siendo el ratio de refresco determinado en su totalidad por la frecuencia escogida como sr. En este ejemplo renuevan su valor cada 0.0000227 segundos.
+\end{itemize}
+
+Tener un conocimiento suficiente acerca del funcionamiento de las variables \textbf{k-rate} puede hacer que nuestro código acabe siendo mucho más eficiente y optimizado pero como nota general puede bastarnos con recordar que: Las variables \textbf{i-rate} deben usarse cuando sepamos que algo debe ser hecho una única vez y de manera puntual, y las variables \textbf{k-rate} deben usarse cuando necesitemos que algo se haga continuamente pero sepamos que ese algo no necesita ser hecho cada vez que se realiza un sample.
+
+\section{Las f-variables,  w-variables y S-variables}
+
+Existen dos tipos de variables en csound que son algo más especiales que las vistas hasta ahora:
+
+\begin{itemize}
+ \item \textbf{Las f-variables}: Son variables usadas por algunos opcodes (los que empiezan por \textbf{pvs}), y se usan principalmente para la realización de \textsl{Transformadas rápidas de Fourier}. Su ratio de refresco es el mismo que para las variables \textbf{k-rate} pero su valor depende de algunos parámetros  de las transformadas que hemos mencionado.
+ \item \textbf{Las w-variables}: Podemos encontrar el uso de estas variables en algunos opcodes antiguos aunque su uso es ya prácticamente por razones hereditarios por lo que no profundizaremos en ellas.
+ \item \textbf{Las S-variables}: Son variables de tipo \textbf{String}, serán necesarias para usar algunos opcodes cuyo resultado sea una variable de este tipo.
+\end{itemize}
+
+\section{El ámbito global y local de las variables}
+
+Las variables contenidas en el código de un instrumento son generalmente de ámbito local, es decir, podría crear una variable con el mismo nombre dentro de todos mis instrumento sin que exista ningún tipo de conflicto.
+
+Las variables globales sin embargo deben ser únicas cada vez que escribamos un valor sobre ellas, su valor cambiará para cualquier futura lectura. Para hacer que una variable sea de tipo global debemos hacer que \textbf{g} sea la primera letra del nombre de esa variable. Algunos ejemplo de nombre de variable global serían: \textbf{gaGlobal}, \textbf{giConstante} o \textbf{gkResultado}.
+
+Una alternativa al uso de las variables globales es el uso del opcode \textbf{chnget} para realizar conexiones de canal entre variables. Es el método usado en la etiqueta \textless Cabbage\textgreater para relacionar los widgets con el resto del código sin hacer uso de variables globales.
+
+\section{Las estructuras de control}
+
+En Csound como en la mayoría de lenguajes existen la estructuras de control: Sentencias \textbf{if-else}, bucles \textbf{while/until} y los llamados \textbf{timouts}. Vamos a explicarlas centrándonos en la peculiaridades de uso respecto al lenguaje.
+
+\subsection{Sentencias if-else}
+
+La forma más común de este tipo de sentencia en Csound es \textbf{If - then - [elseif - then -] else}:
+
+\codigofuente{TeX}{Sintaxis base de la sentencia if-else}{codigo/ifejemplo}
+
+Lo único a destacar sería que la palabra \textbf{then} debe estar en la misma línea de código que la palabra \textbf{if}, pero no ahondaremos más en este tipo de sentencia al tratarse de nociones básicas de la programación.
+
+Csound permite también la sintaxis de lenguaje descriptivo \textbf{(a v b ? x : y)}: De ser verdadera la condición \textbf{a}, el valor devuelto es \textbf{x}. De ser falsa (y por tanto ser cierta \textbf{b}) el valor devuelto es \textbf{y}. Un ejemplo práctico de uso sería: \textbf{kRes = (kVar \textless 1 ? 0 : 1);}. Si kVar es menor que uno se devuelve 0, se no ser así se devuelve 1.
+
+\subsection{Bucles While/Until}
+
+\codigofuente{TeX}{Sintaxis base de los bucles while-until}{codigo/whileejemplo}
+
+Estos bucles funcionan de forma análoga, la única diferencia entre ellos es que el bucle \textbf{while} se seguirá ejecutando siempre y cuando la condicion sea verdadera y el bucle \textbf{until} se seguirá ejecutando siempre y cuando la condición sea falsa.
+
+\subsection{El timout}
+
+El \textbf{timout} es un opcode para generar bucles de una duración determinada. 
+
+\codigofuente{TeX}{Sintaxis base del timout}{codigo/timoutSyntax} 
+
+En primer lugar \textbf{first\_ label} y \textbf{second\_ label} son etiquetas de referencia a las que podemos saltar desde otras partes del código. El opcode \textbf{(timout    istart, idur, second\_ label)} tiene tres parámetros de entrada: \textbf{istart} el instante de inicio, \textbf{idur} la duración de timout y \textbf{second\_ label} el nombre de la etiqueta de la parte del código a la que queremos saltar, en este caso por lógica la segunda.El segundo opcode necesario para el funcionamiento es \textbf{(reinit	first\_ label)} que da la orden directa de saltar a la parte del código referida por \textbf{first\_ label}.
+
+Entendamos el uso de \textbf{timout} con un ejemplo práctico:
+
+\codigofuente{TeX}{Ejemplo real de uso del timout}{codigo/timoutReal}
+
+Hemos definido una variable \textbf{idur} a la que damos un valor aleatorio entre (0,5 y 3) mediante el opcode \textbf{random}. Acto seguido usamos el opcode \textbf{timout} para saltar desde el instante \textbf{0}, durante ese \textbf{valor aleatorio de segundos}, a la etiqueta \textbf{play} donde se ejecuta el opcode \textbf{poscil} que genera una onda de sonido. Una vez acabado ese periodo de tiempo se ejecuta el opcode \textbf{reinit} que nos hace saltar a la etiqueta \textbf{loop} y vuelta a empezar.
+
+
+
