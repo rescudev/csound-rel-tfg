@@ -186,4 +186,16 @@ Por ejemplo, esta sería la cabecera del bloque de código de un UDO con dos var
 Los opcodes \textbf{xin} y \textbf{xout} nos sirven respectivamente para recoger las variables de entrada, dándoles un nombre identificativo para usarlo en el resto del UDO, y para definir cuál o cuáles serán las variables de salida.
 
 Por último, \textbf{inName} y \textbf{outName} representan los nombres de esas variables de entrada y salida que además deben respetar la nomenclatura de uso de tipos en Csound empezando por a, i, k, etc... Según corresponda en la defición de la primera línea del bloque.
+
+Vamos a crear un ejemplo de UDO para realizar ecuaciones de segundo grado: \( x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a} \)
+
+\codigofuente{TeX}{UDO para ecuaciones de segundo grado}{codigo/UDOSegundoGrado}
+
+Y para usar nuestro opcode en un instrumento:
+
+\codigofuente{TeX}{Uso del opcode SegundoGrado en un instrumento}{codigo/InstSegundoGrado}
+
+\pagebreak
+
+
 \section{Las macros}

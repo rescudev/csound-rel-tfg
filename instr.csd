@@ -8,28 +8,24 @@ sr = 44100
 ksmps = 32
 0dbfs = 1
 
-        opcode Lowpass, a, akk
-
-        setksmps 1              ; need sr=kr
-ain, ka1, ka2   xin             ; read input parameters
-aout    init 0                  ; initialize output
-aout    =  ain + ka1 + ka2  ; simple tone-like filter
-        xout aout               ; write output
-
-        endop
+opcode SegundoGrado, ii, iii          
+iVarA, iVarB, iVarC   xin            
+ioutPos    =  ((iVarB*-1)+sqrt(iVarB^2 -(4*iVarA*iVarC)))/(2*iVarA)
+ioutNeg    =  ((iVarB*-1)-sqrt(iVarB^2 -(4*iVarA*iVarC)))/(2*iVarA)
+xout ioutPos, ioutNeg     
+endop
 
 instr 1
-asource = 1
-kvalue1 = 1
-kvalue2 = 1
-print kvalue2
-afiltered Lowpass asource, kvalue1, kvalue2
-
+iVarA = 4
+iVarB = 12
+iVarC = 2
+iResPos,iResNeg  SegundoGrado iVarA, iVarB, iVarC
+print iResPos
+print iResNeg
 endin
 
 </CsInstruments>
 <CsScore>
 i 1 0 1
-e
 </CsScore>
 </CsoundSynthesizer>

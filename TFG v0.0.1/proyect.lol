@@ -15,4 +15,6 @@
 \contentsline {lstlisting}{\numberline {3.4}Ejemplo real de uso del timout}{20}%
 \contentsline {lstlisting}{\numberline {3.5}Uso del scalearray}{21}%
 \contentsline {lstlisting}{\numberline {3.6}Sintaxis base de un UDO}{23}%
-\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{27}%
+\contentsline {lstlisting}{\numberline {3.7}UDO para ecuaciones de segundo grado}{23}%
+\contentsline {lstlisting}{\numberline {3.8}Uso del opcode SegundoGrado en un instrumento}{23}%
+\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{28}%
