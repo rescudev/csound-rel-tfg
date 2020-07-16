@@ -1,34 +1,35 @@
-<Cabbage>
-form caption("Primer Sinte") size(450, 300), colour(250, 110, 20), pluginID("sin1")
-keyboard bounds(30, 150, 380, 100)
-</Cabbage>
 <CsoundSynthesizer>
 <CsOptions>
--n -d -+rtmidi=NULL -M0 -m0d --midi-key-cps=4 --midi-velocity-amp=5
+
 </CsOptions>
 <CsInstruments>
 ; Initialize the global variables. 
 sr = 44100
 ksmps = 32
-nchnls = 2
 0dbfs = 1
 
-;instrument will be triggered by keyboard widget
+        opcode Lowpass, a, akk
+
+        setksmps 1              ; need sr=kr
+ain, ka1, ka2   xin             ; read input parameters
+aout    init 0                  ; initialize output
+aout    =  ain + ka1 + ka2  ; simple tone-like filter
+        xout aout               ; write output
+
+        endop
+
 instr 1
-iFreq = p4
-iAmp = p5
-iAtt = 0.1
-iDec = 0.4
-iSus = 0.6
-iRel = 0.7
-kEnv madsr iAtt, iDec, iSus, iRel 
-aOut vco2 iAmp, iFreq
-outs aOut*kEnv, aOut*kEnv
+asource = 1
+kvalue1 = 1
+kvalue2 = 1
+print kvalue2
+afiltered Lowpass asource, kvalue1, kvalue2
+
 endin
 
 </CsInstruments>
 <CsScore>
-;causes Csound to run for about 7000 years...
-f0 z
+i 1 0 1
+e
 </CsScore>
 </CsoundSynthesizer>

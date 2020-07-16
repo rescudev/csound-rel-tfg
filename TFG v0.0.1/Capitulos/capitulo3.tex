@@ -171,6 +171,19 @@ Muchos de los opcodes de Csound pueden expresarse mediante la sintaxis funcional
  Ejemplo: \textbf{sqrt(25) = 5}
 \end{itemize}
 
-\section{Creando un opcode}
+\section{Creando un opcode (UDOs)}
 
+En Csound, un opcode creado por un usuario recibe el nombre de \textbf{UDO (User created opcode)}. Definir un \textbf{UDO} es simplemente escribir parte del código que incluiríamos en un instrumento, dentro de un bloque especial para luego poder usarlo a efectos prácticos de la misma manera que usamos cualquier opcode.
+
+La sintaxis base para definir un UDO es:
+
+\codigofuente{TeX}{Sintaxis base de un UDO}{codigo/UDOSyntax} 
+
+Vamos por partes, las palabras \textbf{opcode} y \textbf{endop} marcan el inicio y el final del bloque de código en el que se define nuestro UDO. En la línea 1 de la figura de código anterior observamos: \textbf{name} que será el nombre de nuestro UDO, \textbf{outtypes} donde marcaremos el tipo de variable de las variables de salida del UDO y \textbf{intypes} donde marcaremos el tipo de variable de las variables de entrada. La sintaxis para usar \textbf{outtypes} e \textbf{inttypes} es simplemente un string con una letra por cada variable de entrada o salida especificando su tipo.
+
+Por ejemplo, esta sería la cabecera del bloque de código de un UDO con dos variables de salida, una tipo \textbf{i-rate} y otra \textbf{tipo k-rate}; y una variable de entrada \textbf{k-rate}: \textbf{(opcode miOpcode, ik, k)}
+
+Los opcodes \textbf{xin} y \textbf{xout} nos sirven respectivamente para recoger las variables de entrada, dándoles un nombre identificativo para usarlo en el resto del UDO, y para definir cuál o cuáles serán las variables de salida.
+
+Por último, \textbf{inName} y \textbf{outName} representan los nombres de esas variables de entrada y salida que además deben respetar la nomenclatura de uso de tipos en Csound empezando por a, i, k, etc... Según corresponda en la defición de la primera línea del bloque.
 \section{Las macros}
