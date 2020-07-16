@@ -13,4 +13,5 @@
 \contentsline {lstlisting}{\numberline {3.2}Sintaxis base de los bucles while-until}{19}%
 \contentsline {lstlisting}{\numberline {3.3}Sintaxis base del timout}{19}%
 \contentsline {lstlisting}{\numberline {3.4}Ejemplo real de uso del timout}{20}%
-\contentsline {lstlisting}{\numberline {4.1}Ejemplo básico de un widget}{24}%
+\contentsline {lstlisting}{\numberline {3.5}Uso del scalearray}{21}%
+\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{26}%

@@ -111,10 +111,17 @@ Estos son algunos de los opcodes que podemos usar al trabajar con arrays:
  \item \textbf{genarray}: Genera un array al que se le añaden los valores comprendidos entre los valores de entrada del opcode. Un ejemplo de uso: \textbf{kArr[] genarray   1, 5} que crea un array al que se le añaden los valores 1, 2, 3, 4 y 5.
  \item \textbf{lenarray}: Devuelve el tamaño actual de un array. \textbf{kTam  lenarray  kArr} devolvería el tamaño de kArr. 
  \item \textbf{slicearray}: Nos sirve para generar un subarray desde un índice inicial hasta un índice final del array original introducido como parámetro de entrada en el opcode. Su sintaxis base es: \textbf{kSlice[] slicearray kArr, iStart, iEnd}. Y un ejemplo de uso sería \textbf{kSub[]  slicearray kArr, 0, 2} que para el array \textbf{kArr=[4,3,2,1,0]} devolvería como resultado \textbf{kSub=[4,3,2]}
-  \item \textbf{minarray}: 
-  \item \textbf{maxarray}: 
-  \item \textbf{sumarray}: 
-  \item \textbf{scalearray}: 
+ \item \textbf{minarray}: Este opcode devuelve el valor más pequeño de todo el array y de manera opcional su índice si especificamos una variable para guardarla. Su sintaxis base  es: \textbf{kMin [,kMinIndx] minarray kArr}.
+ \item \textbf{maxarray}: Este opcode devuelve el mayor valor de todo el array y de manera opcional su índice si especificamos una variable para guardarla. Su sintaxis base  es: \textbf{kMin [,kMinIndx] minarray kArr}.
+ \item \textbf{sumarray}: Devuelve la suma de todos los valores del array numérico. Su sintaxis es \textbf{kSum sumarray kArr} y siendo \textbf{kArr=[1,1,1,1]} resultaría \textbf{kSum = 3}.
+ \item \textbf{scalearray}: Escala los valores de un array en referencia a un valor mínimo y a un valor máximo. Veamos un ejemplo de uso: 
+  
+\codigofuente{TeX}{Uso del scalearray}{codigo/scaleArray}  
+
+Tenemos el array \textbf{kArr=[1,3,9,5,6]}, donde el valor más pequeño es 1 y el valor más grande es 9. Cuando hacemos uso del opcode \textbf{(scalearray kArr 1,3)} estaremos escalando con las siguientes referencias relativas: \textbf{1 $\leftrightarrow$ 1 (kmin)} y \textbf{9 $\leftrightarrow$ 3 (kmax)}. De la misma manera el resto de valores de \textbf{kArr} quedarán en referencia también a kmin y kmax. El resultado para \textbf{(scalearray kArr 1,3)} con \textbf{kArr=[1,3,9,5,6]} sería  \textbf{kArr=[1, 1.5, 3, 2, 2.25]}.
+
+ \item \textbf{maparray}: Aplica un opcode en formato función a cada uno de los valores del array. Su sintaxis base es: \textbf{(kRes  maparray kArr, ``fun")}. Siendo \textbf{fun} la función que queremos usar de entre las siguientes opciones: \textbf{abs, ceil, exp, floor, frac, int, log, log10, round, sqrt}. Por ejemplo, la operación \textbf{(kRes  maparray kArr, sqrt)} aplica la función \textbf{sqrt()} a cada elemento del array \textbf{kArr} y almacena los resultados en \textbf{kRes}.
+  
 \end{itemize}
 
 \subsection{Operaciones con arrays}
@@ -122,3 +129,48 @@ Estos son algunos de los opcodes que podemos usar al trabajar con arrays:
 Se pueden usar los cuatro operadores básicos (\textbf{+, -, *, /}) para sumar, restar, multiplicar y dividir arrays. Si el operador se aplica entre el array y un número, la operación se realiza a todos los elementos del array, por lo que guardar los resultados en un nuevo array es una buena práctica. Por ejemplo si tenemos el array \textbf{kArr=[1,1,1]} y realizamos la operación \textbf{kSuma = Karr + 1} obtendremos \textbf{kSuma=[2,2,2]}.
 
 Por otra parte, si realizamos la operación entre dos arrays del mismo tamaño, el cálculo tendrá en cuenta cada pareja de valores de la misma posición de cada array. Si tenemos el array \textbf{kArr1=[10,10,10]} y el array \textbf{kArr2=[1,2,3]} y realizamos la operación \textbf{kArr3 = kArr1 + kArr2} obtenemos \textbf{kArr3=[11,12,13]}.
+
+\section{Funciones de entrada/salida}
+
+Muchos de los opcodes de Csound pueden expresarse mediante la sintaxis funcional que se usa en tantos otros lenguajes: \textbf{fun(arg1, agr2...)}. Hablemos de algunos de los opcodes que más se usan en su formato funcional.
+
+\begin{itemize}
+ \item \textbf{abs}: Devuelve el valor absoluto del parámetro de entrada \textbf{arg}. 
+ 
+ Sintaxis: \textbf{abs(arg)}
+ 
+ Ejemplo: \textbf{abs(-2) = 2}
+ \item \textbf{ceil}: Devuelve el menor número entero posible que sea mayor que \textbf{arg}.
+ 
+ Sintaxis: \textbf{ceil(arg)}
+ 
+ Ejemplo: \textbf{ceil(0.999) = 1}
+ \item \textbf{exp}: Devuelve el número \textbf{e (2,718...)} elevado a la potencia de \textbf{arg}.
+ 
+ Sintaxis: \textbf{exp(arg)}
+ 
+ Ejemplo: \textbf{exp(2) = 7.389}
+ \item \textbf{frac}: Devuelve la parte fraccionaria de \textbf{arg}.
+ 
+ Sintaxis: \textbf{frac(arg)}
+ 
+ Ejemplo: \textbf{frac(2.1234) = 0.1234}
+ \item \textbf{int}: Devuelve la parte entera de \textbf{arg}.
+ 
+ Sintaxis: \textbf{int(arg)}
+ 
+ Ejemplo: \textbf{int(2.1234) = 2}
+ \item \textbf{log}: Devuelve el logaritmo natural de \textbf{arg}.
+ 
+ Sintaxis: \textbf{log(arg)}
+ 
+ Ejemplo: \textbf{log(8) = 2.079}
+ \item \textbf{sqrt}: Devuelve la raíz cuadrada de \textbf{arg}.
+ Sintaxis: \textbf{sqrt(arg)}
+ 
+ Ejemplo: \textbf{sqrt(25) = 5}
+\end{itemize}
+
+\section{Creando un opcode}
+
+\section{Las macros}
