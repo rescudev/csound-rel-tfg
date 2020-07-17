@@ -199,3 +199,41 @@ Y para usar nuestro opcode en un instrumento:
 
 
 \section{Las macros}
+
+En Csound pueden usarse \textbf{macros} para tener una o varias líneas de código a mano y sustituirlas siempre que queramos con un nombre de referencia a elegir. Normalmente las usaremos cuando tengamos previsto repetir una serie de líneas de código a lo largo de nuestro programa o cuando hagamos referencia a algún nombre de variable o archivo para que, en caso de querer cambiar su nombre o valor, únicamente necesitemos hacerlo en la definición de la \textbf{macro} y no cada vez que aparezca en nuestro código.
+
+\subsection{Sintaxis de las macros}
+
+Su sintaxis es sencilla: \textbf{(\#define NAME \# Código o texto a sustituir \#)}
+
+Siendo \textbf{define} la palabra reservada para empezar a definir una \textbf{macro}, \textbf{NAME} el nombre con el que más tarde haremos referencia a la macro, y la parte contenida entre el segundo y tercer corchete el bloque de código o texto que queda sustituido y que aparecerá repetido a efectos de compilación cada vez que usemos la \textbf{macro}.
+
+Para hacer referencia a la macro en otros lugares de código bastará con escribir su nombre precedido del símbolo \textbf{\$}
+
+Veamos un ejemplo de uso:
+
+\codigofuente{TeX}{Ejemplo de una macro simple}{codigo/macroSimple}
+
+Como vemos hemos definido la macro \textbf{ejemploMacro} que contiene una única línea de código para imprimir por consola el texto ``Soy la macro''. Más tarde usamos esta macro 3 veces en nuestro instrumento por lo que a efectos prácticos el código \textbf{prints ``Soy la macro "} se ejecutará un total de 3 veces.
+
+\subsection{Macros con parámetros de entrada}
+
+Podemos también definir macros con parámetros de entrada de la siguiente manera: 
+
+\textbf{(\#define NAME(Arg1'\ Arg2'\ Arg3...) \# Código o texto a sustituir \#)}
+
+Simplemente incluiremos entre paréntesis la serie de argumentos que usará nuestra macro. La separación entre nombre y nombre de argumento la marcaremos mediante el carácter (\textbf{'}). Para usar los argumentos dentro del bloque de código de la macro les haremos referencia precendiéndolos del símbolo \textbf{\$}.
+
+Veamos un ejemplo de uso:
+
+\codigofuente{TeX}{Ejemplo de una macro con argumentos}{codigo/macroArgs}
+
+\subsection{Macros en \textless CsScore\textgreater}
+
+Hasta ahora hemos estado definiendo el código de nuestras macros en \textless CsInstruments\textgreater pero también podemos usarlas en \textless CsScore\textgreater. De esta manera pueden sernos útiles para realizar pruebas de testeo ordenadas y controladas o, como hicimos anteriormente, para tener un código más reutilizable y optimizado.
+
+La sintaxis es idéntica al caso anterior así que veamos un ejemplo común de uso:
+
+\codigofuente{TeX}{Ejemplo de una macro en \textless CsScore\textgreater}{codigo/macroInScore}
+
+Imaginemos para el ejemplo un instrumento que genera una determinada nota y que usa p1, p2, p3 y p4; siendo p4 un parámetro que determina la frecuencia del tono de la nota de salida del instrumento. En nuestra macro realizamos tres \textbf{Event scores} (líneas 3, 4 y 5) usando ese instrumento, cuyos p2 (momento de inicio) y p4 (tono de la nota de salida) se ven modificados por \textbf{Start} y \textbf{Trans} que son los parámetros de entrada de nuestra macro. De esta manera podemos realizar esos tres \textbf{Score events} tantas veces como queramos y únicamente introduciendo los parámetros que consideramos importantes al definir la macro.

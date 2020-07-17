@@ -21,18 +21,19 @@
 \contentsline {section}{\numberline {2.3}División por etiquetas}{8}%
 \contentsline {section}{\numberline {2.4}Palabras reservadas}{8}%
 \contentsline {section}{\numberline {2.5}Las variables en Csound}{9}%
-\contentsline {section}{\numberline {2.6}Los Opcodes}{10}%
-\contentsline {subsection}{\numberline {2.6.1}Sintaxis del Opcode}{10}%
-\contentsline {section}{\numberline {2.7}Los Score events}{11}%
-\contentsline {section}{\numberline {2.8}Usando lo aprendido en un Sintetizador MIDI}{11}%
-\contentsline {subsection}{\numberline {2.8.1}El instrumento base \textless CsInstruments\textgreater }{11}%
-\contentsline {subsection}{\numberline {2.8.2}Las opciones de configuración \textless CsOptions\textgreater }{12}%
-\contentsline {subsection}{\numberline {2.8.3}Ejecutando nuestro instrumento \textless CsScore\textgreater }{12}%
-\contentsline {subsection}{\numberline {2.8.4}Creando una interfaz \textless Cabbage\textgreater }{12}%
-\contentsline {subsection}{\numberline {2.8.5}El teclado básico}{13}%
-\contentsline {subsection}{\numberline {2.8.6}Convirtiendo el teclado en un sintetizador}{14}%
-\contentsline {subsection}{\numberline {2.8.7}Últimos detalles}{14}%
-\contentsline {subsection}{\numberline {2.8.8}El resultado final}{15}%
+\contentsline {section}{\numberline {2.6}Los Instrumentos}{10}%
+\contentsline {section}{\numberline {2.7}Los Opcodes}{10}%
+\contentsline {subsection}{\numberline {2.7.1}Sintaxis del Opcode}{10}%
+\contentsline {section}{\numberline {2.8}Los Score events}{11}%
+\contentsline {section}{\numberline {2.9}Usando lo aprendido en un Sintetizador MIDI}{12}%
+\contentsline {subsection}{\numberline {2.9.1}El instrumento base \textless CsInstruments\textgreater }{12}%
+\contentsline {subsection}{\numberline {2.9.2}Las opciones de configuración \textless CsOptions\textgreater }{12}%
+\contentsline {subsection}{\numberline {2.9.3}Ejecutando nuestro instrumento \textless CsScore\textgreater }{13}%
+\contentsline {subsection}{\numberline {2.9.4}Creando una interfaz \textless Cabbage\textgreater }{13}%
+\contentsline {subsection}{\numberline {2.9.5}El teclado básico}{13}%
+\contentsline {subsection}{\numberline {2.9.6}Convirtiendo el teclado en un sintetizador}{14}%
+\contentsline {subsection}{\numberline {2.9.7}Últimos detalles}{15}%
+\contentsline {subsection}{\numberline {2.9.8}El resultado final}{15}%
 \contentsline {chapter}{\numberline {3}Profundizando en los conceptos básicos}{17}%
 \contentsline {section}{\numberline {3.1}Las diferencias entre variables i-rate y k-rate}{17}%
 \contentsline {section}{\numberline {3.2}Las f-variables, w-variables y S-variables}{18}%
@@ -48,26 +49,31 @@
 \contentsline {section}{\numberline {3.6}Funciones de entrada/salida}{22}%
 \contentsline {section}{\numberline {3.7}Creando un opcode (UDOs)}{23}%
 \contentsline {section}{\numberline {3.8}Las macros}{24}%
-\contentsline {chapter}{\numberline {4}Haciendo Música en Directo}{25}%
-\contentsline {section}{\numberline {4.1}secc}{25}%
-\contentsline {chapter}{\numberline {5}Cabbage: Guía de uso}{26}%
-\contentsline {section}{\numberline {5.1}Instalación de Cabbage}{26}%
-\contentsline {section}{\numberline {5.2}Opciones del IDE}{27}%
-\contentsline {subsection}{\numberline {5.2.1}Creando un nuevo archivo}{28}%
-\contentsline {section}{\numberline {5.3}La etiqueta \textless Cabbage\textgreater }{28}%
-\contentsline {subsection}{\numberline {5.3.1}Los Witgets}{28}%
-\contentsline {section}{\numberline {5.4}Exportando nuestros instrumentos}{29}%
-\contentsline {chapter}{\numberline {6}Fundamentos del Sonido}{31}%
-\contentsline {section}{\numberline {6.1}Introducción}{31}%
-\contentsline {section}{\numberline {6.2}El Audio Digital}{31}%
-\contentsline {subsection}{\numberline {6.2.1}¿Qué es el sonido y cómo se transmite?}{31}%
-\contentsline {subsection}{\numberline {6.2.2}La onda de sonido y sus características}{32}%
-\contentsline {subsection}{\numberline {6.2.3}El Sampleo y Sample Rate}{33}%
-\contentsline {section}{\numberline {6.3}Conceptos interesantes}{34}%
-\contentsline {subsection}{\numberline {6.3.1}El decibelio}{34}%
-\contentsline {subsection}{\numberline {6.3.2}El ADSR}{34}%
-\contentsline {subsection}{\numberline {6.3.3}El Cutoff y la resonancia}{35}%
-\contentsline {subsection}{\numberline {6.3.4}La ganancia o gain y sus diferencias con el volumen}{36}%
-\contentsline {chapter}{\numberline {7}Bibliografía Comentada}{37}%
-\contentsline {section}{\numberline {7.1}refs}{37}%
+\contentsline {subsection}{\numberline {3.8.1}Sintaxis de las macros}{24}%
+\contentsline {subsection}{\numberline {3.8.2}Macros con parámetros de entrada}{24}%
+\contentsline {subsection}{\numberline {3.8.3}Macros en \textless CsScore\textgreater }{25}%
+\contentsline {chapter}{\numberline {4}Haciendo Música en Directo}{26}%
+\contentsline {section}{\numberline {4.1}secc}{26}%
+\contentsline {chapter}{\numberline {5}Cabbage: Guía de uso}{27}%
+\contentsline {section}{\numberline {5.1}Instalación de Cabbage}{27}%
+\contentsline {section}{\numberline {5.2}Opciones del IDE}{28}%
+\contentsline {subsection}{\numberline {5.2.1}Creando un nuevo archivo}{29}%
+\contentsline {section}{\numberline {5.3}La etiqueta \textless Cabbage\textgreater }{29}%
+\contentsline {subsection}{\numberline {5.3.1}Los Witgets}{29}%
+\contentsline {section}{\numberline {5.4}Exportando nuestros instrumentos}{30}%
+\contentsline {chapter}{\numberline {6}Fundamentos del Sonido}{32}%
+\contentsline {section}{\numberline {6.1}Introducción}{32}%
+\contentsline {section}{\numberline {6.2}El Audio Digital}{32}%
+\contentsline {subsection}{\numberline {6.2.1}¿Qué es el sonido y cómo se transmite?}{32}%
+\contentsline {subsection}{\numberline {6.2.2}La onda de sonido y sus características}{33}%
+\contentsline {subsection}{\numberline {6.2.3}El Sampleo y Sample Rate}{34}%
+\contentsline {section}{\numberline {6.3}Conceptos interesantes}{35}%
+\contentsline {subsection}{\numberline {6.3.1}El decibelio}{35}%
+\contentsline {subsection}{\numberline {6.3.2}El ADSR}{35}%
+\contentsline {subsection}{\numberline {6.3.3}El Cutoff y la resonancia}{36}%
+\contentsline {subsection}{\numberline {6.3.4}La ganancia o gain y sus diferencias con el volumen}{37}%
+\contentsline {chapter}{\numberline {7}Bibliografía Comentada}{38}%
+\contentsline {section}{\numberline {7.1}Csound FLOSS Manual}{38}%
+\contentsline {subsection}{\numberline {7.1.1}Referencia}{38}%
+\contentsline {subsection}{\numberline {7.1.2}Comentario}{38}%
 \contentsfinish 

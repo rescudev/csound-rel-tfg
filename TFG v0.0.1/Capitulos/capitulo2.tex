@@ -65,6 +65,17 @@ Cuando ejecutamos código Csound, una vez compilado el código e inicializada la
 
 La principal razón para que tengamos estas diferente opciones es poder jugar con la optimización de nuestro código. Bien podríamos hacer que todas nuestras variables fuesen de tipo `\ a' pero esto implicaría en la mayoría de los casos un aumento de carga innecesario durante el tiempo de ejecución, que puede ser crucial si nuestro objetivo pasa por ejecutar código en directo al interpretar una pieza musical.
 
+\section{Los Instrumentos}\label{sec:Instrumentos}
+Los \textbf{instrumentos} serán los bloques de código básicos en los que realizaremos las operaciones de nuestro programa. Podemos tener varios \textbf{instrumentos} en la misma etiqueta \textless CsInstruments\textgreater de un programa y a ese conjunto de \textbf{instrumentos} lo llamaremos \textbf{orquestra}.
+La sintaxis base de un instrumento es:
+
+\codigofuente{TeX}{Sintaxis generalizada de un Instrumento}{codigo/instrGeneral}
+
+Donde \textbf{instr} y \textbf{endin} marcan el inicio y el final del bloque de código del instrumento. Seguido a la palabra \textbf{instr} escribiremos el nombre o identificador (normalmente un número) para referirnos más tarde a nuestro instrumento.
+
+En secciones posteriores hablaremos de la etiqueta \textless CsScore\textgreater y de cómo usar en ella nuestros instrumentos, de momento basta con saber que al llamar a nuestros instrumentos necesitaremos una serie de parámetros a los cuales nos referiremos como \textbf{p1},\textbf{p2},\textbf{p3},\textbf{p4}... Cuando veamos estos identificadores dentro del código de los instrumentos sabremos que nos estamos refiriendo a esos parámetros de entrada.
+ 
+
 \section{Los Opcodes}\label{sec:Opcodes}
 
 Los Opcodes realizan diferentes funciones predefinidas, son de hecho el equivalente más parecido a una función de librería en un lenguaje de alto nivel convencional. Por ejemplo el Opcode \textbf{reverb} aplica reverberación a la señal entrante, el opcode \textbf{poscil} produce una señal oscilatoria de alta precisión. Existe una gran variedad de Opcodes (Actualmente más de 1500) con funcionalidades muy concretas y útiles en el mundo del sonido.
@@ -110,8 +121,12 @@ Para ejecutar un instrumento usaremos la siguiente sintaxis base: \bigskip
 \textbf{[i identificador instanteInicial duración]}\bigskip
 
  Siendo \textbf{identificador} el nombre del instrumento que vamos a usar, \textbf{instanteInicial} el tiempo desde el momento de ejecución del código que tarda en iniciarse nuestro instrumento y \textbf{duración} la cantidad de tiempo durante la cual se ejecuta el instrumento.
-
-
+ 
+ La sintaxis generalizada de un Score event de llamada a instrumento o Score \textbf{i} es:
+ 
+ \codigofuente{TeX}{Sintaxis base de un Score event i}{codigo/ScoreEventSyntax}
+ 
+Donde \textbf{p1} será el \textbf{identificador}, \textbf{p2} el \textbf{instanteInicial}, \textbf{p3} la \textbf{duración} y a partir de \textbf{p4} serán variables de entrada opcionales que usaremos según determine el instrumento. Un ejemplo común de variable \textbf{p4} sería un valor numérico de variación de tono que se suma o resta a una de las variables internas del instrumento.
 
 \section{Usando lo aprendido en un Sintetizador MIDI}\label{sec:usandoAprendido}
 
@@ -155,12 +170,10 @@ En segundo lugar usaremos un widget tipo \textbf{keyboard} para crear nuestro te
 
 Un posible ejemplo quedaría tal que así:
 
-
 \codigofuente{TeX}{La interfaz del teclado}{codigo/InstCabUISinte}
-\pagebreak
 Y el resultado al ejecutar esta parte del código será algo parecido a esto:
 
-\figura{0.5}{img/2.2-PrimerSinte}{Nuestro primer sintetizador}{fig:sinte1}{}
+\figura{0.6}{img/2.2-PrimerSinte}{Nuestro primer sintetizador}{fig:sinte1}{}
  
 \subsection{El teclado básico}\label{sec:SinteBasico}
 
@@ -196,7 +209,6 @@ Quedaría nuestro código de vinculación de la siguiente manera:
 Para concluir vamos a añadir un par de efectos útiles a nuestro sintetizador, el \textbf{cutoff} y la \textbf{resonancia}. Una forma sencilla de conseguirlo es usando el opcode \textbf{moogladder}, cuya sintaxis es: \textbf{asig moogladder ain, kcf, kres}. Siendo \textbf{ain} la onda a la que añadir los efectos, \textbf{kcf} el valor del cuttoff y \textbf{kres} el valor de resonancia.
 
 Para el caso vamos a darle a \textbf{ain} el valor de aOut, es decir, nuestra onda resultante de usar el opcode vco2. Para los valores de cuttoff y resonancia crearemos simplemente un par de sliders y vincularemos sus valores a variables de Csound del mismo modo que hicimos antes.
-\pagebreak
 
 \subsection{El resultado final}\label{sec:SinteCompleto}
 
