@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  18 JUL 2020 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  19 JUL 2020 00:47
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -524,28 +524,28 @@ LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 29.
  [2
 
-])
-\tf@toc=\write3
-\openout3 = `proyect.toc'.
-
-
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.20308pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (proyect.lof)
+[3])
+\tf@toc=\write3
+\openout3 = `proyect.toc'.
+
+ [4] (proyect.lof)
 \tf@lof=\write4
 \openout4 = `proyect.lof'.
 
- [4
+ [5
 
 ] (proyect.lol)
 \tf@lol=\write5
 \openout5 = `proyect.lol'.
 
- [5
+ [6
 
 ] (Capitulos/capitulo1.tex
 Cap\'{\i }tulo 1.
@@ -557,36 +557,36 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
-<img/1.1-Barry-Vercoe.jpg, id=32, 622.325pt x 350.30875pt>
+<img/1.1-Barry-Vercoe.jpg, id=35, 622.325pt x 350.30875pt>
 File: img/1.1-Barry-Vercoe.jpg Graphic file (type jpg)
 <use img/1.1-Barry-Vercoe.jpg>
 Package pdftex.def Info: img/1.1-Barry-Vercoe.jpg  used on input line 23.
 (pdftex.def)             Requested size: 213.39568pt x 120.11899pt.
  [2 <./img/1.1-Barry-Vercoe.jpg>]
-<img/1.2-MaxMsp-Example.png, id=36, 730.73pt x 544.0325pt>
+<img/1.2-MaxMsp-Example.png, id=39, 730.73pt x 544.0325pt>
 File: img/1.2-MaxMsp-Example.png Graphic file (type png)
 <use img/1.2-MaxMsp-Example.png>
 Package pdftex.def Info: img/1.2-MaxMsp-Example.png  used on input line 65.
 (pdftex.def)             Requested size: 341.43437pt x 254.20108pt.
-<img/1.3-PureData-Example.png, id=38, 505.89pt x 324.21124pt>
+<img/1.3-PureData-Example.png, id=41, 505.89pt x 324.21124pt>
 File: img/1.3-PureData-Example.png Graphic file (type png)
 <use img/1.3-PureData-Example.png>
 Package pdftex.def Info: img/1.3-PureData-Example.png  used on input line 70.
 (pdftex.def)             Requested size: 341.43437pt x 218.8183pt.
  [3 <./img/1.2-MaxMsp-Example.png>]
-<img/1.4-CsoundQt090.png, id=43, 1380.15625pt x 755.82375pt>
+<img/1.4-CsoundQt090.png, id=46, 1380.15625pt x 755.82375pt>
 File: img/1.4-CsoundQt090.png Graphic file (type png)
 <use img/1.4-CsoundQt090.png>
 Package pdftex.def Info: img/1.4-CsoundQt090.png  used on input line 89.
 (pdftex.def)             Requested size: 341.43437pt x 186.98334pt.
  [4 <./img/1.3-PureData-Example.png>]
-<img/1.5-Blue.png, id=47, 1399.2275pt x 891.33pt>
+<img/1.5-Blue.png, id=50, 1399.2275pt x 891.33pt>
 File: img/1.5-Blue.png Graphic file (type png)
 <use img/1.5-Blue.png>
 Package pdftex.def Info: img/1.5-Blue.png  used on input line 100.
 (pdftex.def)             Requested size: 341.43437pt x 217.48692pt.
  [5 <./img/1.4-CsoundQt090.png> <./img/1.5-Blue.png>]
-<img/1.6-Cabbage.png, id=53, 1003.75pt x 602.25pt>
+<img/1.6-Cabbage.png, id=56, 1003.75pt x 602.25pt>
 File: img/1.6-Cabbage.png Graphic file (type png)
 <use img/1.6-Cabbage.png>
 Package pdftex.def Info: img/1.6-Cabbage.png  used on input line 111.
@@ -629,7 +629,7 @@ que no de-be es-tar den-tro de \OML/cmm/m/it/10.95 <\OT1/ptm/m/n/10.95 CsoundSy
 nthe-
  []
 
-<img/2.1-Cuadrafonico.jpg, id=63, 1284.8pt x 722.7pt>
+<img/2.1-Cuadrafonico.jpg, id=66, 1284.8pt x 722.7pt>
 File: img/2.1-Cuadrafonico.jpg Graphic file (type jpg)
 <use img/2.1-Cuadrafonico.jpg>
 Package pdftex.def Info: img/2.1-Cuadrafonico.jpg  used on input line 44.
@@ -642,7 +642,7 @@ LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <12> not available
  [11] (codigo/InstBaseSinte.tex)
 (codigo/InstVarSinte.tex) (codigo/InstOptSinte.tex) [12]
 (codigo/InstCabUISinte.tex)
-<img/2.2-PrimerSinte.png, id=80, 510.40688pt x 370.38374pt>
+<img/2.2-PrimerSinte.png, id=84, 510.40688pt x 370.38374pt>
 File: img/2.2-PrimerSinte.png Graphic file (type png)
 <use img/2.2-PrimerSinte.png>
 Package pdftex.def Info: img/2.2-PrimerSinte.png  used on input line 176.
@@ -651,7 +651,7 @@ Package pdftex.def Info: img/2.2-PrimerSinte.png  used on input line 176.
 tack.tex) [14] (codigo/SliderVinc.tex)
 (codigo/SinteCompleto.tex [15])) (Capitulos/capitulo3.tex [16]
 Cap\'{\i }tulo 3.
-<img/3.1-kCycles.png, id=94, 743.02594pt x 252.945pt>
+<img/3.1-kCycles.png, id=97, 743.02594pt x 252.945pt>
 File: img/3.1-kCycles.png Graphic file (type png)
 <use img/3.1-kCycles.png>
 Package pdftex.def Info: img/3.1-kCycles.png  used on input line 18.
@@ -685,12 +685,12 @@ Cap\'{\i }tulo 4.
 
 ]
 Cap\'{\i }tulo 5.
-<img/C.1-InstaVersion.png, id=132, 800.9925pt x 574.39594pt>
+<img/C.1-InstaVersion.png, id=135, 800.9925pt x 574.39594pt>
 File: img/C.1-InstaVersion.png Graphic file (type png)
 <use img/C.1-InstaVersion.png>
 Package pdftex.def Info: img/C.1-InstaVersion.png  used on input line 21.
 (pdftex.def)             Requested size: 256.07741pt x 183.63515pt.
-<img/C.2-InstaPasos.png, id=133, 563.10374pt x 430.60875pt>
+<img/C.2-InstaPasos.png, id=136, 563.10374pt x 430.60875pt>
 File: img/C.2-InstaPasos.png Graphic file (type png)
 <use img/C.2-InstaPasos.png>
 Package pdftex.def Info: img/C.2-InstaPasos.png  used on input line 24.
@@ -698,13 +698,13 @@ Package pdftex.def Info: img/C.2-InstaPasos.png  used on input line 24.
 [27
 
  <./img/C.1-InstaVersion.png>]
-<img/C.3-CabbageEjemplos.png, id=137, 664.73344pt x 432.86719pt>
+<img/C.3-CabbageEjemplos.png, id=140, 664.73344pt x 432.86719pt>
 File: img/C.3-CabbageEjemplos.png Graphic file (type png)
 <use img/C.3-CabbageEjemplos.png>
 Package pdftex.def Info: img/C.3-CabbageEjemplos.png  used on input line 32.
 (pdftex.def)             Requested size: 256.07741pt x 166.75674pt.
  [28 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
-<img/C.4-CabbageNewFile.png, id=141, 639.89063pt x 286.06876pt>
+<img/C.4-CabbageNewFile.png, id=144, 639.89063pt x 286.06876pt>
 File: img/C.4-CabbageNewFile.png Graphic file (type png)
 <use img/C.4-CabbageNewFile.png>
 Package pdftex.def Info: img/C.4-CabbageNewFile.png  used on input line 38.
@@ -712,7 +712,7 @@ Package pdftex.def Info: img/C.4-CabbageNewFile.png  used on input line 38.
 LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <14.4> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 50.
  (codigo/CabbageSyntax.tex) [29 <./img/C.4-CabbageNewFile.png>]
-<img/C.5-CabbageExport.png, id=145, 479.54156pt x 83.5622pt>
+<img/C.5-CabbageExport.png, id=148, 479.54156pt x 83.5622pt>
 File: img/C.5-CabbageExport.png Graphic file (type png)
 <use img/C.5-CabbageExport.png>
 Package pdftex.def Info: img/C.5-CabbageExport.png  used on input line 74.
@@ -733,7 +733,7 @@ Underfull \hbox (badness 1442) in paragraph at lines 15--15
 .
  []
 
-<img/S.1-senoidal.png, id=153, 853.1875pt x 305.14pt>
+<img/S.1-senoidal.png, id=156, 853.1875pt x 305.14pt>
 File: img/S.1-senoidal.png Graphic file (type png)
 <use img/S.1-senoidal.png>
 Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
@@ -741,25 +741,25 @@ Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
 [32
 
  <./img/S.1-senoidal.png>]
-<img/S.2-Periodo.jpg, id=158, 312.16624pt x 162.6075pt>
+<img/S.2-Periodo.jpg, id=161, 312.16624pt x 162.6075pt>
 File: img/S.2-Periodo.jpg Graphic file (type jpg)
 <use img/S.2-Periodo.jpg>
 Package pdftex.def Info: img/S.2-Periodo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 256.07741pt x 133.39359pt.
  [33 <./img/S.2-Periodo.jpg>]
-<img/S.3-Sampleo.png, id=162, 501.875pt x 244.915pt>
+<img/S.3-Sampleo.png, id=165, 501.875pt x 244.915pt>
 File: img/S.3-Sampleo.png Graphic file (type png)
 <use img/S.3-Sampleo.png>
 Package pdftex.def Info: img/S.3-Sampleo.png  used on input line 50.
 (pdftex.def)             Requested size: 341.43437pt x 166.62967pt.
  [34 <./img/S.3-Sampleo.png>]
-<img/S.4-Aliasing.png, id=166, 411.5375pt x 377.41pt>
+<img/S.4-Aliasing.png, id=169, 411.5375pt x 377.41pt>
 File: img/S.4-Aliasing.png Graphic file (type png)
 <use img/S.4-Aliasing.png>
 Package pdftex.def Info: img/S.4-Aliasing.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43437pt x 313.12352pt.
  [35 <./img/S.4-Aliasing.png>]
-<img/S.5-ADSR.png, id=170, 468.149pt x 252.945pt>
+<img/S.5-ADSR.png, id=173, 468.149pt x 252.945pt>
 File: img/S.5-ADSR.png Graphic file (type png)
 <use img/S.5-ADSR.png>
 Package pdftex.def Info: img/S.5-ADSR.png  used on input line 94.
@@ -775,7 +775,7 @@ y, An-dres Ca-bre-ra, Alex Hof-mann, Ale-xan-dre Abrioux,
 
 [38
 
-] [39]) [40] (proyect.aux)
+] [39] [40]) [41] (proyect.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -801,9 +801,9 @@ nts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 /urw/times/utmb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
 .pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on proyect.pdf (46 pages, 1137649 bytes).
+Output written on proyect.pdf (48 pages, 1140448 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

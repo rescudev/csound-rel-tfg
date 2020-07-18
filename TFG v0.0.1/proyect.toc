@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'Indice general}{II}%
-\contentsline {chapter}{\'{I}ndice de figuras}{IV}%
-\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{V}%
+\contentsline {chapter}{\'{I}ndice de figuras}{V}%
+\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{VI}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}%
 \contentsline {section}{\numberline {1.1}¿Qué es Csound?}{1}%
 \contentsline {section}{\numberline {1.2}¿Por qué usar Csound?}{1}%
@@ -82,7 +82,7 @@
 \contentsline {subsection}{\numberline {7.2.2}Comentario}{40}%
 \contentsline {subsection}{\numberline {7.2.3}Estructura}{40}%
 \contentsline {section}{\numberline {7.3}Cabbage Docs}{40}%
-\contentsline {subsection}{\numberline {7.3.1}Referencia}{40}%
-\contentsline {subsection}{\numberline {7.3.2}Comentario}{40}%
-\contentsline {subsection}{\numberline {7.3.3}Estructura}{40}%
+\contentsline {subsection}{\numberline {7.3.1}Referencia}{41}%
+\contentsline {subsection}{\numberline {7.3.2}Comentario}{41}%
+\contentsline {subsection}{\numberline {7.3.3}Estructura}{41}%
 \contentsfinish 
