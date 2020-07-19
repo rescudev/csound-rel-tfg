@@ -26,5 +26,5 @@
 \contentsline {lstlisting}{\numberline {4.2}Ejemplo de schedule()}{27}%
 \contentsline {lstlisting}{\numberline {4.3}Un instrumento funcional}{28}%
 \contentsline {lstlisting}{\numberline {4.4}Uso del hexadecimal para las figuras rítmicas}{29}%
-\contentsline {lstlisting}{\numberline {4.5}Usando hexplay() con nuestro instrumento}{29}%
-\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{32}%
+\contentsline {lstlisting}{\numberline {4.5}Usando hexplay() con nuestro instrumento}{30}%
+\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{33}%

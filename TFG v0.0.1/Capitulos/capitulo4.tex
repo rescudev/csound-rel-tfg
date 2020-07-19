@@ -107,9 +107,29 @@ Tabla de conversión de valores hexadecimales:
 \pagebreak
 \codigofuente{TeX}{Uso del hexadecimal para las figuras rítmicas}{codigo/HexRitmoEx}
 
+Tengamos el código de la figura anterior como un ejemplo para entender el funcionamiento del código hexadecimal como atributo de entrada que marca las figuras de ritmo. Prestemos especial atención por tanto a las líneas 5, 10, 15 y 20 del código.
+
+Cuando como argumento \textbf{Spat} del opcode \textbf{hexplay()} introducimos por ejemplo ``1010''\ en valor hexadecimal podemos pensar en ello como un número binario agrupado en cuatro valores, es decir: \textbf{HEX(1010) = BIN(0001 0000 0001 0000)}. 
+
+Cuando marcamos un tempo (en este ejemplo 100) en nuestra pieza y queda el pulso determinado, diremos que cada uno de estos valores hexadecimales representará un pulso. Dicho de otra manera, si ejecutamos únicamente el \textbf{hexplay()} de las líneas 4 a 8 del código, el instrumento \textbf{BD} sonará una vez al final del pulso uno y otra vez al final de pulso tres. Esto se repetirá ad infinitum.
+
+El \textbf{hexplay()} de las líneas 10 a 13 hará sonar el instrumento \textbf{Clap} al final de los pulsos segundo y cuarto.
+
+Cada uno de los pulsos puede dividirse en cuatro partes de igual duración, una por cada bit de los cuatro usados para representar un valor hexadecimal.
+
+El \textbf{hexplay()} de las líneas 15 a 18 hará sonar el instrumento \textbf{LowTom} en la tercera parte de cuarto pulso.
+
+Y por último, el \textbf{hexplay()} de las líneas 20 a 23 hará sonar el instrumento \textbf{Maraca} cuatro veces durante el primer pulso y cuatro veces durante el tercer pulso.
+
+\textbf{hexplay()} acepta cadenas hexadecimales más cortas y más largas que cuatro dígitos como las mostradas en los ejemplos, es por ello que se recomienda encarecidamente abrir \textbf{Live Csound} y empezar a experimentar por uno mismo con los \textbf{hexplay()} para empezar a compreder su concepto rítmico.
+\pagebreak
 \subsection{Ideas musicales con nuestro instrumento}
 
+Una vez introducido el concepto de figuras rítmicas hexadecimales podemos volver a nuestro instrumento casero y usarlo de la siguiente manera por ejemplo:
+
 \codigofuente{TeX}{Usando hexplay() con nuestro instrumento}{codigo/HexConInstr}
+
+Se ejecutará una vez por cada una de las cuatro parte del cuarto pulso. Al generar, como explicamos antes, una nota con frecuencia aleatoria cada vez; estaremos fabricando acordes arpegiados aleatorios con nuestro instrumento de forma automática cada cuarto pulso del tempo que hayamos elegido.
 
  
 

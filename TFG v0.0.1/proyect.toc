@@ -62,40 +62,48 @@
 \contentsline {subsection}{\numberline {4.3.1}Producir sonidos sencillos}{27}%
 \contentsline {subsection}{\numberline {4.3.2}Creando un instrumento}{27}%
 \contentsline {subsection}{\numberline {4.3.3}Figuras rítmicas como valor hexadecimal}{28}%
-\contentsline {subsection}{\numberline {4.3.4}Ideas musicales con nuestro instrumento}{29}%
-\contentsline {chapter}{\numberline {5}Cabbage: Guía de uso}{30}%
-\contentsline {section}{\numberline {5.1}Instalación de Cabbage}{30}%
-\contentsline {section}{\numberline {5.2}Opciones del IDE}{31}%
-\contentsline {subsection}{\numberline {5.2.1}Creando un nuevo archivo}{32}%
-\contentsline {section}{\numberline {5.3}La etiqueta \textless Cabbage\textgreater }{32}%
-\contentsline {subsection}{\numberline {5.3.1}Los Witgets}{32}%
-\contentsline {section}{\numberline {5.4}Exportando nuestros instrumentos}{33}%
-\contentsline {chapter}{\numberline {6}Fundamentos del Sonido}{35}%
-\contentsline {section}{\numberline {6.1}Introducción}{35}%
-\contentsline {section}{\numberline {6.2}El Audio Digital}{35}%
-\contentsline {subsection}{\numberline {6.2.1}¿Qué es el sonido y cómo se transmite?}{35}%
-\contentsline {subsection}{\numberline {6.2.2}La onda de sonido y sus características}{36}%
-\contentsline {subsection}{\numberline {6.2.3}El Sampleo y Sample Rate}{37}%
-\contentsline {section}{\numberline {6.3}Conceptos interesantes}{38}%
-\contentsline {subsection}{\numberline {6.3.1}El decibelio}{38}%
-\contentsline {subsection}{\numberline {6.3.2}El ADSR}{38}%
-\contentsline {subsection}{\numberline {6.3.3}El Cutoff y la resonancia}{39}%
-\contentsline {subsection}{\numberline {6.3.4}La ganancia o gain y sus diferencias con el volumen}{40}%
-\contentsline {chapter}{\numberline {7}Bibliografía Comentada}{41}%
-\contentsline {section}{\numberline {7.1}Csound FLOSS Manual}{41}%
-\contentsline {subsection}{\numberline {7.1.1}Referencia}{41}%
-\contentsline {subsection}{\numberline {7.1.2}Comentario}{41}%
-\contentsline {subsection}{\numberline {7.1.3}Estructura}{42}%
-\contentsline {section}{\numberline {7.2}The Canonical Csound Reference Manual}{43}%
-\contentsline {subsection}{\numberline {7.2.1}Referencia}{43}%
-\contentsline {subsection}{\numberline {7.2.2}Comentario}{43}%
-\contentsline {subsection}{\numberline {7.2.3}Estructura}{43}%
-\contentsline {section}{\numberline {7.3}Cabbage Docs}{44}%
-\contentsline {subsection}{\numberline {7.3.1}Referencia}{44}%
-\contentsline {subsection}{\numberline {7.3.2}Comentario}{44}%
-\contentsline {subsection}{\numberline {7.3.3}Estructura}{44}%
-\contentsline {section}{\numberline {7.4}Página oficial de Csound}{44}%
-\contentsline {section}{\numberline {7.5}Canal youtube Steven Yi y Github de csound-live-code}{44}%
-\contentsline {chapter}{\numberline {8}Anexos}{45}%
-\contentsline {section}{\numberline {8.1}Cómo instalar un PWA en Chrome}{45}%
+\contentsline {subsection}{\numberline {4.3.4}Ideas musicales con nuestro instrumento}{30}%
+\contentsline {chapter}{\numberline {5}Cabbage: Guía de uso}{31}%
+\contentsline {section}{\numberline {5.1}Instalación de Cabbage}{31}%
+\contentsline {section}{\numberline {5.2}Opciones del IDE}{32}%
+\contentsline {subsection}{\numberline {5.2.1}Creando un nuevo archivo}{33}%
+\contentsline {section}{\numberline {5.3}La etiqueta \textless Cabbage\textgreater }{33}%
+\contentsline {subsection}{\numberline {5.3.1}Los Witgets}{33}%
+\contentsline {section}{\numberline {5.4}Exportando nuestros instrumentos}{34}%
+\contentsline {chapter}{\numberline {6}Fundamentos del Sonido}{36}%
+\contentsline {section}{\numberline {6.1}Introducción}{36}%
+\contentsline {section}{\numberline {6.2}El Audio Digital}{36}%
+\contentsline {subsection}{\numberline {6.2.1}¿Qué es el sonido y cómo se transmite?}{36}%
+\contentsline {subsection}{\numberline {6.2.2}La onda de sonido y sus características}{37}%
+\contentsline {subsection}{\numberline {6.2.3}El Sampleo y Sample Rate}{38}%
+\contentsline {section}{\numberline {6.3}Conceptos interesantes}{39}%
+\contentsline {subsection}{\numberline {6.3.1}El decibelio}{39}%
+\contentsline {subsection}{\numberline {6.3.2}El ADSR}{39}%
+\contentsline {subsection}{\numberline {6.3.3}El Cutoff y la resonancia}{40}%
+\contentsline {subsection}{\numberline {6.3.4}La ganancia o gain y sus diferencias con el volumen}{41}%
+\contentsline {chapter}{\numberline {7}Bibliografía Comentada}{42}%
+\contentsline {section}{\numberline {7.1}Csound FLOSS Manual}{42}%
+\contentsline {subsection}{\numberline {7.1.1}Referencia}{42}%
+\contentsline {subsection}{\numberline {7.1.2}Comentario}{42}%
+\contentsline {subsection}{\numberline {7.1.3}Estructura}{43}%
+\contentsline {section}{\numberline {7.2}The Canonical Csound Reference Manual}{44}%
+\contentsline {subsection}{\numberline {7.2.1}Referencia}{44}%
+\contentsline {subsection}{\numberline {7.2.2}Comentario}{44}%
+\contentsline {subsection}{\numberline {7.2.3}Estructura}{44}%
+\contentsline {section}{\numberline {7.3}Cabbage Docs}{45}%
+\contentsline {subsection}{\numberline {7.3.1}Referencia}{45}%
+\contentsline {subsection}{\numberline {7.3.2}Comentario}{45}%
+\contentsline {subsection}{\numberline {7.3.3}Estructura}{45}%
+\contentsline {section}{\numberline {7.4}CS Csound: Página oficial}{45}%
+\contentsline {subsection}{\numberline {7.4.1}Referencia}{45}%
+\contentsline {subsection}{\numberline {7.4.2}Comentario}{46}%
+\contentsline {section}{\numberline {7.5}Repositorio csound-live-code}{46}%
+\contentsline {subsection}{\numberline {7.5.1}Referencia}{46}%
+\contentsline {subsection}{\numberline {7.5.2}Comentario}{46}%
+\contentsline {section}{\numberline {7.6}Canal de youtube: Steven Yi}{46}%
+\contentsline {subsection}{\numberline {7.6.1}Referencia}{46}%
+\contentsline {subsection}{\numberline {7.6.2}Comentario}{46}%
+\contentsline {chapter}{\numberline {8}Anexos}{47}%
+\contentsline {section}{\numberline {8.1}Cómo instalar un PWA en Chrome}{47}%
+\contentsline {chapter}{\numberline {9}Definici\'on de objetivos}{48}%
 \contentsfinish 
