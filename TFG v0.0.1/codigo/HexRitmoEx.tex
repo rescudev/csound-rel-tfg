@@ -1,0 +1,25 @@
+set_tempo(100)
+set_scale("min")
+
+instr P1 
+  hexplay("1010", 
+      "BD", p3,
+      in_scale(-1, 0),
+      0.5)
+  
+  hexplay("0101", 
+      "Clap", p3,
+      in_scale(-1, 0),
+      0.5)
+  
+  hexplay("0002", 
+      "LowTom", p3,
+      in_scale(-1, 0),
+      0.5)
+  
+  hexplay("f0f0", 
+      "Maraca", p3,
+      in_scale(-1, 0),
+      0.5)
+endin
+schedule("P1", 0, 1)

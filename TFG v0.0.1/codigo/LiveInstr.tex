@@ -1,0 +1,14 @@
+instr Add
+  alfo = 1 + oscili(random(0.002, 0.01), random(0.2,3))
+  asig = oscili(1, p4 * alfo)
+  asig += oscili(1, p4 * 2 * alfo)
+  asig *= 0.25 * p5 * expon(1, p3, 0.001)  
+  out(asig, asig)
+endin
+
+instr Note
+  isd = random(0, 12)
+  schedule("Add", 0, 20, in_scale(rand(array(-1,0)), isd), ampdbfs(-12))
+endin
+
+schedule("Note", 0, 0)

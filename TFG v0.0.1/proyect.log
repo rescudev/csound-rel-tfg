@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  19 JUL 2020 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  19 JUL 2020 20:51
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -681,38 +681,40 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )) (codigo/macroArgs.tex) [24] (codigo/macroInScore.tex))
 (Capitulos/capitulo4.tex [25]
 Cap\'{\i }tulo 4.
-) (Capitulos/guiaCabbage.tex [26
+[26
 
-]
+] (codigo/Syntaxhexplay.tex) (codigo/scheduleEx.tex) (codigo/LiveInstr.tex
+[27]) [28] (codigo/HexRitmoEx.tex) (codigo/HexConInstr.tex))
+(Capitulos/guiaCabbage.tex [29]
 Cap\'{\i }tulo 5.
-<img/C.1-InstaVersion.png, id=135, 800.9925pt x 574.39594pt>
+<img/C.1-InstaVersion.png, id=144, 800.9925pt x 574.39594pt>
 File: img/C.1-InstaVersion.png Graphic file (type png)
 <use img/C.1-InstaVersion.png>
 Package pdftex.def Info: img/C.1-InstaVersion.png  used on input line 21.
 (pdftex.def)             Requested size: 256.07741pt x 183.63515pt.
-<img/C.2-InstaPasos.png, id=136, 563.10374pt x 430.60875pt>
+<img/C.2-InstaPasos.png, id=145, 563.10374pt x 430.60875pt>
 File: img/C.2-InstaPasos.png Graphic file (type png)
 <use img/C.2-InstaPasos.png>
 Package pdftex.def Info: img/C.2-InstaPasos.png  used on input line 24.
 (pdftex.def)             Requested size: 256.07741pt x 195.82214pt.
-[27
+[30
 
  <./img/C.1-InstaVersion.png>]
-<img/C.3-CabbageEjemplos.png, id=140, 664.73344pt x 432.86719pt>
+<img/C.3-CabbageEjemplos.png, id=150, 664.73344pt x 432.86719pt>
 File: img/C.3-CabbageEjemplos.png Graphic file (type png)
 <use img/C.3-CabbageEjemplos.png>
 Package pdftex.def Info: img/C.3-CabbageEjemplos.png  used on input line 32.
 (pdftex.def)             Requested size: 256.07741pt x 166.75674pt.
- [28 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
-<img/C.4-CabbageNewFile.png, id=144, 639.89063pt x 286.06876pt>
+ [31 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
+<img/C.4-CabbageNewFile.png, id=154, 639.89063pt x 286.06876pt>
 File: img/C.4-CabbageNewFile.png Graphic file (type png)
 <use img/C.4-CabbageNewFile.png>
 Package pdftex.def Info: img/C.4-CabbageNewFile.png  used on input line 38.
 (pdftex.def)             Requested size: 256.07741pt x 114.48221pt.
 LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <14.4> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 50.
- (codigo/CabbageSyntax.tex) [29 <./img/C.4-CabbageNewFile.png>]
-<img/C.5-CabbageExport.png, id=148, 479.54156pt x 83.5622pt>
+ (codigo/CabbageSyntax.tex) [32 <./img/C.4-CabbageNewFile.png>]
+<img/C.5-CabbageExport.png, id=158, 479.54156pt x 83.5622pt>
 File: img/C.5-CabbageExport.png Graphic file (type png)
 <use img/C.5-CabbageExport.png>
 Package pdftex.def Info: img/C.5-CabbageExport.png  used on input line 74.
@@ -724,7 +726,7 @@ s por FMOD, \OT1/ptm/b/n/10.95 https://www.fmod.com/ \OT1/ptm/m/n/10.95 y que e
 st[]a de-
  []
 
-[30 <./img/C.5-CabbageExport.png>]) (Capitulos/extraSonido.tex [31]
+[33 <./img/C.5-CabbageExport.png>]) (Capitulos/extraSonido.tex [34]
 Cap\'{\i }tulo 6.
 
 Underfull \hbox (badness 1442) in paragraph at lines 15--15
@@ -733,39 +735,39 @@ Underfull \hbox (badness 1442) in paragraph at lines 15--15
 .
  []
 
-<img/S.1-senoidal.png, id=156, 853.1875pt x 305.14pt>
+<img/S.1-senoidal.png, id=165, 853.1875pt x 305.14pt>
 File: img/S.1-senoidal.png Graphic file (type png)
 <use img/S.1-senoidal.png>
 Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
 (pdftex.def)             Requested size: 341.43437pt x 122.11435pt.
-[32
+[35
 
  <./img/S.1-senoidal.png>]
-<img/S.2-Periodo.jpg, id=161, 312.16624pt x 162.6075pt>
+<img/S.2-Periodo.jpg, id=170, 312.16624pt x 162.6075pt>
 File: img/S.2-Periodo.jpg Graphic file (type jpg)
 <use img/S.2-Periodo.jpg>
 Package pdftex.def Info: img/S.2-Periodo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 256.07741pt x 133.39359pt.
- [33 <./img/S.2-Periodo.jpg>]
-<img/S.3-Sampleo.png, id=165, 501.875pt x 244.915pt>
+ [36 <./img/S.2-Periodo.jpg>]
+<img/S.3-Sampleo.png, id=175, 501.875pt x 244.915pt>
 File: img/S.3-Sampleo.png Graphic file (type png)
 <use img/S.3-Sampleo.png>
 Package pdftex.def Info: img/S.3-Sampleo.png  used on input line 50.
 (pdftex.def)             Requested size: 341.43437pt x 166.62967pt.
- [34 <./img/S.3-Sampleo.png>]
-<img/S.4-Aliasing.png, id=169, 411.5375pt x 377.41pt>
+ [37 <./img/S.3-Sampleo.png>]
+<img/S.4-Aliasing.png, id=179, 411.5375pt x 377.41pt>
 File: img/S.4-Aliasing.png Graphic file (type png)
 <use img/S.4-Aliasing.png>
 Package pdftex.def Info: img/S.4-Aliasing.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43437pt x 313.12352pt.
- [35 <./img/S.4-Aliasing.png>]
-<img/S.5-ADSR.png, id=173, 468.149pt x 252.945pt>
+ [38 <./img/S.4-Aliasing.png>]
+<img/S.5-ADSR.png, id=183, 468.149pt x 252.945pt>
 File: img/S.5-ADSR.png Graphic file (type png)
 <use img/S.5-ADSR.png>
 Package pdftex.def Info: img/S.5-ADSR.png  used on input line 94.
 (pdftex.def)             Requested size: 341.43437pt x 184.4862pt.
- [36 <./img/S.5-ADSR.png>])
-(Capitulos/bibliografia.tex [37]
+ [39 <./img/S.5-ADSR.png>])
+(Capitulos/bibliografia.tex [40]
 Cap\'{\i }tulo 7.
 
 Overfull \hbox (12.39203pt too wide) in paragraph at lines 16--17
@@ -773,18 +775,27 @@ Overfull \hbox (12.39203pt too wide) in paragraph at lines 16--17
 y, An-dres Ca-bre-ra, Alex Hof-mann, Ale-xan-dre Abrioux,
  []
 
-[38
+[41
 
-] [39] [40]) [41] (proyect.aux)
+] [42] [43]) (Capitulos/anexos.tex [44]
+Cap\'{\i }tulo 8.
+<img/A.1-PWAinst.png, id=204, 519.44063pt x 231.11343pt>
+File: img/A.1-PWAinst.png Graphic file (type png)
+<use img/A.1-PWAinst.png>
+Package pdftex.def Info: img/A.1-PWAinst.png  used on input line 7.
+(pdftex.def)             Requested size: 341.43437pt x 151.91115pt.
+) [45
+
+ <./img/A.1-PWAinst.png>] (proyect.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9968 strings out of 480799
- 136927 string characters out of 2905528
- 578279 words of memory out of 3000000
- 25626 multiletter control sequences out of 15000+200000
+ 10029 strings out of 480799
+ 138161 string characters out of 2905528
+ 578299 words of memory out of 3000000
+ 25666 multiletter control sequences out of 15000+200000
  566691 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,13n,77p,1049b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -801,9 +812,9 @@ nts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 /urw/times/utmb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
 .pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on proyect.pdf (48 pages, 1140448 bytes).
+Output written on proyect.pdf (52 pages, 1168612 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

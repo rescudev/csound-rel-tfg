@@ -2,6 +2,114 @@
 
 \chapter{Haciendo Música en Directo}
 
-La página web \url{https://live.csound.com/ }
+Este capítulo trata de dar una introducción al ``live coding''\ en Csound. Para ello se enplicarán algunos de sus fundamentos y se usará la página web \url{https://live.csound.com/} (Programada y mantenida por Steven Yi, desarrollador de Csound y blue), de ahora en adelante referida como \textbf{Live Csound}, para ejemplificar los conceptos.
 
-\section{Live Coding}
+\textbf{Live Csound} usa la librería \textbf{livecode.orc} de Csound y puede abrirse en cualquier navegador commplatible con \textbf{Javascript}, \textbf{WebAudio} y \textbf{WebAssembly}. Cualquiera de los navegadores modernos más usados (Chrome, Firefox, Safari, etc..) tiene estas capacidades. Es además una \textbf{PWA (Progressive Web Application)}\footnote{Revisar el anexo ``Cómo instalar un PWA en Chrome''} por lo que podemos instalar una versión offline de la misma en nuestro equipo y ejecutarla mediante nuestro navegador aunque no dispongamos de conexión a internet.
+
+\section{Live Csound}
+
+\subsection{Atajos de teclado}
+
+Estos son los atajos de teclado más útiles al usar la aplicación \textbf{Live Csound}, es combeniente tenerlos en mente para hacer más dinámico nuestro ``Live Coding''.
+
+\begin{itemize}
+ \item \textbf{ctrl-e}: Evalúa y ejecuta el código seleccionado.
+ \item \textbf{ctrl-enter}:	Idéntico a ctrl-e.
+ \item \textbf{ctrl-shift-enter}:  Evalúa el código seleccionado y lo ejecuta tras un compás de 4/4.
+ \item \textbf{ctrl-h}:	Genera una plantilla de código del opcode hexplay().
+ \item \textbf{ctrl-j}:	Genera una plantilla de código del opcode euclidplay().
+ \item \textbf{ctrl-;}:	Convierte en comentarios las líneas seleccionadas o los descomenta si ya lo eran.
+ \item \textbf{ctrl-alt-c}:	Idéntico a ctrl-;.
+\end{itemize}
+
+\section{Los principales opcodes}
+
+La biblioteca \textbf{livecode.orc} usada por \textbf{Live Csound} aporta los opcodes \textbf{hexbeat()} y \textbf{hexplay()} que nos servirán generar los sonidos de forma rítmica mediante valores hexadecimales.
+
+\subsection{schedule()}
+
+El opcode \textbf{schedule()} nos servirá para añadir un nuevo score event, es decir, para hacer uso de alguno de sus instrumentos. Su sintaxis siendo la misma que al escribir un score event \textbf{schedule(p1, p2, p3, p4, p5)}. Siendo \textbf{p1} el identificador, \textbf{p2} el instante de inicio, \textbf{p3} la duración, \textbf{p4} la frecuencia del sonido y \textbf{p5} la amplitud en referencia 0dbfs.
+
+\subsection{hexplay()}
+
+Para usar \textbf{hexplay()} es importante haber conocido previamente \textbf{schedule()} puesto que su sintaxis está implícita.  
+
+ \codigofuente{TeX}{Sintaxis base del hexplay()}{codigo/Syntaxhexplay}
+ 
+Siendo \textbf{Spat} un código hexadecimal que marcará la figura rítmica en la que se activa nuestro \textbf{schedule()} implícito. \textbf{Sinstr} es p1, el nombre del instrumento. \textbf{Sinstr} es p3, la duración. \textbf{ifreq} es p4, la frecuencia. Y \textbf{iamp} es p5, la amplitud. No es necesario introducir \textbf{p2} puesto que no habrá un instante inicial particular para cada score event si contamos con un patrón rítmico.
+
+\section{Creando música}
+
+Empecemos por lo tanto con un sencillo ejemplo al que iremos añadiendo dificultad hasta llegar a lo más parecido a una idea musical.
+
+\subsection{Producir sonidos sencillos}
+
+Haremos uso del opcode \textbf{schedule()} del cual ya hemos aprendido la sintaxis.
+Vamos a la página \url{https://live.csound.com/}, seleccionamos todo (ctrl-a) y borramos todo el código que aparece como demos dejando la página en blanco. Después de eso podemos escribir la línea de código:
+
+ \codigofuente{TeX}{Ejemplo de schedule()}{codigo/scheduleEx}
+ 
+ Si seleccionamos esta línea de código y pulsamos \textbf{ctrl-e} haremos sonar el instrumento \textbf{``sub1''} desde el instante \textbf{0}, durante \textbf{2} segundos, a una frecuencia de \textbf{440HZ(La)}, y a un volumen relativo de \textbf{0.5} respecto a 0dbfs que va de 0.0 a 1.0.
+ 
+ Y así de sencillo es empezar a producir notas en \textbf{Live Csound}. Por supuesto se recomienda empezar a experimentar con los valores del \textbf{schedule()}, incluido el instrumento para el que existen esta serie de opciones predeterminadas:
+ 
+ \begin{itemize}
+ \item \textbf{Instrumentos tonales}: Sub1, Sub2, Sub3, Sub4, Sub5, SynBrass, Plk, Bass, VoxHumana, FM1, Noi, Wobble.
+ \item \textbf{Percusión}: Clap, BD, SD, OHH, CHH, HiTom, MidTom, LowTom, Cymbal, Rimshot, Claves, Cowbell, Maraca, HiConga, MidConga, LowConga.
+\end{itemize}
+ 
+\subsection{Creando un instrumento}
+
+No queremos vernos limitados a la librería predeterminada de instrumentos de \textbf{Live Csound} así que vamos a aprender a definir nuestro propio instrumento. Esto sigue siendo el lenguaje de programación Csound así que definir un instrumento no es algo nuevo para nosotros. Tratemos de verlo de forma sencilla:
+
+ \codigofuente{TeX}{Un instrumento funcional}{codigo/LiveInstr}
+ 
+En primer lugar vamos a definir un bloque de instrumento llamado \textbf(Add). En \textbf(Add) vamos a definir dos ondas sonoras mediante el opcode \textbf{oscili(xamp, xcps)} donde \textbf{xamp} es la amplitud de onda y \textbf{xcps} su frecuencia.La primerá se llamará |textbf{alfo} y le entregaremos como parámetros de entrada dos valores aleatorios mediante el opcode \textbf{random(min, max)}. 
+
+La segunda onda será \textbf{asig} cuyos valores de entrada dependerán de \textbf{alfo} y de otras operaciones realizadas a la onda bajo un criterio musical (Se invita a experimentar realizando diferentes oprecaiones para encontrar la síntesis de sonido que más de adecúe al gusto propio).
+
+Una vez consigamos el sonido deseado vamos a crear el instrumento \textbf{Note}, en el que generando valores aleatorios de frecuencia, ejecutaremos el instrumento \textbf{Add} siempre en una misma tonalidad musical gracias al opcode \textbf{in\_ scale(ioct, idegree)} que genera una frecuencia válida de entre las notas pertenecientes a la octava \textbf{ioct}.
+
+Al ejecutar la línea \textbf{(schedule("Note", 0, 0))} se generará una nota con las características antes descritas y que sonará durante 20 segundos mientras hace ``fadeout'' (su volumen se reduce progresivamente) debido a que en la línea 5 del código empezamos a reducir el valor de la onda de manera exponencial.
+
+Ya tenemos nuestro instrumento listo, veamos cómo sacarle provecho.
+
+\subsection{Figuras rítmicas como valor hexadecimal}
+
+Vamos a hacer un uso básico del opcode \textbf{hexplay()} para usar el instrumento que hemos creado. 
+
+Para usar \textbf{hexplay()} tendremos que pensar en generar figuras rítmicas mediante valores hexadecimales, teniendo en mente que al pasar el valor hexadecimal a binario cada 1 será un tick en el que se ejecutará nuestro \textbf{schedule()} y cada 0 será silencio.
+
+Tabla de conversión de valores hexadecimales:
+\begin{center}
+ \begin{tabular}{||c c c c c c c c c c c||} 
+ \hline
+ HEX & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+ \hline
+ BIN & 0000 & 0001 & 0010 & 0011 & 0100 & 0101 & 0110 & 0111 & 1000 & 1001 \\ 
+ \hline
+ DEC & 00 & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09\\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+ \begin{tabular}{||c c c c c c c||} 
+ \hline
+ HEX & A & B & C & D & E & F \\
+ \hline
+ BIN & 1010 & 1011 & 1100 & 1101 & 1110 & 1111\\ 
+ \hline
+ DEC & 10 & 11 & 12 & 13 & 14 & 15 \\
+ \hline
+\end{tabular}
+\end{center}
+\pagebreak
+\codigofuente{TeX}{Uso del hexadecimal para las figuras rítmicas}{codigo/HexRitmoEx}
+
+\subsection{Ideas musicales con nuestro instrumento}
+
+\codigofuente{TeX}{Usando hexplay() con nuestro instrumento}{codigo/HexConInstr}
+
+ 
+
