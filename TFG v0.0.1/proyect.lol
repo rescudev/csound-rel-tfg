@@ -22,9 +22,10 @@
 \contentsline {lstlisting}{\numberline {3.9}Ejemplo de una macro simple}{24}%
 \contentsline {lstlisting}{\numberline {3.10}Ejemplo de una macro con argumentos}{24}%
 \contentsline {lstlisting}{\numberline {3.11}Ejemplo de una macro en \textless CsScore\textgreater }{25}%
-\contentsline {lstlisting}{\numberline {4.1}Sintaxis base del hexplay()}{27}%
-\contentsline {lstlisting}{\numberline {4.2}Ejemplo de schedule()}{27}%
-\contentsline {lstlisting}{\numberline {4.3}Un instrumento funcional}{28}%
-\contentsline {lstlisting}{\numberline {4.4}Uso del hexadecimal para las figuras rítmicas}{29}%
-\contentsline {lstlisting}{\numberline {4.5}Usando hexplay() con nuestro instrumento}{30}%
-\contentsline {lstlisting}{\numberline {5.1}Ejemplo básico de un widget}{33}%
+\contentsline {lstlisting}{\numberline {4.1}Sintaxis base de ftgen}{26}%
+\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{28}%
+\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{28}%
+\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{29}%
+\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{30}%
+\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{31}%
+\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{34}%

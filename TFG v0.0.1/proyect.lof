@@ -13,19 +13,20 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces La duración de los K-Cycles}}{17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Versiones disponibles}}{31}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pasos de la instalación}}{32}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Ejemplos disponibles en el IDE}}{32}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{33}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Las opciones de exportación del IDE}}{34}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Onda Senoidal}}{36}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Periodo y Amplitud}}{37}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Ejemplo de sampleo de una onda}}{38}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{39}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces El envolvente ADSR de una onda}}{40}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Versiones disponibles}}{32}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pasos de la instalación}}{33}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Ejemplos disponibles en el IDE}}{33}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{34}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Las opciones de exportación del IDE}}{35}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Onda Senoidal}}{37}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Periodo y Amplitud}}{38}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Ejemplo de sampleo de una onda}}{39}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{40}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces El envolvente ADSR de una onda}}{41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Crear acceso directo a un PWA}}{47}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Crear acceso directo a un PWA}}{48}%
 \addvspace {10\p@ }
 \contentsfinish 
