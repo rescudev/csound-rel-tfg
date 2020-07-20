@@ -14,19 +14,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Versiones disponibles}}{32}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pasos de la instalación}}{33}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Ejemplos disponibles en el IDE}}{33}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{34}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Las opciones de exportación del IDE}}{35}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Versiones disponibles}}{33}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pasos de la instalación}}{34}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Ejemplos disponibles en el IDE}}{34}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{35}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Widget: Form}}{36}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Widget: CheckBox}}{37}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Widget: Button}}{37}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Widget: Keyboard}}{38}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Widget: Signal Display}}{38}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Las opciones de exportación del IDE}}{39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Onda Senoidal}}{37}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Periodo y Amplitud}}{38}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Ejemplo de sampleo de una onda}}{39}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{40}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces El envolvente ADSR de una onda}}{41}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Onda Senoidal}}{40}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Periodo y Amplitud}}{41}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Ejemplo de sampleo de una onda}}{42}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{43}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces El envolvente ADSR de una onda}}{44}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Crear acceso directo a un PWA}}{48}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Crear acceso directo a un PWA}}{51}%
 \addvspace {10\p@ }
 \contentsfinish 

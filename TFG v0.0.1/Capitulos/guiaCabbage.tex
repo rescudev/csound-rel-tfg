@@ -18,7 +18,7 @@ Pasos para la instalación en Windows y OSX:
  \item Acudir a la página \url{https://cabbageaudio.com/download/} donde encontraremos los enlaces de descarga.
  \item Seleccionar la versión adecuada para nuestro sistema, en este caso Windows u OSX.
  
-  \figura{0.6}{img/C.1-InstaVersion}{Versiones disponibles}{fig:InstCabbage}{}
+ \figura{0.6}{img/C.1-InstaVersion}{Versiones disponibles}{fig:InstCabbage}{}
   
  \item Ejecutamos el archivo descargado y seguimos los pasos de instalación. Para los instaladores de Windows y OSX se incluye una instalación automática del lenguaje Csound en nuestro sistema por lo que una vez instalado Cabbage todo estará listo para usar.
  \figura{0.6}{img/C.2-InstaPasos}{Pasos de la instalación}{fig:InstPasos}{}
@@ -51,7 +51,7 @@ Se trata de cuatro plantillas que nos aporta Cabbage para facilitarnos el desarr
 
 A diferencia del resto de etiquetas, la etiqueta \textless Cabbage\textgreater es exclusiva al IDE y proporciona funcionalidades para el diseño de la interfaz de usuario. Veamos algunos de sus usos:
 
-\subsection{Los Witgets}
+\subsection{Los Widgets}
 
 Llamaremos a los diferentes elementos de interfaz gráfica que aporta Cabbage, widgets. Podemos dividirlos en dos tipos: interactivos (botones, sliders, barras de selección, etc...) y no interactivos (imágenes, indicadores, etc...).
 
@@ -64,6 +64,50 @@ En nuestra figura vemos que para hacer uso de un widget empezamos por escribir s
 Podemos usar también el identificador \textbf{range(min, max, value, skew, incr)}. Sus valores min y max marcan el mínimo y máximo valor del slider en cuestión, el resto de parámetros son opcionales. \textbf{value} indica el valor inicial del slider. \textbf{skew} puede usarse para determinar la salida de datos del slider de forma no lineal, su valor predeterminado es 1 pero al darle un valor por ejemplo de 0.5 conseguiríamos una salida de datos exponencial. \textbf{incr} determina el tamaño de los pasos incrementales que da el slider a usarlo, por ejemplo con un valor 0.4, de un valor cualquiera del slider a sus adyacentes habría necesariamente una distacia en valor a 0.4.
 
 En nuestro ejemplo hemos creado un slider cuyo rango de valores va del 0 al 1 y cuyo valor inicial es 0.5.
+
+\section{Algunos Widgets útiles}
+Veamos algunos de los widgets más usados en Cabbage:
+\subsection{Form}
+El widget \textbf{Form} nos sirve para crear la ventana de nuestra interfaz de usuario. Sobre este widget colocaremos el resto de elementos de nuestra interfaz.
+\figura{0.4}{img/C.6-formExample}{Widget: Form}{fig:NewFileCabbage}{}
+
+Este es un ejemplo básico de \textbf{Form}:
+\codigofuente{TeX}{Ejemplo de widget: Form}{codigo/FormEx}
+Siendo \textbf{size()} el tamaño de la ventana, \textbf{caption()} el String que muestra la cabecera de la ventana, \textbf{pluginID()} el identificador del widget y \textbf{colour()} su color en formato rgb.
+
+\pagebreak
+\subsection{Check Box}
+El widget \textbf{CheckBox} nos sirve para marcar una casilla que por ejemplo active y desactive la generación de una de las ondas de salida de nuestros instrumentos.
+\figura{0.4}{img/C.7-CheckBox}{Widget: CheckBox}{fig:NewFileCabbage}{}
+
+Este es un ejemplo básico de \textbf{CheckBox}:
+\codigofuente{TeX}{Ejemplo de widget: CheckBox}{codigo/CheckBoxEx}
+Siendo \textbf{bounds()} la posición y tamaño del widget en la ventana, \textbf{channel()} el identificador que vinculará el \textbf{checkBox} con una variable de nuestro código y \textbf{text()} El texto que aparece junto al \textbf{CheckBox} mientras esté y no esté pulsado.
+
+\subsection{Button}
+El widget \textbf{Button} crea un botón al que podemos dar cualquier tipo de uso como por ejemplo el de inicio de grabación o activación de algún instrumento desde un instante determinado.
+\figura{0.4}{img/C.8-Button}{Widget: Button}{fig:NewFileCabbage}{}
+
+Este es un ejemplo básico de \textbf{Button}:
+\codigofuente{TeX}{Ejemplo de widget: Button}{codigo/ButtonEx}
+Siendo sus funciones de funcionamiento análogo a lo visto previamente en el \textbf{CheckBox}.
+
+\pagebreak
+\subsection{Keyboard}
+El widget \textbf{Keyboard} nos sirve para desplegar un teclado de formato occidental. Es realmente útil si queremos programar un instrumento sintetizador o si queremos tener una vía rápida de ejecutar samples de forma visual y práctica.
+\figura{0.4}{img/C.9-Keyboard}{Widget: Keyboard}{fig:NewFileCabbage}{}
+
+Este es un ejemplo básico de \textbf{Keyboard}:
+\codigofuente{TeX}{Ejemplo de widget: Keyboard}{codigo/KeyboardEx}
+Siendo \textbf{identchannel()} el identificador del widget respecto al código Csound de manera análoga al funcionamiento de \textbf{channel()}.
+
+\subsection{Signal Display}
+El widget \textbf{SignalDisplay} nos servirá, como su propio nombre indica, para mostrar señales de onda de manera visual.
+\figura{0.4}{img/C.10-SignalDisplay}{Widget: Signal Display}{fig:NewFileCabbage}{}
+
+Este es un ejemplo básico de \textbf{SignalDisplay}:
+\codigofuente{TeX}{Ejemplo de widget: SignalDisplay}{codigo/SignalDisplayEx}
+Siendo \textbf{displaytype()} el tipo de onda a mostrar de entre las siguientes opciones: 'spectrogram', 'spectroscope', 'waveform' y 'lissajous'. Y \textbf{signalvariable()} donde instroduciremos la variable con la onda que queremos que se muestre.
 
 \section{Exportando nuestros instrumentos}\label{sec:ExportCabbage}
 

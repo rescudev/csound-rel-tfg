@@ -12,9 +12,33 @@ Su sintaxis base es:
 
 Siendo \textbf{gir} una tabla de al menos 100 posiciones, \textbf{ifn} el número de la tabla. El resto de valores se corresponden con los argumentos \textbf{p2}, \textbf{p3}, \textbf{p4} y \textbf{p5} del \textbf{f Statement} que explicaremos a continuación.
 
-\section{Filtros}
+\subsection{El f statement}
+
+Coloca valores en una tabla de scores para usar nuestros instrumentos. Está implícita en \textbf{ftgen}.
+
+Esta es la sintaxis base:
+
+\codigofuente{TeX}{Sintaxis base de ftgen}{codigo/fStateSyntax}
+
+Siendo \textbf{p1} el número de tabla, \textbf{p2} tiempo de activación para generar datos, \textbf{p3} tamaño de la tabla, \textbf{p4} nombre de la rutina \textbf{GEN} de generación de datos y \textbf{p5 ... PMAX} que dependerán del \textbf{GEN} que estemos usando.
+
+Veamos un ejemplo en el que rellenamos una tabla (f1) de tamaño 5 con ceros: \textbf{( f1 0 5 2 0\ )}
+
+\section{Delay}
+http://write.flossmanuals.net/csound/d-delay-and-feedback/
+
+
+\section{Modulación de frecuencia}
+http://write.flossmanuals.net/csound/d-frequency-modulation/
+\section{AM RM WAVESHAPING}
+http://write.flossmanuals.net/csound/f-am-rm-waveshaping/
+\section{AMPLITUDE AND RING MODULATION}
+http://write.flossmanuals.net/csound/c-amplitude-and-ring-modulation/
 \section{Filtros de onda}
-\section{Filtros}
+http://write.flossmanuals.net/csound/c-filters/
+\section{Reverberación}
+http://write.flossmanuals.net/csound/e-reverberation/
+
 \subsection{sub}
 
 
