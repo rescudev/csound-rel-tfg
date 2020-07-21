@@ -22,7 +22,7 @@ Esta es la sintaxis base:
 
 Siendo \textbf{p1} el número de tabla, \textbf{p2} tiempo de activación para generar datos, \textbf{p3} tamaño de la tabla, \textbf{p4} nombre de la rutina \textbf{GEN} de generación de datos y \textbf{p5 ... PMAX} que dependerán del \textbf{GEN} que estemos usando.
 
-Veamos un ejemplo en el que rellenamos una tabla (f1) de tamaño 5 con ceros: \textbf{( f1 0 5 2 0\ )}
+Este es un ejemplo en el que rellenamos una tabla (f1) de tamaño 5 con ceros: \textbf{( f1 0 5 2 0\ )}
 
 \section{Delay y Feedback}
 
@@ -80,12 +80,33 @@ Una vez sabido el funcionamiento básico de cada opcode presente veamos paso por
 \codigofuente{TeX}{Ejemplo completo del efecto Delay}{codigo/delayCompleto}
 
 Se invita al lector a que experimente con diversos valores en las variables mencionadas para comprender en mayor medida el concepto de delay y que posteriormente visite las referencias del documento en caso querer profundizar.
+\pagebreak
 
-\section{Modulación de frecuencia}
-http://write.flossmanuals.net/csound/d-frequency-modulation/
-\section{AM RM WAVESHAPING}
+\section{FM: La modulación de frecuencia}
+
+La modulación de frecuencia, tambien conocida como \textbf{FM (Frequency Modulation)} es la categoría de los efectos de sonido basados en la modificación de la frecuencia de la onda de sonido original. Un claro ejemplo de ello es el efecto de vibrato.
+
+\subsection{El vibrato}
+
+El efecto \textbf{Vibrato} en el sonido consiste en modificar la frecuencia (por tanto el tono) de la onda sonora de forma periódica y constante  con valores cercanos al original. Se crea así una sensación de ``vibración''\ del sonido. 
+
+Veamos un ejemplo de \textbf{vibrato} implementado en Csound.
+\codigofuente{TeX}{Ejemplo completo del efecto Vibrato}{codigo/vibratoCompleto}
+
+Prestemos especial atención a las líneas 12 y 13 de la figura anterior. En primer lugar la línea \textbf{(aMod poscil 10, 5, 1)} produce una onda de 10Hz de amplitud y 5Hz de frecuencia. Esta será nuestra onda moduladora, la que aplicaremos sobre el sonido al que queremos añadir el efecto vibrato.
+
+En segundo lugar tenemos la línea \textbf{(aCar poscil 0.3, 440+aMod, 1)} que produce una onda de 440Hz de frecuencia y a la que sumamos el valor de \textbf{aMod}, nuestro modulador, que afecta al valor de la frecuencia de \textbf{aCar} haciéndolo oscilar periódicamente entre 450Hz y 430Hz.
+Si sustituimos la línea anterior por: \textbf{(aCar poscil 0.3, 440, 1)} comprobaremos que deja de producirse el efecto \textbf{vibrato}.
+
+Como podemos observar el efecto vibrato simple puede lograrse fácilmente en Csound, pero se invita a  experimentar con los valores de \textbf{aMod} para comprobar cómo afecta una onda moduladora con distintos valores de amplitud y frecuencia.
+\pagebreak
+
+\section{AM: La modulación de amplitud}
+
+\section{RM: La modulación en anillo}
+
+\section{WAVESHAPING}
 http://write.flossmanuals.net/csound/f-am-rm-waveshaping/
-\section{AMPLITUDE AND RING MODULATION}
 http://write.flossmanuals.net/csound/c-amplitude-and-ring-modulation/
 \section{Filtros de onda}
 http://write.flossmanuals.net/csound/c-filters/

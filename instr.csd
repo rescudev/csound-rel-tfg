@@ -1,32 +1,27 @@
-<Cabbage>
-form caption("Signaldisplay Example") size(400, 300), colour(220, 220, 220), pluginID("def1")
-checkbox bounds(116, 38, 150, 50), channel("checkbutton1"), text("Enable Tone", "Disable Tone")
-</Cabbage>
 <CsoundSynthesizer>
 <CsOptions>
--n -d -+rtmidi=NULL -M0 -m0d --displays
+-o dac
 </CsOptions>
 <CsInstruments>
-; Initialize the global variables. 
-sr = 44100
+
+sr = 48000
 ksmps = 32
-nchnls = 2
+nchnls = 1
 0dbfs = 1
 
-giWave ftgen 1, 0, 4096, 10, 1, 1, 1, 1 
-seed 0 
-;basic usage
 instr 1
-    aSig randi 1, 200
-    display aSig, .5, 1   
-endin      
+aRaise expseg 2, 20, 100
+aModSine poscil 0.5, aRaise, 1
+aDCOffset = 0.5    ; we want amplitude-modulation
+aCarSine poscil 0.3, 440, 1
+out aCarSine*(aModSine + aDCOffset)
+endin
 
 </CsInstruments>
 <CsScore>
-;causes Csound to run for about 7000 years...
-f0 z
-;starts instrument 1 and runs it for a week
-i1 0 z
-;i2 0 z
+f 1 0 1024 10 1
+i 1 0 25
+e
 </CsScore>
 </CsoundSynthesizer>
+; written by Alex Hofmann (Mar. 2011)
