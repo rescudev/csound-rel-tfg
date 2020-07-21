@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'Indice general}{II}%
-\contentsline {chapter}{\'{I}ndice de figuras}{V}%
-\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{VI}%
+\contentsline {chapter}{\'{I}ndice de figuras}{VI}%
+\contentsline {chapter}{{\'I}ndice de c{\'o}digo}{VII}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}%
 \contentsline {section}{\numberline {1.1}¿Qué es Csound?}{1}%
 \contentsline {section}{\numberline {1.2}¿Por qué usar Csound?}{1}%
@@ -64,10 +64,9 @@
 \contentsline {section}{\numberline {4.4}AM: La modulación de amplitud}{30}%
 \contentsline {section}{\numberline {4.5}RM: La modulación en anillo}{30}%
 \contentsline {section}{\numberline {4.6}WAVESHAPING}{30}%
-\contentsline {section}{\numberline {4.7}AMPLITUDE AND RING MODULATION}{30}%
-\contentsline {section}{\numberline {4.8}Filtros de onda}{30}%
-\contentsline {section}{\numberline {4.9}Reverberación}{30}%
-\contentsline {subsection}{\numberline {4.9.1}sub}{30}%
+\contentsline {section}{\numberline {4.7}Filtros de onda}{30}%
+\contentsline {section}{\numberline {4.8}Reverberación}{30}%
+\contentsline {subsection}{\numberline {4.8.1}sub}{30}%
 \contentsline {chapter}{\numberline {5}Haciendo Música en Directo}{31}%
 \contentsline {section}{\numberline {5.1}Live Csound}{31}%
 \contentsline {subsection}{\numberline {5.1.1}Atajos de teclado}{31}%
