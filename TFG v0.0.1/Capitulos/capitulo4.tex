@@ -24,9 +24,62 @@ Siendo \textbf{p1} el número de tabla, \textbf{p2} tiempo de activación para g
 
 Veamos un ejemplo en el que rellenamos una tabla (f1) de tamaño 5 con ceros: \textbf{( f1 0 5 2 0\ )}
 
-\section{Delay}
-http://write.flossmanuals.net/csound/d-delay-and-feedback/
+\section{Delay y Feedback}
 
+Empecemos por explicar en qué consisten estos efectos. 
+
+\subsection{El Delay}
+Podemos definir el \textbf{Delay} como un buffer de repetición de nuestra onda que va poniendo en cola los sonidos que van entrando y según las características de nuestro \textbf{Delay} los saca de una manera determinada, conformando así algunos de los efectos más conocidos en la producción musical. 
+
+El uso más básico del \textbf{Delay} es el clásico efecto ``eco'' pero también puede servirnos para implementar el Chorus, Flanging, Cambio tonal y otros filtros de onda.
+
+Respecto a Csound existen varios opcodes dedicados al \textbf{Delay}, como \textbf{delayr} y \textbf{delayw}.
+
+Empecemos por la diferencia en los nombres de estos opcodes que se usan en conjunto puesto que \textbf{delayr} es de lectura (read) y \textbf{delayw} es de escritura (write) del buffer de delay. 
+
+Veamos un ejemplo básico de uso:
+
+\codigofuente{TeX}{Sintaxis delayr y delayw}{codigo/delaySyntax}
+
+Donde \textbf{aSignIn} es la señal de entrada a la que queremos aplicar el delay y \textbf{aSignOut} es la señal de salida a la que ya se ha aplicado el efecto.
+El '1' que aparece como argumento es la cantidad de segundos que mide el buffer, en este caso un segundo y el hecho de definir aquí la longitud del buffer implica que tengamos que definir primero la variable de salida antes y después la variable de entrada, lo cual es en principio un poco confuso.
+
+\subsection{El Feedback}
+
+El delay tal y como lo hemos definido anteriormente acaba pareciendo una simple única repetición atenuada del sonido de entrada. Para encontrar el clásico sonido al que en el mundo de la edición musical nos referimos como delay debemos conocer el concepto de \textbf{feedback}.
+
+El \textbf{feedback} será un valor residual de la señal del buffer que usaremos como parámetro de entrada del delay. Lo normal es que este valor decrezca con cada paso por el buffer de manera que el sonido acabe pareciendo cada vez más distante hasta apagarse por completo y no se produzca un bucle infinito.
+
+Respecto a Csound podremos implementar este concepto de manera sencilla con una variable.
+
+\subsection{Ejemplo del efecto Delay}
+
+Veamos a continuación el código de un efecto delay con feedback y analicémoslo con el objetivo de comprenderlo mejor:
+
+En primer lugar podemos observar tres opcodes que no habíamos visto hasta el momento. \textbf{loopseg} en la línea 16, \textbf{randomh} en la línea 17 y \textbf{interp} en la línea 18. 
+
+Expliquemos brevemente sus funcionamientos:
+
+\begin{itemize}
+ \item \textbf{loopseg}: Genera una señal de control que puede usarse como envelope o envoltura. Tantovariable de salida como variables de entradas serán de tipo k-rate.
+ \item \textbf{randomh}: Genera valores aleatorios al igual que el opcode \textbf{random} pero mantiene estos valores guardados durante un periodo determinado de tiempo.
+ \item \textbf{interp}: Sirve para convertir una variable de tipo k-rate a una variable de tipo a-rate.
+\end{itemize}
+
+Una vez sabido el funcionamiento básico de cada opcode presente veamos paso por paso lo que  se hace en el ejemplo:
+
+\begin{itemize}
+ \item \textbf{Línea 13}: Hacemos uso de \textbf{ftgen} para tener preparada nuestra onda senuidad.
+ \item \textbf{Líneas 15 a 19}: Definimos las primeras líneas de nuestro instrumento. El uso de estas líneas es el de acabar generando \textbf{aSig}, es decir, nuestra onda de entrada a la que aplicaremos el delay.
+ \item \textbf{Línea 21}: Definimos \textbf{iFback} que tal y como explicamos en secciones anteriores hará las veces de valor de feedback, en este caso 0.7 (de ser un valor menor nuestro delay se apagaría antes).
+ \item \textbf{Líneas 22 a 26}: Hacemos uso de \textbf{delayr} y \textbf{delayw}. Si prestamos especial atención a la línea 23 veremos que nuestro valor de entrada, \textbf{(aSig(aBufOut*iFdback))}, es efectivamente una operación en la que participan nuestra señal, su propio valor de salida (siguiente en el buffer) y el valor de feedback que acabará determinando el tiempo restante del delay.
+ 
+ Como vemos también en la línea 25, el sonido que nuestro instrumento producirá será una mezcla de la onda de salida con el valor de buffer.
+\end{itemize}
+
+\codigofuente{TeX}{Ejemplo completo del efecto Delay}{codigo/delayCompleto}
+
+Se invita al lector a que experimente con diversos valores en las variables mencionadas para comprender en mayor medida el concepto de delay y que posteriormente visite las referencias del documento en caso querer profundizar.
 
 \section{Modulación de frecuencia}
 http://write.flossmanuals.net/csound/d-frequency-modulation/

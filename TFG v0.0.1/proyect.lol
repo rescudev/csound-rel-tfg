@@ -24,14 +24,16 @@
 \contentsline {lstlisting}{\numberline {3.11}Ejemplo de una macro en \textless CsScore\textgreater }{25}%
 \contentsline {lstlisting}{\numberline {4.1}Sintaxis base de ftgen}{26}%
 \contentsline {lstlisting}{\numberline {4.2}Sintaxis base de ftgen}{26}%
-\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{29}%
-\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{29}%
-\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{30}%
-\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{31}%
-\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{32}%
-\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{35}%
-\contentsline {lstlisting}{\numberline {6.2}Ejemplo de widget: Form}{36}%
-\contentsline {lstlisting}{\numberline {6.3}Ejemplo de widget: CheckBox}{37}%
-\contentsline {lstlisting}{\numberline {6.4}Ejemplo de widget: Button}{37}%
-\contentsline {lstlisting}{\numberline {6.5}Ejemplo de widget: Keyboard}{38}%
-\contentsline {lstlisting}{\numberline {6.6}Ejemplo de widget: SignalDisplay}{38}%
+\contentsline {lstlisting}{\numberline {4.3}Sintaxis delayr y delayw}{27}%
+\contentsline {lstlisting}{\numberline {4.4}Ejemplo completo del efecto Delay}{28}%
+\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{31}%
+\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{31}%
+\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{32}%
+\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{33}%
+\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{34}%
+\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{37}%
+\contentsline {lstlisting}{\numberline {6.2}Ejemplo de widget: Form}{38}%
+\contentsline {lstlisting}{\numberline {6.3}Ejemplo de widget: CheckBox}{39}%
+\contentsline {lstlisting}{\numberline {6.4}Ejemplo de widget: Button}{39}%
+\contentsline {lstlisting}{\numberline {6.5}Ejemplo de widget: Keyboard}{40}%
+\contentsline {lstlisting}{\numberline {6.6}Ejemplo de widget: SignalDisplay}{40}%
