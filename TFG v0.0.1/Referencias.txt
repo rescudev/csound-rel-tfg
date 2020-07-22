@@ -33,4 +33,6 @@ https://cabbageaudio.com/docs/cabbage_syntax/
 
 https://www.britannica.com/science/envelope-sound
 
+https://www.quora.com/Is-it-possible-to-generate-a-sine-wave-of-different-positive-and-negative-amplitude
+
 https://www.musicianonamission.com/gain-vs-volume/

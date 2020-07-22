@@ -103,7 +103,33 @@ Como podemos observar el efecto vibrato simple puede lograrse fácilmente en Cso
 
 \section{AM: La modulación de amplitud}
 
+La modulación de la amplitud de onda o \textbf{AM (Amplitude Modulation)} consiste en hacer modificaciones en la amplitud de una onda, esto provoca lógicamente un aumento o disminución del volumen del sonido producido. Uno de los ejemplos más claros de efecto basado en el \textbf{AM} es el efecto trémolo.
+
+\subsection{El trémolo}
+
+Es fácil confundir el efecto trémolo con el vibrato pero como acabamos de describir, el efecto trémolo se basa en modificaciones de amplitud y no de frecuencia de la onda. No obstante, para implementar este efecto en Csound procederemos de manera similar haciendo uso de una variable moduladora(una segunda onda) que aplicaremos sobre sobre el sonido al que queremos aplicar el trémolo. 
+
+Veamos un ejemplo:
+
+\codigofuente{TeX}{Ejemplo completo del efecto Trémolo}{codigo/tremoloCompleto}
+
+Empecemos por explicar el opcode \textbf{expseg} que vemos por primera vez. Este opcode con sintaxis \textbf{(ares expseg ia, idur1, ib)} genera un valor que cambia exponecialmente a lo largo del tiempo, es decir, nos da un valor inicial \textbf{ia} que aumenta su valor exponencialmente a los largo de \textbf{idur1} segundos hasta llegar al valor \textbf{ib}. Aunque este valor sobrepase a \textbf{ib}, seguirá aumentando en el mismo ratio de exponecialidad hasta que paremos su ejecución. Es debido a este opcode y su valor \textbf{aRaise} en el ejemplo que podemos oír un aumento de la ``rapidez'' del trémolo a medida que pasa el tiempo.
+
+Observemos detenidamente las líneas 14, 16 y 17 de la figura. Tenemos por una parte la onda \textbf{aModSine} que será nuestro modulador de amplitud y por otro nuestra onda original y simple de 440Hz \textbf{aCarSine}. Como vemos en la línea 17 aplicaremos un cálculo simple de multiplicación para que las amplitudes, \textbf{0.5} de \textbf{aModSine} y \textbf{0.3} de \textbf{aCarSine} se sumen y oigamos el efecto trémolo a una frecuencia de \textbf{aRaise}. Se invita al lector a ejecutar este mismo ejemplo sustituyendo la variable \textbf{aRaise} en la línea 14 por el valor fijo 1 y se podrá observar cómo el efecto trémolo tendrá una duración constante de exactamente un segundo.
+
+Por último en la línea 15 tenemos la variable \textbf{aDCOffset} que determina el DC Offset de la onda. Veamos con un poco más de profundidad este concepto.
+
+\subsection{DC Offset}
+El \textbf{DC Offset} es un valor añadido a la onda que en términos gráficos podemos decir que la ``desplaza'' respecto del valor 0. 
+ \figura{0.6}{img/4.1-Offset}{El DC Offset}{fig:Offset}{}
+ 
+El DC Offset tiene muchos usos cuando es intencionado como el de prevenir el clipping, pero en algunos casos se produce de forma indeseada por causas ajenas.
+ 
 \section{RM: La modulación en anillo}
+
+La modulación en anillo o \textbf{RM (Ring-Modulation)} es un caso especial de modulación de amplitud en el que no hacemos uso del \textbf{DC Offset}. De esta manera diremos que la amplitud variará entre +1 y -1 (respecto a 0dbfs).
+
+Para tener un ejemplo básico de esto basta con que volvamos a la figura de código 4.6 y demos a \textbf{aDCOffset} un valor de 0.
 
 \section{WAVESHAPING}
 http://write.flossmanuals.net/csound/f-am-rm-waveshaping/
