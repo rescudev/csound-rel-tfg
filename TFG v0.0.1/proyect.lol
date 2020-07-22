@@ -28,14 +28,14 @@
 \contentsline {lstlisting}{\numberline {4.4}Ejemplo completo del efecto Delay}{28}%
 \contentsline {lstlisting}{\numberline {4.5}Ejemplo completo del efecto Vibrato}{29}%
 \contentsline {lstlisting}{\numberline {4.6}Ejemplo completo del efecto Trémolo}{30}%
-\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{33}%
-\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{33}%
-\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{34}%
-\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{35}%
-\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{36}%
-\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{39}%
-\contentsline {lstlisting}{\numberline {6.2}Ejemplo de widget: Form}{40}%
-\contentsline {lstlisting}{\numberline {6.3}Ejemplo de widget: CheckBox}{41}%
-\contentsline {lstlisting}{\numberline {6.4}Ejemplo de widget: Button}{41}%
-\contentsline {lstlisting}{\numberline {6.5}Ejemplo de widget: Keyboard}{42}%
-\contentsline {lstlisting}{\numberline {6.6}Ejemplo de widget: SignalDisplay}{42}%
+\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{34}%
+\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{34}%
+\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{35}%
+\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{36}%
+\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{37}%
+\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{40}%
+\contentsline {lstlisting}{\numberline {6.2}Ejemplo de widget: Form}{41}%
+\contentsline {lstlisting}{\numberline {6.3}Ejemplo de widget: CheckBox}{42}%
+\contentsline {lstlisting}{\numberline {6.4}Ejemplo de widget: Button}{42}%
+\contentsline {lstlisting}{\numberline {6.5}Ejemplo de widget: Keyboard}{43}%
+\contentsline {lstlisting}{\numberline {6.6}Ejemplo de widget: SignalDisplay}{43}%
