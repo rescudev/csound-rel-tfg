@@ -1,0 +1,42 @@
+<CsOptions>
+-odac
+</CsOptions>
+<CsInstruments>
+
+sr = 44100
+ksmps = 32
+nchnls = 1
+0dbfs = 1
+
+  instr 1
+        prints       "tone%n"    
+aSig    vco2         0.5, 150    
+kcf     expon        10000,p3,20 
+aSig    tone         aSig, kcf   
+        out          aSig        
+  endin
+
+  instr 2
+        prints       "butlp%n"   
+aSig    vco2         0.5, 150    
+kcf     expon        10000,p3,20 
+aSig    butlp        aSig, kcf   
+        out          aSig       
+  endin
+
+  instr 3
+        prints       "moogladder%n" 
+aSig    vco2         0.5, 150      
+kcf     expon        10000,p3,20   
+aSig    moogladder   aSig, kcf, 0.9
+        out          aSig        
+  endin
+
+</CsInstruments>
+<CsScore>
+i 1 0  3; tone
+i 2 4  3; butlp
+i 3 8  3; moogladder
+e
+</CsScore>
+</CsoundSynthesizer>

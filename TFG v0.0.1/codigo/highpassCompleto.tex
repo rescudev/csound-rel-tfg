@@ -1,0 +1,43 @@
+<CsoundSynthesizer>
+<CsOptions>
+-odac 
+</CsOptions>
+<CsInstruments>
+
+sr = 44100
+ksmps = 32
+nchnls = 1
+0dbfs = 1
+
+  instr 1
+        prints       "atone%n"     
+aSig    vco2         0.2, 150      
+kcf     expon        20, p3, 20000 
+aSig    atone        aSig, kcf     
+        out          aSig         
+  endin
+
+  instr 2
+        prints       "buthp%n"     
+aSig    vco2         0.2, 150     
+kcf     expon        20, p3, 20000
+aSig    buthp        aSig, kcf    
+        out          aSig       
+  endin
+
+  instr 3
+        prints       "bqrez(mode:1)%n"
+aSig    vco2         0.03, 150        
+kcf     expon        20, p3, 20000    
+aSig    bqrez        aSig, kcf, 30, 1 
+        out          aSig         
+  endin
+
+</CsInstruments>
+<CsScore>
+i 1 0  3 ; atone
+i 2 5  3 ; buthp
+i 3 10 3 ; bqrez(mode 1)
+e
+</CsScore>
+</CsoundSynthesizer>

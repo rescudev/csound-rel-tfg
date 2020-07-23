@@ -1,13 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  22 JUL 2020 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.15)  23 JUL 2020 19:02
 entering extended mode
 **./proyect.tex
 (proyect.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-05-15> (pclass.cls
 Document Class: pclass 2008/09/08 PFC class Universidad de Sevilla
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\book.cls"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\boo
+k.cls"
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\bk11.clo"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk1
+1.clo"
 File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -23,17 +27,21 @@ File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry
+\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\
+ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\
+iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count176
@@ -49,36 +57,44 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry
+\geometry.cfg"))
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen143
 \Gin@req@width=\dimen144
-)
-(amsmath.sty
+) (amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\
+amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\
+amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen145
@@ -86,7 +102,8 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen146
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\
+amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count179
@@ -174,7 +191,8 @@ Package: amsthm 2004/08/06 v2.20
 ) (amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
+\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -186,20 +204,25 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) ("D:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
+)
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.
+sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("D:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\
+babel.sty"
 Package: babel 2020/05/13 3.44 The Babel package
 
-("D:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\
+babel.def"
 File: babel.def 2020/05/13 3.44 Babel common definitions
 \babel@savecnt=\count191
 \U@D=\dimen154
 \l@babelnohyphens=\language78
 
-("D:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\
+txtbabel.def")
 \bbl@readstream=\read2
 )
 \bbl@dirlevel=\count192
@@ -207,7 +230,9 @@ File: babel.def 2020/05/13 3.44 Babel common definitions
 *************************************
 * Local config file bblopts.cfg used
 *
-("D:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bb
+lopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 ) (spanish.ldf
@@ -221,14 +246,14 @@ Package babel Info: Making < an active character on input line 626.
 Package babel Info: Making > an active character on input line 626.
 Package babel Info: Making ' an active character on input line 652.
 ))
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\helvet.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\h
+elvet.sty"
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 ) (symbols.sty
 Package: symbols 2002/12/11 Personal macros for common math symbols
 \uni@fixwidth=\skip55
 \uni@truewidth=\skip56
-)
-(titlesec.sty
+) (titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box47
 \beforetitleunit=\skip57
@@ -244,7 +269,8 @@ File: ttlps.def 2007/08/12
 )) (titletoc.sty
 Package: titletoc 2007/08/12 v1.6 TOC entries
 \ttl@leftsep=\dimen160
-) (tocbibind.sty
+)
+(tocbibind.sty
 Package: tocbibind 2003/03/13 v1.5g extra ToC listings
 
 
@@ -273,10 +299,13 @@ English documentation          <92/09/04> (FMi)
 \multicolbaselineskip=\skip60
 \partial@page=\box49
 \last@line=\box50
-) ("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
+)
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+\color.sty"
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
@@ -293,7 +322,7 @@ Package color Info: Driver file: pdftex.def on input line 147.
 \lst@newlines=\count272
 \lst@lineno=\count273
 \lst@maxwidth=\dimen169
-(lstmisc.sty
+ (lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count274
 \lst@skipnumbers=\count275
@@ -310,7 +339,8 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibparsep=\skip63
 \bibitemsep=\skip64
 \biblabelsep=\skip65
-) (fancyhdr.sty
+)
+(fancyhdr.sty
 \fancy@headwidth=\skip66
 \f@ncyO@elh=\skip67
 \f@ncyO@erh=\skip68
@@ -326,21 +356,26 @@ File: block.tss 2007/08/12
 \c@thm=\count277
 \c@defn=\count278
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inp
+utenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks31
 \inpenc@posthook=\toks32
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\palatino.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\p
+alatino.sty"
 Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\times.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t
+imes.sty"
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/csquotes\csquotes.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes
+\csquotes.sty"
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox
+\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count279
 )
@@ -352,13 +387,15 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count285
 \csq@ltx@everypar=\toks33
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/csquotes\csquotes.def"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes
+\csquotes.def"
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/csquotes\csquotes.cfg"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes
+\csquotes.cfg"
 File: csquotes.cfg 
 ))
 Package csquotes Info: Checking for multilingual support...
@@ -366,12 +403,12 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backen
+d\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count286
 \l__pdf_internal_box=\box53
-)
-(proyect.aux
+) (proyect.aux
 
 LaTeX Warning: Label `sec:intro' multiply defined.
 
@@ -430,7 +467,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
 1.
- ("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+t1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -467,7 +506,9 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("D:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/m
+kii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count287
 \scratchdimen=\dimen170
@@ -480,15 +521,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \MPnumerator=\count291
 \makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks35
-) ("D:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+)
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf
+-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \c@lstlisting=\count293
 \c@maskedRefs=\count294
-
-(spanish.apc
+ (spanish.apc
 File: spanish.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
@@ -500,30 +542,34 @@ Package pdftex.def Info: img/us.jpg  used on input line 21.
 (pdftex.def)             Requested size: 90.33722pt x 90.33722pt.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
 1.
- ("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+t1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
-[1
+) [1
 
 
-{C:/Users/rescu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/us.jp
-g>] (tocdef.tex) (resumen.tex
+{C:/Users/rafael.escudero/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <.
+/img/us.jpg>] (tocdef.tex) (resumen.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
+\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
+\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
 .
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ula
+sy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )) [1
 
@@ -532,7 +578,8 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Font Info:    Trying to load font information for OML+ptm on input line 2
 9.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlptm.fd"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+mlptm.fd"
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
@@ -556,58 +603,59 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  [6
 
-] (proyect.lol)
+] (proyect.lol [7
+
+])
 \tf@lol=\write5
 \openout5 = `proyect.lol'.
 
- [7
-
-] (Capitulos/capitulo1.tex
+ [8] (Capitulos/capitulo1.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 .
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1pcr.fd"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\o
+t1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
 
 
 ]
-<img/1.1-Barry-Vercoe.jpg, id=38, 622.325pt x 350.30875pt>
+<img/1.1-Barry-Vercoe.jpg, id=41, 622.325pt x 350.30875pt>
 File: img/1.1-Barry-Vercoe.jpg Graphic file (type jpg)
 <use img/1.1-Barry-Vercoe.jpg>
 Package pdftex.def Info: img/1.1-Barry-Vercoe.jpg  used on input line 23.
 (pdftex.def)             Requested size: 213.39568pt x 120.11899pt.
  [2 <./img/1.1-Barry-Vercoe.jpg>]
-<img/1.2-MaxMsp-Example.png, id=42, 730.73pt x 544.0325pt>
+<img/1.2-MaxMsp-Example.png, id=45, 730.73pt x 544.0325pt>
 File: img/1.2-MaxMsp-Example.png Graphic file (type png)
 <use img/1.2-MaxMsp-Example.png>
 Package pdftex.def Info: img/1.2-MaxMsp-Example.png  used on input line 65.
 (pdftex.def)             Requested size: 341.43437pt x 254.20108pt.
-<img/1.3-PureData-Example.png, id=44, 505.89pt x 324.21124pt>
+<img/1.3-PureData-Example.png, id=47, 505.89pt x 324.21124pt>
 File: img/1.3-PureData-Example.png Graphic file (type png)
 <use img/1.3-PureData-Example.png>
 Package pdftex.def Info: img/1.3-PureData-Example.png  used on input line 70.
 (pdftex.def)             Requested size: 341.43437pt x 218.8183pt.
  [3 <./img/1.2-MaxMsp-Example.png>]
-<img/1.4-CsoundQt090.png, id=49, 1380.15625pt x 755.82375pt>
+<img/1.4-CsoundQt090.png, id=52, 1380.15625pt x 755.82375pt>
 File: img/1.4-CsoundQt090.png Graphic file (type png)
 <use img/1.4-CsoundQt090.png>
 Package pdftex.def Info: img/1.4-CsoundQt090.png  used on input line 89.
 (pdftex.def)             Requested size: 341.43437pt x 186.98334pt.
  [4 <./img/1.3-PureData-Example.png>]
-<img/1.5-Blue.png, id=53, 1399.2275pt x 891.33pt>
+<img/1.5-Blue.png, id=57, 1399.2275pt x 891.33pt>
 File: img/1.5-Blue.png Graphic file (type png)
 <use img/1.5-Blue.png>
 Package pdftex.def Info: img/1.5-Blue.png  used on input line 100.
 (pdftex.def)             Requested size: 341.43437pt x 217.48692pt.
  [5 <./img/1.4-CsoundQt090.png> <./img/1.5-Blue.png>]
-<img/1.6-Cabbage.png, id=60, 1003.75pt x 602.25pt>
+<img/1.6-Cabbage.png, id=63, 1003.75pt x 602.25pt>
 File: img/1.6-Cabbage.png Graphic file (type png)
 <use img/1.6-Cabbage.png>
 Package pdftex.def Info: img/1.6-Cabbage.png  used on input line 111.
 (pdftex.def)             Requested size: 341.43437pt x 204.86337pt.
-)
-(Capitulos/capitulo2.tex [6 <./img/1.6-Cabbage.png>]
+) (Capitulos/capitulo2.tex [6 <./img/1.6-Cabbage.png>]
 Cap\'{\i }tulo 2.
 (lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -644,7 +692,7 @@ que no de-be es-tar den-tro de \OML/cmm/m/it/10.95 <\OT1/ptm/m/n/10.95 CsoundSy
 nthe-
  []
 
-<img/2.1-Cuadrafonico.jpg, id=69, 1284.8pt x 722.7pt>
+<img/2.1-Cuadrafonico.jpg, id=72, 1284.8pt x 722.7pt>
 File: img/2.1-Cuadrafonico.jpg Graphic file (type jpg)
 <use img/2.1-Cuadrafonico.jpg>
 Package pdftex.def Info: img/2.1-Cuadrafonico.jpg  used on input line 44.
@@ -657,7 +705,7 @@ LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <12> not available
  [11] (codigo/InstBaseSinte.tex)
 (codigo/InstVarSinte.tex) (codigo/InstOptSinte.tex) [12]
 (codigo/InstCabUISinte.tex)
-<img/2.2-PrimerSinte.png, id=87, 510.40688pt x 370.38374pt>
+<img/2.2-PrimerSinte.png, id=90, 510.40688pt x 370.38374pt>
 File: img/2.2-PrimerSinte.png Graphic file (type png)
 <use img/2.2-PrimerSinte.png>
 Package pdftex.def Info: img/2.2-PrimerSinte.png  used on input line 176.
@@ -666,7 +714,7 @@ Package pdftex.def Info: img/2.2-PrimerSinte.png  used on input line 176.
 tack.tex) [14] (codigo/SliderVinc.tex)
 (codigo/SinteCompleto.tex [15])) (Capitulos/capitulo3.tex [16]
 Cap\'{\i }tulo 3.
-<img/3.1-kCycles.png, id=100, 743.02594pt x 252.945pt>
+<img/3.1-kCycles.png, id=104, 743.02594pt x 252.945pt>
 File: img/3.1-kCycles.png Graphic file (type png)
 <use img/3.1-kCycles.png>
 Package pdftex.def Info: img/3.1-kCycles.png  used on input line 18.
@@ -685,13 +733,15 @@ Overfull \hbox (2.50172pt too wide) in paragraph at lines 190--191
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 11.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t
+s1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-(codigo/macroSimple.tex
+) (codigo/macroSimple.tex
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 4
 .
- ("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1pcr.fd"
+
+("C:\Users\rafael.escudero\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t
+s1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )) (codigo/macroArgs.tex) [24] (codigo/macroInScore.tex))
 (Capitulos/capitulo4.tex [25]
@@ -701,79 +751,81 @@ Cap\'{\i }tulo 4.
 ] (codigo/delaySyntax.tex) [27] (codigo/delayCompleto.tex) [28] (codigo/vibrato
 Completo.tex) [29]
 (codigo/tremoloCompleto.tex) [30]
-<img/4.1-Offset.png, id=151, 444.15938pt x 256.70906pt>
+<img/4.1-Offset.png, id=154, 444.15938pt x 256.70906pt>
 File: img/4.1-Offset.png Graphic file (type png)
 <use img/4.1-Offset.png>
 Package pdftex.def Info: img/4.1-Offset.png  used on input line 124.
 (pdftex.def)             Requested size: 256.07741pt x 148.00217pt.
-) (Capitulos/capitulo5.tex [31 <./img/4.1-Offset.png>] [32]
+ (codigo/lowpassCompleto.tex [31 <./img/4.1-Offset.png>]) [32] (codigo/highpass
+Completo.tex) [33]
+(codigo/bandpassCompleto.tex) [34]) (Capitulos/capitulo5.tex [35]
 Cap\'{\i }tulo 5.
-[33
+[36
 
 ] (codigo/Syntaxhexplay.tex) (codigo/scheduleEx.tex) (codigo/LiveInstr.tex
-[34]) [35] (codigo/HexRitmoEx.tex) [36] (codigo/HexConInstr.tex))
-(Capitulos/guiaCabbage.tex [37]
+[37]) [38] (codigo/HexRitmoEx.tex) [39] (codigo/HexConInstr.tex))
+(Capitulos/guiaCabbage.tex [40]
 Cap\'{\i }tulo 6.
-<img/C.1-InstaVersion.png, id=175, 800.9925pt x 574.39594pt>
+<img/C.1-InstaVersion.png, id=188, 800.9925pt x 574.39594pt>
 File: img/C.1-InstaVersion.png Graphic file (type png)
 <use img/C.1-InstaVersion.png>
 Package pdftex.def Info: img/C.1-InstaVersion.png  used on input line 21.
 (pdftex.def)             Requested size: 256.07741pt x 183.63515pt.
-<img/C.2-InstaPasos.png, id=176, 563.10374pt x 430.60875pt>
+<img/C.2-InstaPasos.png, id=189, 563.10374pt x 430.60875pt>
 File: img/C.2-InstaPasos.png Graphic file (type png)
 <use img/C.2-InstaPasos.png>
 Package pdftex.def Info: img/C.2-InstaPasos.png  used on input line 24.
 (pdftex.def)             Requested size: 256.07741pt x 195.82214pt.
-[38
+[41
 
  <./img/C.1-InstaVersion.png>]
-<img/C.3-CabbageEjemplos.png, id=180, 664.73344pt x 432.86719pt>
+<img/C.3-CabbageEjemplos.png, id=193, 664.73344pt x 432.86719pt>
 File: img/C.3-CabbageEjemplos.png Graphic file (type png)
 <use img/C.3-CabbageEjemplos.png>
 Package pdftex.def Info: img/C.3-CabbageEjemplos.png  used on input line 32.
 (pdftex.def)             Requested size: 256.07741pt x 166.75674pt.
- [39 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
-<img/C.4-CabbageNewFile.png, id=184, 639.89063pt x 286.06876pt>
+ [42 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
+<img/C.4-CabbageNewFile.png, id=197, 639.89063pt x 286.06876pt>
 File: img/C.4-CabbageNewFile.png Graphic file (type png)
 <use img/C.4-CabbageNewFile.png>
 Package pdftex.def Info: img/C.4-CabbageNewFile.png  used on input line 38.
 (pdftex.def)             Requested size: 256.07741pt x 114.48221pt.
 LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <14.4> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 50.
- (codigo/CabbageSyntax.tex) [40 <./img/C.4-CabbageNewFile.png>]
-<img/C.6-formExample.png, id=188, 400.49625pt x 151.56625pt>
+ (codigo/CabbageSyntax.tex) [43 <./img/C.4-CabbageNewFile.png>]
+<img/C.6-formExample.png, id=201, 400.49625pt x 151.56625pt>
 File: img/C.6-formExample.png Graphic file (type png)
 <use img/C.6-formExample.png>
 Package pdftex.def Info: img/C.6-formExample.png  used on input line 72.
 (pdftex.def)             Requested size: 170.71393pt x 64.60559pt.
- (codigo/FormEx.tex) [41 <./img/C.6-formExample.png>]
-<img/C.7-CheckBox.png, id=194, 303.38344pt x 106.89937pt>
+ (codigo/FormEx.tex) [44 <./img/C.6-formExample.png>]
+<img/C.7-CheckBox.png, id=206, 303.38344pt x 106.89937pt>
 File: img/C.7-CheckBox.png Graphic file (type png)
 <use img/C.7-CheckBox.png>
 Package pdftex.def Info: img/C.7-CheckBox.png  used on input line 81.
 (pdftex.def)             Requested size: 170.71393pt x 60.15356pt.
  (codigo/CheckBoxEx.tex)
-<img/C.8-Button.png, id=195, 303.38344pt x 105.39375pt>
+<img/C.8-Button.png, id=207, 303.38344pt x 105.39375pt>
 File: img/C.8-Button.png Graphic file (type png)
 <use img/C.8-Button.png>
 Package pdftex.def Info: img/C.8-Button.png  used on input line 89.
 (pdftex.def)             Requested size: 170.71393pt x 59.30634pt.
-(codigo/ButtonEx.tex) [42 <./img/C.7-CheckBox.png> <./img/C.8-Button.png>]
-<img/C.9-Keyboard.png, id=201, 304.13625pt x 228.10219pt>
+(codigo/ButtonEx.tex) [45 <./img/C.7-CheckBox.png> <./img/C.8-Button.png>]
+<img/C.9-Keyboard.png, id=213, 304.13625pt x 228.10219pt>
 File: img/C.9-Keyboard.png Graphic file (type png)
 <use img/C.9-Keyboard.png>
 Package pdftex.def Info: img/C.9-Keyboard.png  used on input line 98.
 (pdftex.def)             Requested size: 170.71393pt x 128.03914pt.
 
 (codigo/KeyboardEx.tex)
-<img/C.10-SignalDisplay.png, id=202, 305.64188pt x 249.18094pt>
+<img/C.10-SignalDisplay.png, id=214, 305.64188pt x 249.18094pt>
 File: img/C.10-SignalDisplay.png Graphic file (type png)
 <use img/C.10-SignalDisplay.png>
 Package pdftex.def Info: img/C.10-SignalDisplay.png  used on input line 106.
 (pdftex.def)             Requested size: 170.71393pt x 139.17535pt.
- (codigo/SignalDisplayEx.tex) [43 <./img/C.9-Keyboard.png> <./img/C.10-SignalDi
+ (codigo/SignalDisplayEx.tex) [46 <./img/C.9-Keyboard.png> <./img/C.10-SignalDi
 splay.png>]
-<img/C.5-CabbageExport.png, id=208, 479.54156pt x 83.5622pt>
+<img/C.5-CabbageExport.png, id=221, 479.54156pt x 83.5622pt>
 File: img/C.5-CabbageExport.png Graphic file (type png)
 <use img/C.5-CabbageExport.png>
 Package pdftex.def Info: img/C.5-CabbageExport.png  used on input line 118.
@@ -785,7 +837,7 @@ s por FMOD, \OT1/ptm/b/n/10.95 https://www.fmod.com/ \OT1/ptm/m/n/10.95 y que e
 st[]a de-
  []
 
-) (Capitulos/extraSonido.tex [44 <./img/C.5-CabbageExport.png>]
+) (Capitulos/extraSonido.tex [47 <./img/C.5-CabbageExport.png>]
 Cap\'{\i }tulo 7.
 
 Underfull \hbox (badness 1442) in paragraph at lines 15--15
@@ -794,39 +846,39 @@ Underfull \hbox (badness 1442) in paragraph at lines 15--15
 .
  []
 
-<img/S.1-senoidal.png, id=212, 853.1875pt x 305.14pt>
+<img/S.1-senoidal.png, id=225, 853.1875pt x 305.14pt>
 File: img/S.1-senoidal.png Graphic file (type png)
 <use img/S.1-senoidal.png>
 Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
 (pdftex.def)             Requested size: 341.43437pt x 122.11435pt.
-[45
+[48
 
  <./img/S.1-senoidal.png>]
-<img/S.2-Periodo.jpg, id=217, 312.16624pt x 162.6075pt>
+<img/S.2-Periodo.jpg, id=230, 312.16624pt x 162.6075pt>
 File: img/S.2-Periodo.jpg Graphic file (type jpg)
 <use img/S.2-Periodo.jpg>
 Package pdftex.def Info: img/S.2-Periodo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 256.07741pt x 133.39359pt.
- [46 <./img/S.2-Periodo.jpg>]
-<img/S.3-Sampleo.png, id=221, 501.875pt x 244.915pt>
+ [49 <./img/S.2-Periodo.jpg>]
+<img/S.3-Sampleo.png, id=234, 501.875pt x 244.915pt>
 File: img/S.3-Sampleo.png Graphic file (type png)
 <use img/S.3-Sampleo.png>
 Package pdftex.def Info: img/S.3-Sampleo.png  used on input line 50.
 (pdftex.def)             Requested size: 341.43437pt x 166.62967pt.
- [47 <./img/S.3-Sampleo.png>]
-<img/S.4-Aliasing.png, id=226, 411.5375pt x 377.41pt>
+ [50 <./img/S.3-Sampleo.png>]
+<img/S.4-Aliasing.png, id=238, 411.5375pt x 377.41pt>
 File: img/S.4-Aliasing.png Graphic file (type png)
 <use img/S.4-Aliasing.png>
 Package pdftex.def Info: img/S.4-Aliasing.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43437pt x 313.12352pt.
- [48 <./img/S.4-Aliasing.png>]
-<img/S.5-ADSR.png, id=230, 468.149pt x 252.945pt>
+ [51 <./img/S.4-Aliasing.png>]
+<img/S.5-ADSR.png, id=242, 468.149pt x 252.945pt>
 File: img/S.5-ADSR.png Graphic file (type png)
 <use img/S.5-ADSR.png>
 Package pdftex.def Info: img/S.5-ADSR.png  used on input line 94.
 (pdftex.def)             Requested size: 341.43437pt x 184.4862pt.
- [49 <./img/S.5-ADSR.png>])
-(Capitulos/bibliografia.tex [50]
+ [52 <./img/S.5-ADSR.png>])
+(Capitulos/bibliografia.tex [53]
 Cap\'{\i }tulo 8.
 
 Overfull \hbox (12.39203pt too wide) in paragraph at lines 16--17
@@ -834,26 +886,26 @@ Overfull \hbox (12.39203pt too wide) in paragraph at lines 16--17
 y, An-dres Ca-bre-ra, Alex Hof-mann, Ale-xan-dre Abrioux,
  []
 
-[51
+[54
 
-] [52] [53] [54]
+] [55] [56] [57]
 Overfull \hbox (15.11143pt too wide) in paragraph at lines 161--162
 []\OT1/ptm/m/n/10.95 Yi S.(Mayo de 2019). csound-live-code doc. Github. $\OT1/p
 cr/m/n/10.95 https :// github [] .com / kunstmusik /
  []
 
-) (Capitulos/anexos.tex [55]
+) (Capitulos/anexos.tex [58]
 Cap\'{\i }tulo 9.
-<img/A.1-PWAinst.png, id=254, 519.44063pt x 231.11343pt>
+<img/A.1-PWAinst.png, id=267, 519.44063pt x 231.11343pt>
 File: img/A.1-PWAinst.png Graphic file (type png)
 <use img/A.1-PWAinst.png>
 Package pdftex.def Info: img/A.1-PWAinst.png  used on input line 7.
 (pdftex.def)             Requested size: 341.43437pt x 151.91115pt.
-) (Capitulos/defobjetivos.tex [56
+) (Capitulos/defobjetivos.tex [59
 
  <./img/A.1-PWAinst.png>]
 Cap\'{\i }tulo 10.
-) [57
+) [60
 
 ] (proyect.aux)
 
@@ -861,29 +913,35 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10192 strings out of 480799
- 141742 string characters out of 2905528
+ 10213 strings out of 480799
+ 146377 string characters out of 2891114
  578321 words of memory out of 3000000
- 25777 multiletter control sequences out of 15000+200000
+ 25789 multiletter control sequences out of 15000+200000
  566691 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,13n,77p,1049b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<D:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmib10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
-.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on proyect.pdf (65 pages, 1241798 bytes).
+{C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
+ase/8r.enc}<C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rafael.escudero/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/rafael.escude
+ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb
+><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/rafael.escudero/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rafa
+el.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Users/rafael.escudero/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/rafael.escudero/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/rafae
+l.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
+s/utmb8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/urw/times/utmr8a.pfb><C:/Users/rafael.escudero/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on proyect.pdf (69 pages, 1255402 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 322 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
