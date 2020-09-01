@@ -10,32 +10,32 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sonido cuadrafónico}}{9}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Nuestro primer sintetizador}}{13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces La duración de los K-Cycles}}{17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces La duración de los K-Cycles}}{18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces El DC Offset}}{31}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Añadir librerías en Netbeans}}{44}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Versiones disponibles}}{48}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Pasos de la instalación}}{49}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Ejemplos disponibles en el IDE}}{49}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{50}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Widget: Form}}{51}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Widget: CheckBox}}{52}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Widget: Button}}{52}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Widget: Keyboard}}{53}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Widget: Signal Display}}{53}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Las opciones de exportación del IDE}}{54}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Onda Senoidal}}{55}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Periodo y Amplitud}}{56}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Ejemplo de sampleo de una onda}}{57}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{58}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces El envolvente ADSR de una onda}}{59}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces De abajo a arriba: Blanco, rojo, rosa, gris, azul, violeta}}{60}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces El DC Offset}}{32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Crear acceso directo a un PWA}}{68}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Añadir librerías en Netbeans}}{45}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Versiones disponibles}}{49}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Pasos de la instalación}}{50}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Ejemplos disponibles en el IDE}}{50}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Sintetizador, Efecto, Archivo Csound y VCV Rack}}{51}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Widget: Form}}{52}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Widget: CheckBox}}{53}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Widget: Button}}{53}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Widget: Keyboard}}{54}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Widget: Signal Display}}{54}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Las opciones de exportación del IDE}}{55}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Onda Senoidal}}{56}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Periodo y Amplitud}}{57}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Ejemplo de sampleo de una onda}}{58}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Un mismo sample rate para ondas distintas}}{59}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces El envolvente ADSR de una onda}}{60}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces De abajo a arriba: Blanco, rojo, rosa, gris, azul, violeta}}{61}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Crear acceso directo a un PWA}}{69}%
 \addvspace {10\p@ }
 \contentsfinish 

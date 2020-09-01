@@ -38,12 +38,12 @@ Veamos algunas de las palabras reservadas más comunes en Csound:
  \item \textbf{instr/endin}: Las palabras reservadas instr y endin sirven para determinar el comienzo y el final del bloque de código necesario para crear un instrumento en Csound. Podemos ver un ejemplo de uso en las líneas 6 y 10 de la figura de código 2.1.
  Además debemos asignar un nombre o identificador al instrumento acompañando a la palabra reservada instr, en nuestro ejemplo de código le damos el nombre ``1'' \ a nuestro instrumento.
  
- \item \textbf{sr}: Indica el valor del sample rate. Wl valor predeterminado es de 44100Hz, es decir, 44100 veces cada segundo. Normalmente usaremos un valor 44100 o de 48000 según la compatibilidad de la tarjeta de sonido de nuestro equipo.\footnote{Para mayor entendimiento de los conceptos relacionados al sampleo véase el apartado ``El Sampleo y Sample Rate'' del capítulo ``Fundamentos del Sonido''}
+ \item \textbf{sr}: Indica el valor del sample rate. Su valor predeterminado es de 44100Hz, es decir, 44100 veces cada segundo. Normalmente usaremos un valor 44100 o de 48000 según la compatibilidad de la tarjeta de sonido de nuestro equipo.\footnote{Para mayor entendimiento de los conceptos relacionados al sampleo véase el apartado ``El Sampleo y Sample Rate'' del capítulo ``Fundamentos del Sonido''}
  
  \item \textbf{nchnls}: Se trata del número de canales de salida de audio que usamos en nuestro programa. Con nchnls = 1 conseguimos sonido mono, con nchnls = 2 stereo, nchnls = 4 cuadrafónico. (véase figura 2.1)
  \figura{0.8}{img/2.1-Cuadrafonico}{Sonido cuadrafónico}{fig:quadra}{}
 
- \item \textbf{0dbfs}: Determina el valor relativo que usaremos en el programa como 0 decibelios y a partir del cual aumentaremos o disminuiremos los decibelios de volumen. Por defecto tiene un valor de 32767 aunque lo más lógico al usar un computador para determinar este valor es dar un valor absoluto de 0dbfs = 1 puesto que la intensidad final del sonido no depende únicamente de nuestro código sino de nuestros altavoces, la configuración de nuestra tarjeta de sonido o la configuación de nuestro IDE de Csound. Darle un valor 1 a 0dbfs nos permite tener una referencia útil y muy manejable además de ser la usada por convenio en los programas de audio digital en lugar de dar valores absolutos que bien pueden desembocar en resultados distintos a lo que deseábamos según el equipo en el que ejecutemos nuestro código. \footnote{Para mayor entendimiento del concepto de decibelio, ir a la sección ``El decibelio''  del capítulo ``Fundamentos del Sonido''}
+ \item \textbf{0dbfs}: Determina el valor relativo que usaremos en el programa como 0 decibelios y a partir del cual aumentaremos o disminuiremos los decibelios de volumen. Por defecto tiene un valor de 32767 aunque lo más lógico al usar un computador para determinar este valor es dar un valor relativo de 0dbfs = 1 puesto que la intensidad final del sonido no depende únicamente de nuestro código sino de nuestros altavoces, la configuración de nuestra tarjeta de sonido o la configuación de nuestro IDE de Csound. Darle un valor 1 a 0dbfs nos permite tener una referencia útil y muy manejable además de ser la usada por convenio en los programas de audio digital en lugar de dar valores absolutos que bien pueden desembocar en resultados distintos a lo que deseábamos según el equipo en el que ejecutemos nuestro código. \footnote{Para mayor entendimiento del concepto de decibelio, ir a la sección ``El decibelio''  del capítulo ``Fundamentos del Sonido''}
 \end{itemize}
 
 \section{Las variables en Csound}\label{sec:variables}
@@ -63,7 +63,7 @@ Cuando ejecutamos código Csound, una vez compilado el código e inicializada la
 
 \end{itemize}
 
-La principal razón para que tengamos estas diferente opciones es poder jugar con la optimización de nuestro código. Bien podríamos hacer que todas nuestras variables fuesen de tipo `\ a' pero esto implicaría en la mayoría de los casos un aumento de carga innecesario durante el tiempo de ejecución, que puede ser crucial si nuestro objetivo pasa por ejecutar código en directo al interpretar una pieza musical.
+La principal razón para que tengamos estas diferentes opciones es poder jugar con la optimización de nuestro código. Bien podríamos hacer que todas nuestras variables fuesen de tipo `\ a' pero esto implicaría en la mayoría de los casos un aumento de carga innecesario durante el tiempo de ejecución, que puede ser crucial si nuestro objetivo pasa por ejecutar código en directo al interpretar una pieza musical.
 
 \section{Los Instrumentos}\label{sec:Instrumentos}
 Los \textbf{instrumentos} serán los bloques de código básicos en los que realizaremos las operaciones de nuestro programa. Podemos tener varios \textbf{instrumentos} en la misma etiqueta \textless CsInstruments\textgreater de un programa y a ese conjunto de \textbf{instrumentos} lo llamaremos \textbf{orquestra}.
@@ -73,7 +73,7 @@ La sintaxis base de un instrumento es:
 
 Donde \textbf{instr} y \textbf{endin} marcan el inicio y el final del bloque de código del instrumento. Seguido a la palabra \textbf{instr} escribiremos el nombre o identificador (normalmente un número) para referirnos más tarde a nuestro instrumento.
 
-En secciones posteriores hablaremos de la etiqueta \textless CsScore\textgreater y de cómo usar en ella nuestros instrumentos, de momento basta con saber que al llamar a nuestros instrumentos necesitaremos una serie de parámetros a los cuales nos referiremos como \textbf{p1},\textbf{p2},\textbf{p3},\textbf{p4}... Cuando veamos estos identificadores dentro del código de los instrumentos sabremos que nos estamos refiriendo a esos parámetros de entrada.
+En secciones posteriores hablaremos de la etiqueta \textless CsScore\textgreater y de cómo usar en ella nuestros instrumentos. De momento basta con saber que al llamar a nuestros instrumentos necesitaremos una serie de parámetros a los cuales nos referiremos como \textbf{p1},\textbf{p2},\textbf{p3},\textbf{p4}... Cuando veamos estos identificadores dentro del código de los instrumentos sabremos que nos estamos refiriendo a esos parámetros de entrada.
  
 
 \section{Los Opcodes}\label{sec:Opcodes}
@@ -86,7 +86,7 @@ Veamos primero la sintaxis generalizada y después un ejemplo sencillo de uso de
 
 \codigofuente{TeX}{Sintaxis generalizada de un Opcode}{codigo/opcodeGeneral}
 
-Refiriéndonos a la figura de código 2.2. \textbf{opcode} es el nombre del opcode que queremos usar, \textbf{input1}, \textbf{inpu2} e \textbf{input3} representan los diferentes atrbutos de entrada al opcode, son generalmente valores numéricos y su cantidad es indeterminada. Existen opcodes sin atributos de entrada. Por último \textbf{aOutput} es la variable de salida del opcode en la que vamos a guardar nuestro resultado esperado a la que haremos referencia más adelante en nuestro código.
+Refiriéndonos a la figura de código 2.3. \textbf{opcode} es el nombre del opcode que queremos usar, \textbf{input1}, \textbf{inpu2} e \textbf{input3} representan los diferentes atrbutos de entrada al opcode, son generalmente valores numéricos y su cantidad es indeterminada. Existen opcodes sin atributos de entrada. Por último \textbf{aOutput} es la variable de salida del opcode en la que vamos a guardar nuestro resultado esperado a la que haremos referencia más adelante en nuestro código.
 Podríamos resumir la sintaxis básica de uso de opcodes en: \textbf{salida $\leftarrow$ función $\leftarrow$ entrada/s} 
 
 \codigofuente{TeX}{Ejemplo de uso del Opcode oscils}{codigo/opcodeEx}
@@ -148,11 +148,11 @@ Usaremos el opcode de esta manera: \textbf{aOut vco2 iAmp, iFreq}, siendo \textb
 
 \subsection{Las opciones de configuración \textless CsOptions\textgreater}\label{sec:optSinte}
 
-Veamos qué opciones de configuración podemos añadir a nuestro sintetizador. Será importante para que el uso de señales MIDI sea funcional así que usaremos la opción \textbf{-+rtmidi=NULL -M0 -m0d}. No usaremos plgins MIDI de tiempo real en este ejemplo así daremos el valor \textbf{NULL} a \textbf{-+rtmidi}, con -M seguido de un identificador podremos seleccionar qué dispositivo vamos a usar. Como sólo tendremos disponible el dispositivo virtual de Cabbage, usaremos \textbf{-M0}. 
+Veamos qué opciones de configuración podemos añadir a nuestro sintetizador. Será importante para que el uso de señales MIDI sea funcional así que usaremos la opción \textbf{-+rtmidi=NULL -M0 -m0d}. No usaremos plugins MIDI de tiempo real en este ejemplo así que daremos el valor \textbf{NULL} a \textbf{-+rtmidi}, con -M seguido de un identificador podremos seleccionar qué dispositivo vamos a usar. Como sólo tendremos disponible el dispositivo virtual de Cabbage, usaremos \textbf{-M0}. 
 
 Para relacionar las variables de nuestro instrumento como comentamos anteriormente usaremos \textbf{--midi-key-cps=4} para pasar la frecuencia de la nota MIDI actual a \textbf{p4} y \textbf{--midi-velocity-amp=5} para pasar la velocidad de pulsación a |textbf{p5}.
 
-Bastará de momento con tener un entendimiento básico de la etiqueta \textless CsOptions\textgreater de momento, aunque profundizaremos en ella más adelante.
+Bastará por el momento con tener un entendimiento básico de la etiqueta \textless CsOptions\textgreater , aunque profundizaremos en ella más adelante.
 
 Quedaría así nuestro código:
 
@@ -160,7 +160,7 @@ Quedaría así nuestro código:
 
 \subsection{Ejecutando nuestro instrumento \textless CsScore\textgreater}\label{sec:scoreSinte}
 
-La etiqueta \textless CsScore\textgreater contiene nuestros \textbf{score events} auqnue en esta ocasión no vamos a necesitarlos como tal, únicamente usaremos el score \textbf{f0 z} que sirve para indicar a Csound que se quede esperando eventos tanto tiempo como queramos. Esto ideal para el caso puesto que queremos que Csound escuche nuestros eventos de señal MIDI.
+La etiqueta \textless CsScore\textgreater contiene nuestros \textbf{score events} aunque en esta ocasión no vamos a necesitarlos como tal, únicamente usaremos el score \textbf{f0 z} que sirve para indicar a Csound que se quede esperando eventos tanto tiempo como queramos. Esto es ideal para el caso puesto que queremos que Csound escuche nuestros eventos de señal MIDI.
 
 \subsection{Creando una interfaz \textless Cabbage\textgreater}\label{sec:UISinte}
 
@@ -174,7 +174,7 @@ Un posible ejemplo quedaría tal que así:
 Y el resultado al ejecutar esta parte del código será algo parecido a esto:
 
 \figura{0.6}{img/2.2-PrimerSinte}{Nuestro primer sintetizador}{fig:sinte1}{}
- 
+\pagebreak 
 \subsection{El teclado básico}\label{sec:SinteBasico}
 
 Si unimos todas las partes, nuestro código queda de esta manera:
@@ -185,13 +185,13 @@ Este teclado es ya ciertamente funcional pero para tener un ejemplo más complet
 
 \subsection{Convirtiendo el teclado en un sintetizador}\label{sec:SinteReal}
 
-En primer lugar, para añadir un envelope ADSR, podemos seleccionar alguna de las muchas opciones que ofrece Csound en materia de opcodes. Uno de los más sencillos y que puede servirnos perfectamente es el opcode \textbf{madsr} cuya sintaxis es \textbf{kenv madsr iatt, idec, islev, irel}. Siendo \textbf{iatt} el valor de ataque, \textbf{idec} el valor de decay, \textbf{islev} el valor de sustain u \textbf{irel} el valor de release. Recordemos también que las variables i son a efectos prácticos variables constantes del instrumento, que refescarán su valor en este caso entre pulsación y pulsación de una nota.
+En primer lugar, para añadir un envelope ADSR, podemos seleccionar alguna de las muchas opciones que ofrece Csound en materia de opcodes. Uno de los más sencillos y que puede servirnos perfectamente es el opcode \textbf{madsr} cuya sintaxis es \textbf{kenv madsr iatt, idec, islev, irel}. Siendo \textbf{iatt} el valor de ataque, \textbf{idec} el valor de decay, \textbf{islev} el valor de sustain u \textbf{irel} el valor de release. Recordemos también que las variables i son a efectos prácticos variables constantes del instrumento, que refrescarán su valor en este caso entre pulsación y pulsación de una nota.
 
 Bastaría ahora con aplicar este envelope a nuestra onda de salida, una de tantas maneras es multiplicando la salida del opcode \textbf{madsr} a los canales de salida de nuestro instrumento de esta forma: \textbf{outs aOut*kEnv, aOut*kEnv}.
 
 Necesitamos también dar un valor a los parámetros \textbf{iatt}, \textbf{idec}, \textbf{islev} y \textbf{irel}. Podríamos dar valores fijos aunque esto no tendría un uso demasiado funcional, por lo tanto vamos a aprovechar las opciones de interfaz que proporciona Cabbage para vincular estos valores a 4 widgets de tipo slider.
 Veamos cómo crear el slider para el valor de ataque:
-
+\pagebreak 
 \codigofuente{TeX}{El slider para el valor de ataque}{codigo/SliderAttack}
 
 El widget slider no es nuevo, aunque debe destacarse el identificador \textbf{channel(chan)} que se usa para otorgar al slider un nombre de canal al que se vincula su valor de salida y que más tarde podremos usar en nuestro código.
@@ -208,8 +208,8 @@ Quedaría nuestro código de vinculación de la siguiente manera:
 
 Para concluir vamos a añadir un par de efectos útiles a nuestro sintetizador, el \textbf{cutoff} y la \textbf{resonancia}. Una forma sencilla de conseguirlo es usando el opcode \textbf{moogladder}, cuya sintaxis es: \textbf{asig moogladder ain, kcf, kres}. Siendo \textbf{ain} la onda a la que añadir los efectos, \textbf{kcf} el valor del cuttoff y \textbf{kres} el valor de resonancia.
 
-Para el caso vamos a darle a \textbf{ain} el valor de aOut, es decir, nuestra onda resultante de usar el opcode vco2. Para los valores de cuttoff y resonancia crearemos simplemente un par de sliders y vincularemos sus valores a variables de Csound del mismo modo que hicimos antes.
-
+Para el caso vamos a darle a \textbf{ain} el valor de aOut, es decir, nuestra onda resultante de usar el opcode vco2 anteriormente. Para los valores de cuttoff y resonancia crearemos simplemente un par de sliders y vincularemos sus valores a variables de Csound del mismo modo que hicimos antes.
+\pagebreak 
 \subsection{El resultado final}\label{sec:SinteCompleto}
 
 Y aquí tenemos al fin el código completo de nuestro sintetizador con efectos:
@@ -217,4 +217,4 @@ Y aquí tenemos al fin el código completo de nuestro sintetizador con efectos:
 \codigofuente{TeX}{Un sintetizador funcional}{codigo/SinteCompleto}
 
 Con esto termina la introducción a la sintaxis del lenguaje. Como puede observarse, aunque Csound parezca algo enrevesado a primera vista y sin conociemientos previos, una vez comprendido el esquema básico y la lógica sintáctica es fácil entender y escribir código lo suficientemente elaborado como para obtener instrumentos completamente funcionales sin demasiado esfuerzo.
-Seguiremos profundizando en el potencial de Csound en posteriores capítulos ahora que hemos alcanzado el nivel fundamental para poder seguir las lecciones sin perdernos.
+Seguiremos profundizando en el potencial de Csound en posteriores capítulos ahora que hemos alcanzado el nivel fundamental para poder seguir las lecciones sin pérdida.

@@ -30,120 +30,120 @@
 \contentsline {subsection}{\numberline {2.9.2}Las opciones de configuración \textless CsOptions\textgreater }{12}%
 \contentsline {subsection}{\numberline {2.9.3}Ejecutando nuestro instrumento \textless CsScore\textgreater }{13}%
 \contentsline {subsection}{\numberline {2.9.4}Creando una interfaz \textless Cabbage\textgreater }{13}%
-\contentsline {subsection}{\numberline {2.9.5}El teclado básico}{13}%
+\contentsline {subsection}{\numberline {2.9.5}El teclado básico}{14}%
 \contentsline {subsection}{\numberline {2.9.6}Convirtiendo el teclado en un sintetizador}{14}%
 \contentsline {subsection}{\numberline {2.9.7}Últimos detalles}{15}%
-\contentsline {subsection}{\numberline {2.9.8}El resultado final}{15}%
-\contentsline {chapter}{\numberline {3}Profundizando en los conceptos básicos}{17}%
-\contentsline {section}{\numberline {3.1}Las diferencias entre variables i-rate y k-rate}{17}%
-\contentsline {section}{\numberline {3.2}Las f-variables, w-variables y S-variables}{18}%
-\contentsline {section}{\numberline {3.3}El ámbito global y local de las variables}{18}%
-\contentsline {section}{\numberline {3.4}Las estructuras de control}{19}%
-\contentsline {subsection}{\numberline {3.4.1}Sentencias if-else}{19}%
-\contentsline {subsection}{\numberline {3.4.2}Bucles While/Until}{19}%
-\contentsline {subsection}{\numberline {3.4.3}El timout}{19}%
-\contentsline {section}{\numberline {3.5}Los Arrays de datos}{20}%
-\contentsline {subsection}{\numberline {3.5.1}Propiedades de los Arrays}{20}%
-\contentsline {subsection}{\numberline {3.5.2}Opcodes útiles}{21}%
-\contentsline {subsection}{\numberline {3.5.3}Operaciones con arrays}{22}%
-\contentsline {section}{\numberline {3.6}Funciones de entrada/salida}{22}%
-\contentsline {section}{\numberline {3.7}Creando un opcode (UDOs)}{23}%
-\contentsline {section}{\numberline {3.8}Las macros}{24}%
-\contentsline {subsection}{\numberline {3.8.1}Sintaxis de las macros}{24}%
-\contentsline {subsection}{\numberline {3.8.2}Macros con parámetros de entrada}{24}%
-\contentsline {subsection}{\numberline {3.8.3}Macros en \textless CsScore\textgreater }{25}%
-\contentsline {chapter}{\numberline {4}Conceptos Avanzados}{26}%
-\contentsline {section}{\numberline {4.1}El opcode ftgen}{26}%
-\contentsline {subsection}{\numberline {4.1.1}El f statement}{26}%
-\contentsline {section}{\numberline {4.2}Delay y Feedback}{26}%
-\contentsline {subsection}{\numberline {4.2.1}El Delay}{26}%
-\contentsline {subsection}{\numberline {4.2.2}El Feedback}{27}%
-\contentsline {subsection}{\numberline {4.2.3}Ejemplo del efecto Delay}{27}%
-\contentsline {section}{\numberline {4.3}FM: La modulación de frecuencia}{29}%
-\contentsline {subsection}{\numberline {4.3.1}El vibrato}{29}%
-\contentsline {section}{\numberline {4.4}AM: La modulación de amplitud}{30}%
-\contentsline {subsection}{\numberline {4.4.1}El trémolo}{30}%
-\contentsline {subsection}{\numberline {4.4.2}DC Offset}{31}%
-\contentsline {section}{\numberline {4.5}RM: La modulación en anillo}{31}%
-\contentsline {section}{\numberline {4.6}WAVESHAPING}{31}%
-\contentsline {section}{\numberline {4.7}Filtros de onda}{31}%
-\contentsline {subsection}{\numberline {4.7.1}Filtros Lowpass}{31}%
-\contentsline {subsection}{\numberline {4.7.2}Filtros Highpass}{33}%
-\contentsline {subsection}{\numberline {4.7.3}Filtros Bandpass}{34}%
-\contentsline {section}{\numberline {4.8}Reverberación}{35}%
-\contentsline {chapter}{\numberline {5}Haciendo Música en Directo}{37}%
-\contentsline {section}{\numberline {5.1}Live Csound}{37}%
-\contentsline {subsection}{\numberline {5.1.1}Atajos de teclado}{37}%
-\contentsline {section}{\numberline {5.2}Los principales opcodes}{37}%
-\contentsline {subsection}{\numberline {5.2.1}schedule()}{38}%
-\contentsline {subsection}{\numberline {5.2.2}hexplay()}{38}%
-\contentsline {section}{\numberline {5.3}Creando música}{38}%
-\contentsline {subsection}{\numberline {5.3.1}Producir sonidos sencillos}{38}%
-\contentsline {subsection}{\numberline {5.3.2}Creando un instrumento}{38}%
-\contentsline {subsection}{\numberline {5.3.3}Figuras rítmicas como valor hexadecimal}{39}%
-\contentsline {subsection}{\numberline {5.3.4}Ideas musicales con nuestro instrumento}{41}%
-\contentsline {chapter}{\numberline {6}Csound y otros lenguajes}{42}%
-\contentsline {section}{\numberline {6.1}Python en Csound}{42}%
-\contentsline {subsection}{\numberline {6.1.1}Compartiendo variables}{43}%
-\contentsline {section}{\numberline {6.2}Csound en Java}{44}%
-\contentsline {subsection}{\numberline {6.2.1}Compilando archivos externos}{45}%
-\contentsline {subsection}{\numberline {6.2.2}Un ejemplo más completo}{45}%
-\contentsline {chapter}{\numberline {7}Cabbage: Guía de uso}{48}%
-\contentsline {section}{\numberline {7.1}Instalación de Cabbage}{48}%
-\contentsline {section}{\numberline {7.2}Opciones del IDE}{49}%
-\contentsline {subsection}{\numberline {7.2.1}Creando un nuevo archivo}{50}%
-\contentsline {section}{\numberline {7.3}La etiqueta \textless Cabbage\textgreater }{50}%
-\contentsline {subsection}{\numberline {7.3.1}Los Widgets}{50}%
-\contentsline {section}{\numberline {7.4}Algunos Widgets útiles}{51}%
-\contentsline {subsection}{\numberline {7.4.1}Form}{51}%
-\contentsline {subsection}{\numberline {7.4.2}Check Box}{52}%
-\contentsline {subsection}{\numberline {7.4.3}Button}{52}%
-\contentsline {subsection}{\numberline {7.4.4}Keyboard}{53}%
-\contentsline {subsection}{\numberline {7.4.5}Signal Display}{53}%
-\contentsline {section}{\numberline {7.5}Exportando nuestros instrumentos}{54}%
-\contentsline {chapter}{\numberline {8}Fundamentos del Sonido}{55}%
-\contentsline {section}{\numberline {8.1}Introducción}{55}%
-\contentsline {section}{\numberline {8.2}El Audio Digital}{55}%
-\contentsline {subsection}{\numberline {8.2.1}¿Qué es el sonido y cómo se transmite?}{55}%
-\contentsline {subsection}{\numberline {8.2.2}La onda de sonido y sus características}{56}%
-\contentsline {subsection}{\numberline {8.2.3}El Sampleo y Sample Rate}{57}%
-\contentsline {section}{\numberline {8.3}Conceptos interesantes}{58}%
-\contentsline {subsection}{\numberline {8.3.1}El decibelio}{58}%
-\contentsline {subsection}{\numberline {8.3.2}El ADSR}{58}%
-\contentsline {subsection}{\numberline {8.3.3}El Cutoff y la resonancia}{59}%
-\contentsline {subsection}{\numberline {8.3.4}La ganancia o gain y sus diferencias con el volumen}{60}%
-\contentsline {section}{\numberline {8.4}Colores del sonido}{60}%
-\contentsline {chapter}{\numberline {9}Bibliografía Comentada}{61}%
-\contentsline {section}{\numberline {9.1}Csound FLOSS Manual}{61}%
-\contentsline {subsection}{\numberline {9.1.1}Referencia}{61}%
-\contentsline {subsection}{\numberline {9.1.2}Comentario}{61}%
-\contentsline {subsection}{\numberline {9.1.3}Estructura}{62}%
-\contentsline {section}{\numberline {9.2}The Canonical Csound Reference Manual}{63}%
-\contentsline {subsection}{\numberline {9.2.1}Referencia}{63}%
-\contentsline {subsection}{\numberline {9.2.2}Comentario}{63}%
-\contentsline {subsection}{\numberline {9.2.3}Estructura}{63}%
-\contentsline {section}{\numberline {9.3}Cabbage Docs}{64}%
-\contentsline {subsection}{\numberline {9.3.1}Referencia}{64}%
-\contentsline {subsection}{\numberline {9.3.2}Comentario}{64}%
-\contentsline {subsection}{\numberline {9.3.3}Estructura}{64}%
-\contentsline {section}{\numberline {9.4}CS Csound: Página oficial}{64}%
-\contentsline {subsection}{\numberline {9.4.1}Referencia}{64}%
-\contentsline {subsection}{\numberline {9.4.2}Comentario}{65}%
-\contentsline {section}{\numberline {9.5}Repositorio csound-live-code}{65}%
-\contentsline {subsection}{\numberline {9.5.1}Referencia}{65}%
-\contentsline {subsection}{\numberline {9.5.2}Comentario}{65}%
-\contentsline {section}{\numberline {9.6}Canal de youtube: Steven Yi}{65}%
-\contentsline {subsection}{\numberline {9.6.1}Referencia}{65}%
-\contentsline {subsection}{\numberline {9.6.2}Comentario}{65}%
-\contentsline {section}{\numberline {9.7}Canal de youtube: Rory Walsh}{66}%
-\contentsline {subsection}{\numberline {9.7.1}Referencia}{66}%
-\contentsline {subsection}{\numberline {9.7.2}Comentario}{66}%
-\contentsline {section}{\numberline {9.8}Repositorio csoundAPI examples}{66}%
-\contentsline {subsection}{\numberline {9.8.1}Referencia}{66}%
-\contentsline {subsection}{\numberline {9.8.2}Comentario}{66}%
-\contentsline {section}{\numberline {9.9}Otras referencias}{67}%
-\contentsline {chapter}{\numberline {10}Anexos}{68}%
-\contentsline {section}{\numberline {10.1}Cómo instalar un PWA en Chrome}{68}%
-\contentsline {section}{\numberline {10.2}Código de la sección ``Un ejemplo más completo'' del capítulo 6}{69}%
-\contentsline {chapter}{\numberline {11}Definici\'on de objetivos}{71}%
+\contentsline {subsection}{\numberline {2.9.8}El resultado final}{16}%
+\contentsline {chapter}{\numberline {3}Profundizando en los conceptos básicos}{18}%
+\contentsline {section}{\numberline {3.1}Las diferencias entre variables i-rate y k-rate}{18}%
+\contentsline {section}{\numberline {3.2}Las f-variables, w-variables y S-variables}{19}%
+\contentsline {section}{\numberline {3.3}El ámbito global y local de las variables}{19}%
+\contentsline {section}{\numberline {3.4}Las estructuras de control}{20}%
+\contentsline {subsection}{\numberline {3.4.1}Sentencias if-else}{20}%
+\contentsline {subsection}{\numberline {3.4.2}Bucles While/Until}{20}%
+\contentsline {subsection}{\numberline {3.4.3}El timout}{20}%
+\contentsline {section}{\numberline {3.5}Los Arrays de datos}{21}%
+\contentsline {subsection}{\numberline {3.5.1}Propiedades de los Arrays}{21}%
+\contentsline {subsection}{\numberline {3.5.2}Opcodes útiles}{22}%
+\contentsline {subsection}{\numberline {3.5.3}Operaciones con arrays}{23}%
+\contentsline {section}{\numberline {3.6}Funciones de entrada/salida}{23}%
+\contentsline {section}{\numberline {3.7}Creando un opcode (UDOs)}{24}%
+\contentsline {section}{\numberline {3.8}Las macros}{25}%
+\contentsline {subsection}{\numberline {3.8.1}Sintaxis de las macros}{25}%
+\contentsline {subsection}{\numberline {3.8.2}Macros con parámetros de entrada}{25}%
+\contentsline {subsection}{\numberline {3.8.3}Macros en \textless CsScore\textgreater }{26}%
+\contentsline {chapter}{\numberline {4}Conceptos Avanzados}{27}%
+\contentsline {section}{\numberline {4.1}El opcode ftgen}{27}%
+\contentsline {subsection}{\numberline {4.1.1}El f statement}{27}%
+\contentsline {section}{\numberline {4.2}Delay y Feedback}{27}%
+\contentsline {subsection}{\numberline {4.2.1}El Delay}{27}%
+\contentsline {subsection}{\numberline {4.2.2}El Feedback}{28}%
+\contentsline {subsection}{\numberline {4.2.3}Ejemplo del efecto Delay}{28}%
+\contentsline {section}{\numberline {4.3}FM: La modulación de frecuencia}{30}%
+\contentsline {subsection}{\numberline {4.3.1}El vibrato}{30}%
+\contentsline {section}{\numberline {4.4}AM: La modulación de amplitud}{31}%
+\contentsline {subsection}{\numberline {4.4.1}El trémolo}{31}%
+\contentsline {subsection}{\numberline {4.4.2}DC Offset}{32}%
+\contentsline {section}{\numberline {4.5}RM: La modulación en anillo}{32}%
+\contentsline {section}{\numberline {4.6}WAVESHAPING}{32}%
+\contentsline {section}{\numberline {4.7}Filtros de onda}{32}%
+\contentsline {subsection}{\numberline {4.7.1}Filtros Lowpass}{32}%
+\contentsline {subsection}{\numberline {4.7.2}Filtros Highpass}{34}%
+\contentsline {subsection}{\numberline {4.7.3}Filtros Bandpass}{35}%
+\contentsline {section}{\numberline {4.8}Reverberación}{36}%
+\contentsline {chapter}{\numberline {5}Haciendo Música en Directo}{38}%
+\contentsline {section}{\numberline {5.1}Live Csound}{38}%
+\contentsline {subsection}{\numberline {5.1.1}Atajos de teclado}{38}%
+\contentsline {section}{\numberline {5.2}Los principales opcodes}{38}%
+\contentsline {subsection}{\numberline {5.2.1}schedule()}{39}%
+\contentsline {subsection}{\numberline {5.2.2}hexplay()}{39}%
+\contentsline {section}{\numberline {5.3}Creando música}{39}%
+\contentsline {subsection}{\numberline {5.3.1}Producir sonidos sencillos}{39}%
+\contentsline {subsection}{\numberline {5.3.2}Creando un instrumento}{39}%
+\contentsline {subsection}{\numberline {5.3.3}Figuras rítmicas como valor hexadecimal}{40}%
+\contentsline {subsection}{\numberline {5.3.4}Ideas musicales con nuestro instrumento}{42}%
+\contentsline {chapter}{\numberline {6}Csound y otros lenguajes}{43}%
+\contentsline {section}{\numberline {6.1}Python en Csound}{43}%
+\contentsline {subsection}{\numberline {6.1.1}Compartiendo variables}{44}%
+\contentsline {section}{\numberline {6.2}Csound en Java}{45}%
+\contentsline {subsection}{\numberline {6.2.1}Compilando archivos externos}{46}%
+\contentsline {subsection}{\numberline {6.2.2}Un ejemplo más completo}{46}%
+\contentsline {chapter}{\numberline {7}Cabbage: Guía de uso}{49}%
+\contentsline {section}{\numberline {7.1}Instalación de Cabbage}{49}%
+\contentsline {section}{\numberline {7.2}Opciones del IDE}{50}%
+\contentsline {subsection}{\numberline {7.2.1}Creando un nuevo archivo}{51}%
+\contentsline {section}{\numberline {7.3}La etiqueta \textless Cabbage\textgreater }{51}%
+\contentsline {subsection}{\numberline {7.3.1}Los Widgets}{51}%
+\contentsline {section}{\numberline {7.4}Algunos Widgets útiles}{52}%
+\contentsline {subsection}{\numberline {7.4.1}Form}{52}%
+\contentsline {subsection}{\numberline {7.4.2}Check Box}{53}%
+\contentsline {subsection}{\numberline {7.4.3}Button}{53}%
+\contentsline {subsection}{\numberline {7.4.4}Keyboard}{54}%
+\contentsline {subsection}{\numberline {7.4.5}Signal Display}{54}%
+\contentsline {section}{\numberline {7.5}Exportando nuestros instrumentos}{55}%
+\contentsline {chapter}{\numberline {8}Fundamentos del Sonido}{56}%
+\contentsline {section}{\numberline {8.1}Introducción}{56}%
+\contentsline {section}{\numberline {8.2}El Audio Digital}{56}%
+\contentsline {subsection}{\numberline {8.2.1}¿Qué es el sonido y cómo se transmite?}{56}%
+\contentsline {subsection}{\numberline {8.2.2}La onda de sonido y sus características}{57}%
+\contentsline {subsection}{\numberline {8.2.3}El Sampleo y Sample Rate}{58}%
+\contentsline {section}{\numberline {8.3}Conceptos interesantes}{59}%
+\contentsline {subsection}{\numberline {8.3.1}El decibelio}{59}%
+\contentsline {subsection}{\numberline {8.3.2}El ADSR}{59}%
+\contentsline {subsection}{\numberline {8.3.3}El Cutoff y la resonancia}{60}%
+\contentsline {subsection}{\numberline {8.3.4}La ganancia o gain y sus diferencias con el volumen}{61}%
+\contentsline {section}{\numberline {8.4}Colores del sonido}{61}%
+\contentsline {chapter}{\numberline {9}Bibliografía Comentada}{62}%
+\contentsline {section}{\numberline {9.1}Csound FLOSS Manual}{62}%
+\contentsline {subsection}{\numberline {9.1.1}Referencia}{62}%
+\contentsline {subsection}{\numberline {9.1.2}Comentario}{62}%
+\contentsline {subsection}{\numberline {9.1.3}Estructura}{63}%
+\contentsline {section}{\numberline {9.2}The Canonical Csound Reference Manual}{64}%
+\contentsline {subsection}{\numberline {9.2.1}Referencia}{64}%
+\contentsline {subsection}{\numberline {9.2.2}Comentario}{64}%
+\contentsline {subsection}{\numberline {9.2.3}Estructura}{64}%
+\contentsline {section}{\numberline {9.3}Cabbage Docs}{65}%
+\contentsline {subsection}{\numberline {9.3.1}Referencia}{65}%
+\contentsline {subsection}{\numberline {9.3.2}Comentario}{65}%
+\contentsline {subsection}{\numberline {9.3.3}Estructura}{65}%
+\contentsline {section}{\numberline {9.4}CS Csound: Página oficial}{65}%
+\contentsline {subsection}{\numberline {9.4.1}Referencia}{65}%
+\contentsline {subsection}{\numberline {9.4.2}Comentario}{66}%
+\contentsline {section}{\numberline {9.5}Repositorio csound-live-code}{66}%
+\contentsline {subsection}{\numberline {9.5.1}Referencia}{66}%
+\contentsline {subsection}{\numberline {9.5.2}Comentario}{66}%
+\contentsline {section}{\numberline {9.6}Canal de youtube: Steven Yi}{66}%
+\contentsline {subsection}{\numberline {9.6.1}Referencia}{66}%
+\contentsline {subsection}{\numberline {9.6.2}Comentario}{66}%
+\contentsline {section}{\numberline {9.7}Canal de youtube: Rory Walsh}{67}%
+\contentsline {subsection}{\numberline {9.7.1}Referencia}{67}%
+\contentsline {subsection}{\numberline {9.7.2}Comentario}{67}%
+\contentsline {section}{\numberline {9.8}Repositorio csoundAPI examples}{67}%
+\contentsline {subsection}{\numberline {9.8.1}Referencia}{67}%
+\contentsline {subsection}{\numberline {9.8.2}Comentario}{67}%
+\contentsline {section}{\numberline {9.9}Otras referencias}{68}%
+\contentsline {chapter}{\numberline {10}Anexos}{69}%
+\contentsline {section}{\numberline {10.1}Cómo instalar un PWA en Chrome}{69}%
+\contentsline {section}{\numberline {10.2}Código de la sección ``Un ejemplo más completo'' del capítulo 6}{70}%
+\contentsline {chapter}{\numberline {11}Definici\'on de objetivos}{72}%
 \contentsfinish 
