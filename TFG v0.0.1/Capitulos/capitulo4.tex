@@ -177,6 +177,20 @@ Este tipo de filtros dejan pasar frecuencias comprendidas en una determinada ``b
 \end{itemize}
 
 \section{Reverberación}
-http://write.flossmanuals.net/csound/e-reverberation/
- 
+La \textbf{reverberación} o \textbf{reverb} es el conocido efecto sonoro que se produce cuando hablamos en una habitación vacía o se produce un ruido en espacios cerrados muy amplios como iglesias o catedrales. 
 
+El efecto físico asociado consiste en una mezcla entre los ecos del propio sonido que se sobreponen unos sobre otros por rebotar continuamente en las paredes del habitáculo.
+
+El opcode más común para conseguir el efecto \textbf{reverb} en Csound es \textbf{freeverb}, veamos un ejemplo de código:
+
+\codigofuente{TeX}{Opcodes de filtro Bandpass}{codigo/revCompleto}
+
+Vemos por primera vez el opcode \textbf{pinkish}, que genera una onda de ruido rosa o \textbf{pink noise}.
+ 
+En la figura de código anterior se definen dos instrumentos. El primero con el que generamos los golpes sonoros y el segundo con el generamos el efecto \textbf{reverb} del sonido anterior gracias al opcode \textbf{freeverb}. Si observamos mejor el instrumento 1 vemos que definimos una señal de audio sencilla \textbf{aSig} y definimos más tarde las características del \textbf{reverb} con la variable global \textbf{gaRvSend}. En el segundo instrumento es donde hacemos uso de \textbf{freeverb}, veamos su sintaxis en profundidad: 
+
+\textbf{(aoutL, aoutR freeverb ainL, ainR, kRoomSize, kHFDamp)}
+
+Siendo \textbf{ainL} y \textbf{ainR} las señales de entrada que, como en nuestro ejemplo, suelen ser la misma. El argumento \textbf{kRoomSize} representa el tamaño de la sala en la que se produce el reverb, es un valor de 0 a 1 y determina directamente la duración del reverb. Por último \textbf{kHFDamp} es la variable de control de altas frecuancias, a más se acerque a 1 este valor más se atenuarán las frecuencia mayores y con un valor de 0 la atenuación durante el efecto reverb será el mismo para todas las frecuencias.
+
+Se invita a experimentar con los valores de \textbf{iRvbSendAmt}, \textbf{kroomsize} y \textbf{kHFDamp} del ejemplo para comprender mejor el efecto reverb y el opcode freeverb.

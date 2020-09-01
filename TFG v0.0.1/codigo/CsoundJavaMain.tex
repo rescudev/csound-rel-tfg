@@ -1,0 +1,32 @@
+public static void main(String[] args) {
+        csnd6.csoundInitialize(
+                csnd6.CSOUNDINIT_NO_ATEXIT | csnd6.CSOUNDINIT_NO_SIGNAL_HANDLER);
+
+        String orc = "sr=44100\n"
+                + "ksmps=32\n"
+                + "nchnls=2\n"
+                + "0dbfs=1\n"
+                + "\n"
+                + "instr 1 \n"
+                + "ipch = cps2pch(p5, 12)\n"
+                + "kenv linsegr 0, .05, 1, .05, .7, .4, 0\n"
+                + "aout vco2 p4 * kenv, ipch \n"
+                + "aout moogladder aout, 2000, 0.25\n"
+                + "outs aout, aout\n"
+                + "endin\n";
+        
+        String sco = generateScore();
+        Csound c = new Csound();
+        c.SetOption("-odac");
+        c.CompileOrc(orc);
+        c.ReadScore(sco);
+        c.Start();
+
+        while (c.PerformKsmps() == 0) {
+        }
+        
+        c.Stop();
+        c.Cleanup();
+
+    }
+}

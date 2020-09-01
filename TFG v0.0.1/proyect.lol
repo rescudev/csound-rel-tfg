@@ -31,14 +31,25 @@
 \contentsline {lstlisting}{\numberline {4.7}Opcodes de filtro Lowpass}{32}%
 \contentsline {lstlisting}{\numberline {4.8}Opcodes de filtro Highpass}{33}%
 \contentsline {lstlisting}{\numberline {4.9}Opcodes de filtro Bandpass}{34}%
-\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{37}%
-\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{37}%
-\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{38}%
-\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{39}%
-\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{40}%
-\contentsline {lstlisting}{\numberline {6.1}Ejemplo básico de un widget}{43}%
-\contentsline {lstlisting}{\numberline {6.2}Ejemplo de widget: Form}{44}%
-\contentsline {lstlisting}{\numberline {6.3}Ejemplo de widget: CheckBox}{45}%
-\contentsline {lstlisting}{\numberline {6.4}Ejemplo de widget: Button}{45}%
-\contentsline {lstlisting}{\numberline {6.5}Ejemplo de widget: Keyboard}{46}%
-\contentsline {lstlisting}{\numberline {6.6}Ejemplo de widget: SignalDisplay}{46}%
+\contentsline {lstlisting}{\numberline {4.10}Opcodes de filtro Bandpass}{35}%
+\contentsline {lstlisting}{\numberline {5.1}Sintaxis base del hexplay()}{38}%
+\contentsline {lstlisting}{\numberline {5.2}Ejemplo de schedule()}{38}%
+\contentsline {lstlisting}{\numberline {5.3}Un instrumento funcional}{39}%
+\contentsline {lstlisting}{\numberline {5.4}Uso del hexadecimal para las figuras rítmicas}{40}%
+\contentsline {lstlisting}{\numberline {5.5}Usando hexplay() con nuestro instrumento}{41}%
+\contentsline {lstlisting}{\numberline {6.1}Compilando Python en Csound}{42}%
+\contentsline {lstlisting}{\numberline {6.2}Varias líneas en pyruni}{43}%
+\contentsline {lstlisting}{\numberline {6.3}Diferencia entre pyrun y pyruni}{43}%
+\contentsline {lstlisting}{\numberline {6.4}Ejemplo de pyeval}{43}%
+\contentsline {lstlisting}{\numberline {6.5}Ejemplo de pyassign}{43}%
+\contentsline {lstlisting}{\numberline {6.6}Ejemplo 1 Csound en Java, compilación básica}{45}%
+\contentsline {lstlisting}{\numberline {6.7}La clase Note}{45}%
+\contentsline {lstlisting}{\numberline {6.8}La función generateScore()}{46}%
+\contentsline {lstlisting}{\numberline {6.9}La parte main()}{47}%
+\contentsline {lstlisting}{\numberline {7.1}Ejemplo básico de un widget}{50}%
+\contentsline {lstlisting}{\numberline {7.2}Ejemplo de widget: Form}{51}%
+\contentsline {lstlisting}{\numberline {7.3}Ejemplo de widget: CheckBox}{52}%
+\contentsline {lstlisting}{\numberline {7.4}Ejemplo de widget: Button}{52}%
+\contentsline {lstlisting}{\numberline {7.5}Ejemplo de widget: Keyboard}{53}%
+\contentsline {lstlisting}{\numberline {7.6}Ejemplo de widget: SignalDisplay}{53}%
+\contentsline {lstlisting}{\numberline {10.1}Ejemplo 2 Csound en Java, programa completo}{69}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  24 JUL 2020 01:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.28)  31 AUG 2020 22:55
 entering extended mode
 **./proyect.tex
 (proyect.tex
@@ -708,74 +708,103 @@ Package pdftex.def Info: img/4.1-Offset.png  used on input line 124.
 (pdftex.def)             Requested size: 256.07741pt x 148.00217pt.
  (codigo/lowpassCompleto.tex [31 <./img/4.1-Offset.png>]) [32] (codigo/highpass
 Completo.tex) [33]
-(codigo/bandpassCompleto.tex)) (Capitulos/capitulo5.tex [34] [35]
+(codigo/bandpassCompleto.tex) [34] (codigo/revCompleto.tex) [35])
+(Capitulos/capitulo5.tex [36]
 Cap\'{\i }tulo 5.
-[36
+[37
 
 ] (codigo/Syntaxhexplay.tex) (codigo/scheduleEx.tex) (codigo/LiveInstr.tex
-[37]) [38] (codigo/HexRitmoEx.tex) [39] (codigo/HexConInstr.tex))
-(Capitulos/guiaCabbage.tex [40]
+[38]) [39] (codigo/HexRitmoEx.tex) [40] (codigo/HexConInstr.tex))
+(Capitulos/capitulo6.tex [41]
 Cap\'{\i }tulo 6.
-<img/C.1-InstaVersion.png, id=188, 800.9925pt x 574.39594pt>
+
+Overfull \hbox (1.96729pt too wide) in paragraph at lines 9--10
+[]\OT1/ptm/m/n/10.95 Al eje-cu-tar el ins-ta-la-dor de Csound de-be-mos ha-ber 
+mar-ca-do la ca-si-lla ``Python fea-tu-res(requires
+ []
+
+(codigo/pyCsound.tex)
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2
+0.
+ ("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/b/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 20.
+ [42
+
+] (codigo/pyBasi.tex) (codigo/pyRuni.tex) (codigo/pypyeval.tex)
+(codigo/pypyassign.tex) [43]
+<img/6.2-NetbeansLib.png, id=198, 393.72093pt x 399.74344pt>
+File: img/6.2-NetbeansLib.png Graphic file (type png)
+<use img/6.2-NetbeansLib.png>
+Package pdftex.def Info: img/6.2-NetbeansLib.png  used on input line 64.
+(pdftex.def)             Requested size: 341.43437pt x 346.65775pt.
+ [44 <./img/6.2-NetbeansLib.png>]
+(codigo/CsoundEnJava.tex) (codigo/CsoundJavaNote.tex) [45]
+(codigo/CsoundJavaScore.tex) [46] (codigo/CsoundJavaMain.tex))
+(Capitulos/guiaCabbage.tex [47]
+Cap\'{\i }tulo 7.
+<img/C.1-InstaVersion.png, id=213, 800.9925pt x 574.39594pt>
 File: img/C.1-InstaVersion.png Graphic file (type png)
 <use img/C.1-InstaVersion.png>
 Package pdftex.def Info: img/C.1-InstaVersion.png  used on input line 21.
 (pdftex.def)             Requested size: 256.07741pt x 183.63515pt.
-<img/C.2-InstaPasos.png, id=189, 563.10374pt x 430.60875pt>
+<img/C.2-InstaPasos.png, id=214, 563.10374pt x 430.60875pt>
 File: img/C.2-InstaPasos.png Graphic file (type png)
 <use img/C.2-InstaPasos.png>
 Package pdftex.def Info: img/C.2-InstaPasos.png  used on input line 24.
 (pdftex.def)             Requested size: 256.07741pt x 195.82214pt.
-[41
+[48
 
  <./img/C.1-InstaVersion.png>]
-<img/C.3-CabbageEjemplos.png, id=193, 664.73344pt x 432.86719pt>
+<img/C.3-CabbageEjemplos.png, id=218, 664.73344pt x 432.86719pt>
 File: img/C.3-CabbageEjemplos.png Graphic file (type png)
 <use img/C.3-CabbageEjemplos.png>
 Package pdftex.def Info: img/C.3-CabbageEjemplos.png  used on input line 32.
 (pdftex.def)             Requested size: 256.07741pt x 166.75674pt.
- [42 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
-<img/C.4-CabbageNewFile.png, id=197, 639.89063pt x 286.06876pt>
+ [49 <./img/C.2-InstaPasos.png> <./img/C.3-CabbageEjemplos.png>]
+<img/C.4-CabbageNewFile.png, id=222, 639.89063pt x 286.06876pt>
 File: img/C.4-CabbageNewFile.png Graphic file (type png)
 <use img/C.4-CabbageNewFile.png>
 Package pdftex.def Info: img/C.4-CabbageNewFile.png  used on input line 38.
 (pdftex.def)             Requested size: 256.07741pt x 114.48221pt.
 LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <14.4> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 50.
- (codigo/CabbageSyntax.tex) [43 <./img/C.4-CabbageNewFile.png>]
-<img/C.6-formExample.png, id=201, 400.49625pt x 151.56625pt>
+ (codigo/CabbageSyntax.tex) [50 <./img/C.4-CabbageNewFile.png>]
+<img/C.6-formExample.png, id=226, 400.49625pt x 151.56625pt>
 File: img/C.6-formExample.png Graphic file (type png)
 <use img/C.6-formExample.png>
 Package pdftex.def Info: img/C.6-formExample.png  used on input line 72.
 (pdftex.def)             Requested size: 170.71393pt x 64.60559pt.
- (codigo/FormEx.tex) [44 <./img/C.6-formExample.png>]
-<img/C.7-CheckBox.png, id=206, 303.38344pt x 106.89937pt>
+ (codigo/FormEx.tex) [51 <./img/C.6-formExample.png>]
+<img/C.7-CheckBox.png, id=231, 303.38344pt x 106.89937pt>
 File: img/C.7-CheckBox.png Graphic file (type png)
 <use img/C.7-CheckBox.png>
 Package pdftex.def Info: img/C.7-CheckBox.png  used on input line 81.
 (pdftex.def)             Requested size: 170.71393pt x 60.15356pt.
  (codigo/CheckBoxEx.tex)
-<img/C.8-Button.png, id=207, 303.38344pt x 105.39375pt>
+<img/C.8-Button.png, id=232, 303.38344pt x 105.39375pt>
 File: img/C.8-Button.png Graphic file (type png)
 <use img/C.8-Button.png>
 Package pdftex.def Info: img/C.8-Button.png  used on input line 89.
 (pdftex.def)             Requested size: 170.71393pt x 59.30634pt.
-(codigo/ButtonEx.tex) [45 <./img/C.7-CheckBox.png> <./img/C.8-Button.png>]
-<img/C.9-Keyboard.png, id=213, 304.13625pt x 228.10219pt>
+(codigo/ButtonEx.tex) [52 <./img/C.7-CheckBox.png> <./img/C.8-Button.png>]
+<img/C.9-Keyboard.png, id=239, 304.13625pt x 228.10219pt>
 File: img/C.9-Keyboard.png Graphic file (type png)
 <use img/C.9-Keyboard.png>
 Package pdftex.def Info: img/C.9-Keyboard.png  used on input line 98.
 (pdftex.def)             Requested size: 170.71393pt x 128.03914pt.
 
 (codigo/KeyboardEx.tex)
-<img/C.10-SignalDisplay.png, id=214, 305.64188pt x 249.18094pt>
+<img/C.10-SignalDisplay.png, id=240, 305.64188pt x 249.18094pt>
 File: img/C.10-SignalDisplay.png Graphic file (type png)
 <use img/C.10-SignalDisplay.png>
 Package pdftex.def Info: img/C.10-SignalDisplay.png  used on input line 106.
 (pdftex.def)             Requested size: 170.71393pt x 139.17535pt.
- (codigo/SignalDisplayEx.tex) [46 <./img/C.9-Keyboard.png> <./img/C.10-SignalDi
+ (codigo/SignalDisplayEx.tex) [53 <./img/C.9-Keyboard.png> <./img/C.10-SignalDi
 splay.png>]
-<img/C.5-CabbageExport.png, id=221, 479.54156pt x 83.5622pt>
+<img/C.5-CabbageExport.png, id=246, 479.54156pt x 83.5622pt>
 File: img/C.5-CabbageExport.png Graphic file (type png)
 <use img/C.5-CabbageExport.png>
 Package pdftex.def Info: img/C.5-CabbageExport.png  used on input line 118.
@@ -787,8 +816,8 @@ s por FMOD, \OT1/ptm/b/n/10.95 https://www.fmod.com/ \OT1/ptm/m/n/10.95 y que e
 st[]a de-
  []
 
-) (Capitulos/extraSonido.tex [47 <./img/C.5-CabbageExport.png>]
-Cap\'{\i }tulo 7.
+) (Capitulos/extraSonido.tex [54 <./img/C.5-CabbageExport.png>]
+Cap\'{\i }tulo 8.
 
 Underfull \hbox (badness 1442) in paragraph at lines 15--15
 [][]\OT1/ptm/m/n/9 REAL ACA-DE-MIA ES-PA[]NOLA: Dic-cio-na-rio de la len-gua es
@@ -796,66 +825,109 @@ Underfull \hbox (badness 1442) in paragraph at lines 15--15
 .
  []
 
-<img/S.1-senoidal.png, id=225, 853.1875pt x 305.14pt>
+<img/S.1-senoidal.png, id=250, 853.1875pt x 305.14pt>
 File: img/S.1-senoidal.png Graphic file (type png)
 <use img/S.1-senoidal.png>
 Package pdftex.def Info: img/S.1-senoidal.png  used on input line 19.
 (pdftex.def)             Requested size: 341.43437pt x 122.11435pt.
-[48
+[55
 
  <./img/S.1-senoidal.png>]
-<img/S.2-Periodo.jpg, id=230, 312.16624pt x 162.6075pt>
+<img/S.2-Periodo.jpg, id=255, 312.16624pt x 162.6075pt>
 File: img/S.2-Periodo.jpg Graphic file (type jpg)
 <use img/S.2-Periodo.jpg>
 Package pdftex.def Info: img/S.2-Periodo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 256.07741pt x 133.39359pt.
- [49 <./img/S.2-Periodo.jpg>]
-<img/S.3-Sampleo.png, id=234, 501.875pt x 244.915pt>
+ [56 <./img/S.2-Periodo.jpg>]
+<img/S.3-Sampleo.png, id=259, 501.875pt x 244.915pt>
 File: img/S.3-Sampleo.png Graphic file (type png)
 <use img/S.3-Sampleo.png>
 Package pdftex.def Info: img/S.3-Sampleo.png  used on input line 50.
 (pdftex.def)             Requested size: 341.43437pt x 166.62967pt.
- [50 <./img/S.3-Sampleo.png>]
-<img/S.4-Aliasing.png, id=238, 411.5375pt x 377.41pt>
+ [57 <./img/S.3-Sampleo.png>]
+<img/S.4-Aliasing.png, id=263, 411.5375pt x 377.41pt>
 File: img/S.4-Aliasing.png Graphic file (type png)
 <use img/S.4-Aliasing.png>
 Package pdftex.def Info: img/S.4-Aliasing.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43437pt x 313.12352pt.
- [51 <./img/S.4-Aliasing.png>]
-<img/S.5-ADSR.png, id=242, 468.149pt x 252.945pt>
+ [58 <./img/S.4-Aliasing.png>]
+<img/S.5-ADSR.png, id=268, 468.149pt x 252.945pt>
 File: img/S.5-ADSR.png Graphic file (type png)
 <use img/S.5-ADSR.png>
 Package pdftex.def Info: img/S.5-ADSR.png  used on input line 94.
 (pdftex.def)             Requested size: 341.43437pt x 184.4862pt.
- [52 <./img/S.5-ADSR.png>])
-(Capitulos/bibliografia.tex [53]
-Cap\'{\i }tulo 8.
+ [59 <./img/S.5-ADSR.png>]
+<img/S.6-Colores.png, id=273, 578.16pt x 433.62pt>
+File: img/S.6-Colores.png Graphic file (type png)
+<use img/S.6-Colores.png>
+Package pdftex.def Info: img/S.6-Colores.png  used on input line 120.
+(pdftex.def)             Requested size: 341.43437pt x 256.07178pt.
+)
+(Capitulos/bibliografia.tex [60 <./img/S.6-Colores.png>]
+Cap\'{\i }tulo 9.
 
 Overfull \hbox (12.39203pt too wide) in paragraph at lines 16--17
 []\OT1/ptm/b/n/10.95 Autor/es\OT1/ptm/m/n/10.95 : Joa-chim Heintz, Iain Mc-Curd
 y, An-dres Ca-bre-ra, Alex Hof-mann, Ale-xan-dre Abrioux,
  []
 
-[54
+[61
 
-] [55] [56] [57]
+] [62] [63] [64]
 Overfull \hbox (15.11143pt too wide) in paragraph at lines 161--162
 []\OT1/ptm/m/n/10.95 Yi S.(Mayo de 2019). csound-live-code doc. Github. $\OT1/p
 cr/m/n/10.95 https :// github [] .com / kunstmusik /
  []
 
-) (Capitulos/anexos.tex [58]
-Cap\'{\i }tulo 9.
-<img/A.1-PWAinst.png, id=267, 519.44063pt x 231.11343pt>
+[65]
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 207--208
+[]\OT1/ptm/m/n/10.95 Walsh R.(Mayo de 2019). Ca-nal de you-tu-be: Rory Walsh. Y
+ou-tu-be. $\OT1/pcr/m/n/10.95 https :// www [] .youtube []
+ []
+
+[66]
+Overfull \hbox (34.20319pt too wide) in paragraph at lines 245--246
+\OT1/pcr/m/n/10.95 -generate [] -a [] -sine [] -wave [] -of [] -different [] -p
+ositive [] -and [] -negative [] -amplitude$ 
+ []
+
+
+Overfull \hbox (19.8455pt too wide) in paragraph at lines 251--252
+[]\OT1/ptm/m/n/10.95 Comunidad wi-ki-books.(Septiembre 2018). Sound in the Di-g
+i-tal Do-main. wi-ki-books. $\OT1/pcr/m/n/10.95 https ://
+ []
+
+
+Overfull \hbox (35.51717pt too wide) in paragraph at lines 255--256
+\OT1/pcr/m/n/10.95 .mx / tallerdeaudio / cursos / cursoardour / Teoria [] []y [
+] []tecnicas / Audiodigital []
+ []
+
+
+Overfull \hbox (7.92322pt too wide) in paragraph at lines 257--258
+\OT1/pcr/m/n/10.95 -your [] -language [] -csound [] -may [] -be [] -ancient [] 
+-but [] -its [] -the [] -audio [] -hacking []
+ []
+
+
+Overfull \hbox (1.35323pt too wide) in paragraph at lines 259--260
+\OT1/pcr/m/n/10.95 .nzherald [] .co [] .nz / bay [] -of [] -plenty [] -times / 
+business / news / article [] .cfm []
+ []
+
+) (Capitulos/anexos.tex [67]
+Cap\'{\i }tulo 10.
+<img/A.1-PWAinst.png, id=300, 519.44063pt x 231.11343pt>
 File: img/A.1-PWAinst.png Graphic file (type png)
 <use img/A.1-PWAinst.png>
 Package pdftex.def Info: img/A.1-PWAinst.png  used on input line 7.
 (pdftex.def)             Requested size: 341.43437pt x 151.91115pt.
-) (Capitulos/defobjetivos.tex [59
+[68
 
- <./img/A.1-PWAinst.png>]
-Cap\'{\i }tulo 10.
-) [60
+ <./img/A.1-PWAinst.png>] (codigo/CsoundEnJavaComp.tex [69]))
+(Capitulos/defobjetivos.tex [70]
+Cap\'{\i }tulo 11.
+) [71
 
 ] (proyect.aux)
 
@@ -863,29 +935,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10213 strings out of 480799
- 142286 string characters out of 2905528
- 578321 words of memory out of 3000000
- 25789 multiletter control sequences out of 15000+200000
- 566691 words of font info for 102 fonts, out of 3000000 for 9000
+ 10392 strings out of 480799
+ 145688 string characters out of 2905528
+ 619034 words of memory out of 3000000
+ 25923 multiletter control sequences out of 15000+200000
+ 567378 words of font info for 105 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,13n,77p,1049b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<D:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmib10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
-.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on proyect.pdf (69 pages, 1255565 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmib10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmb8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on proyect.pdf (80 pages, 1383340 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
+ 366 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

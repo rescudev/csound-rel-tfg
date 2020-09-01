@@ -1,0 +1,36 @@
+<CsoundSynthesizer>
+<CsOptions>
+-odac 
+</CsOptions>
+<CsInstruments>
+
+sr =  44100
+ksmps = 32
+nchnls = 2
+0dbfs = 1
+
+gaRvbSend    init      0
+
+  instr 1 
+kEnv         loopseg   0.5,0,0,1,0.003,1,0.0001,0,0.9969,0,0
+aSig         pinkish   kEnv           
+             outs      aSig, aSig        
+iRvbSendAmt  =         0.8               
+gaRvbSend    =         gaRvbSend + (aSig * iRvbSendAmt)
+  endin
+
+  instr 5
+kroomsize    init      0.85       
+kHFDamp      init      0.5        
+aRvbL,aRvbR  freeverb  gaRvbSend, gaRvbSend,kroomsize,kHFDamp
+             outs      aRvbL, aRvbR 
+             clear     gaRvbSend    
+  endin
+
+</CsInstruments>
+<CsScore>
+i 1 0 300
+i 5 0 300
+e
+</CsScore>
+</CsoundSynthesizer>

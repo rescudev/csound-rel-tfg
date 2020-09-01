@@ -1,0 +1,84 @@
+public class Example6 {
+
+    public static String midi2pch(int num) {
+        return String.format("%d.%02d", 3 + (num / 12), num % 12);
+    }
+
+    public static class Note {
+
+        List pfields;
+
+        public Note(Object... args) {
+            this.pfields = Arrays.asList(args);
+        }
+
+        public String toString() {
+            StringBuilder buffer = new StringBuilder("i");
+            for (int i = 0; i < pfields.size(); i++) {
+                buffer.append(" ");
+                if (i == 4) {
+                    buffer.append(midi2pch(((Integer) pfields.get(i))));
+                } else {
+                    buffer.append(pfields.get(i).toString());
+                }
+            }
+            return buffer.toString();
+        }
+    }
+
+    public static String generateScore() {
+        List<Note> vals = new ArrayList<Note>();
+        for (int i = 0; i < 13; i++) {
+            Note n = new Note(1, i * .25, .25, 0.5,
+                    60 + (int) (Math.random() * 15));
+            vals.add(n);
+        }
+
+        StringBuilder buffer = new StringBuilder();
+        for (Note note : vals) {
+            buffer.append(note.toString()).append("\n");
+        }
+
+        for (Note note : vals) {
+            int midiPch = (Integer) note.pfields.get(4);
+            double start = (Double) note.pfields.get(1);
+            note.pfields.set(4, midiPch + 4);
+            note.pfields.set(1, start + 0.125);
+            buffer.append(note.toString()).append("\n");
+        }
+
+        return buffer.toString();
+    }
+
+    public static void main(String[] args) {
+        csnd6.csoundInitialize(
+                csnd6.CSOUNDINIT_NO_ATEXIT | csnd6.CSOUNDINIT_NO_SIGNAL_HANDLER);
+
+        String orc = "sr=44100\n"
+                + "ksmps=32\n"
+                + "nchnls=2\n"
+                + "0dbfs=1\n"
+                + "\n"
+                + "instr 1 \n"
+                + "ipch = cps2pch(p5, 12)\n"
+                + "kenv linsegr 0, .05, 1, .05, .7, .4, 0\n"
+                + "aout vco2 p4 * kenv, ipch \n"
+                + "aout moogladder aout, 2000, 0.25\n"
+                + "outs aout, aout\n"
+                + "endin\n";
+        
+        String sco = generateScore();
+        Csound c = new Csound();
+        c.SetOption("-odac");
+        c.CompileOrc(orc);
+        c.ReadScore(sco);
+        c.Start();
+
+        while (c.PerformKsmps() == 0) {
+        }
+        
+        c.Stop();
+        c.Cleanup();
+
+    }
+}

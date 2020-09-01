@@ -1,0 +1,20 @@
+public static String generateScore() {
+        List<Note> vals = new ArrayList<Note>();
+        for (int i = 0; i < 13; i++) {
+            Note n = new Note(1, i * .25, .25, 0.5,
+                    60 + (int) (Math.random() * 15));
+            vals.add(n);
+        }
+        StringBuilder buffer = new StringBuilder();
+        for (Note note : vals) {
+            buffer.append(note.toString()).append("\n");
+        }
+        for (Note note : vals) {
+            int midiPch = (Integer) note.pfields.get(4);
+            double start = (Double) note.pfields.get(1);
+            note.pfields.set(4, midiPch + 4);
+            note.pfields.set(1, start + 0.125);
+            buffer.append(note.toString()).append("\n");
+        }
+        return buffer.toString();
+    }

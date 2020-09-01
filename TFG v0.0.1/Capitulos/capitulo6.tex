@@ -1,0 +1,115 @@
+% !TEX root = ../proyect.tex
+
+\chapter{Csound y otros lenguajes}
+
+En este capítulo explicaremos algunos de los usos de la API (Application Programming Interface) de Csound. Una de las formas efectivas de divulgar un lenguaje de uso concreto como es Csound, es aprendiendo a disponer de él como una herramienta más al desarrollar código con nuestros lenguajes o tecnologías favoritas de uso general.
+
+\section{Python en  Csound}
+
+Al ejecutar el instalador de Csound debemos haber marcado la casilla ``Python features(requires Python 2.7)'', además necesitaremos instalar la versión 2.7 de python en nuestro equipo para compilar el código de manera correcta. Usaremos los opcodes \textbf{pyinit} y \textbf{pyruni} que están programados específicamente para esta función.
+
+\begin{itemize}
+ \item \textbf{pyinit}: Inicializa el compilador de Python de manera que podamos usar el lenguaje.
+ \item \textbf{pyruni}: Lo usaremos cada vez que escribamos una línea de código Python la cual quedará entrecomillada como argumento string de \textbf{pyruni}. Las variables definidas en \textbf{pyruni} se comportarán como variables i-rate.
+\end{itemize}
+
+Veamos un ejemplo básico de uso:
+
+\codigofuente{TeX}{Compilando Python en Csound}{codigo/pyCsound}
+
+Si queremos usar varias líneas de código en una misma llamada a \textbf{pyruni} podemos conseguir escribiendo dentro de los caracteres \textbf{\{\{ \}\}}.
+
+\codigofuente{TeX}{Varias líneas en pyruni}{codigo/pyBasi}
+
+Y posteriormente podremos hacer referencia a estas variables por sus nombres en nuestro código.
+
+Para hacer que nuestras variables de Python sean de tipo k-rate usaremos el opcode: \textbf{pyrun}.
+
+Veamos un ejemplo:
+
+\codigofuente{TeX}{Diferencia entre pyrun y pyruni}{codigo/pyRuni}
+
+La variable \textbf{ratek} irá aumentando su valor en uno por cada ciclo k de control, mientras que la variable ratei será a efectos prácticos de tipo i-rate.
+
+\subsection{Compartiendo variables}
+
+Para compartir variables entre Csound y Python usaremos dos opcodes: \textbf{pyeval(i)} y \textbf{pyassign(i)}.
+\begin{itemize}
+ \item \textbf{pyeval(i)}: Lo usaremos siempre que queramos pasar variables Python a Csound. 
+ 
+\codigofuente{TeX}{Ejemplo de pyeval}{codigo/pypyeval}
+ 
+ \item \textbf{pyassign(i)}: Lo usaremos siempre que queramos pasar variables Csound a Python. 
+ 
+\codigofuente{TeX}{Ejemplo de pyassign}{codigo/pypyassign}
+
+Si queremos hacer que la variables en cuestión sea local respecto al instrumento en el que se la define, usaremos el prefijo ``pyl''\ al nombrarla. En el ejemplo de la figura anterior sería con \textbf{pylVar}.
+\end{itemize}
+
+Estos son los fundamentos para ejecutar código Python en Csound, se invita al lector a usar lo aprendido en capítulos anteriores y tratar de sacarles algún nuevo enfoque ahora que se dispone de ésta herramienta.
+\pagebreak
+
+\section{Csound en Java}
+
+Csound puede usarse dentro de otros lenguajes. Existen pocos ejemplos en la red al respecto pero una de las formas más accesibles es mediante el IDE Netbeans para usar Java. Java es uno de los lenguajes más demandados y versátiles en el mundo de la programación, veamos paso a paso cómo añadir Csound a nuestro arsenal de herramientas java.
+\bigskip
+
+
+En primer lugar necesitaremos instalar Netbeans en nuestro equipo además de alguna versión actualizada de máquina virtual java. Por suerte el propio instalador de Netbeans nos da la opción de instalar java de forma automática, podemos descargar el instalador en su página oficial: \url{https://netbeans.apache.org/download/index.html}.
+
+El siguiente paso recomendable a seguir será descargar el proyecto de ejemplos de uso de la API de Csound en su repositorio oficial: \url{https://github.com/csound/csoundAPI_examples}. La carpeta java de este repositorio es un projecto Netbeans que podremos abrir fácilmente desde el IDE, que lo reconocerá automáticamente como tal.
+
+El último paso antes de poder compilar el código de los ejemplos será añadir la librería \textbf{csnd6} \ al proyecto. Para ello debemos ir a la carpeta de nuestro equipo en la que se instaló Csound, en el caso de sistemas windows 64b la carpeta se llamará ``Csound6\_x64''. En ella encontraremos la carpeta ``bin'' que será donde estará nuestra librería java \textbf{csnd6}. Para añadir esta librería a nuestro proyecto hacemos click derecho sobre la carpeta ``Libraries'' del proyecto en Netbeans y luego en ``Add JAR/Folder'', buscamos el archivos \textbf{csnd6}, lo añadimos y todo estará listo.
+
+\figura{0.8}{img/6.2-NetbeansLib}{Añadir librerías en Netbeans}{fig:Beanzz}{}
+\pagebreak
+
+\subsection{Compilando archivos externos}
+
+Empecemos con el ejemplo uno del proyecto descargado anteriormente, su función base es compilar la librería csound y ejecutar un archivo externo al que referenciamos en el código:
+
+\codigofuente{TeX}{Ejemplo 1 Csound en Java, compilación básica}{codigo/CsoundEnJava}
+
+Como podemos observar, en la línea 7 inicializamos Csound, en la línea 10 definimos nuestra variable objeto de tipo Csound, la línea 11 compila el archivo ``externalCsound.csd'' que podría ser cualquier archivo de código funcional Csound, la línea 12 ejecuta el código y por último la línea 13 se encarga de asegurar que Csound ha terminado de ejecutarse.
+
+\subsection{Un ejemplo más completo}
+
+A efectos prácticos usaremos Csound como un objeto Java, con sus clases y atributos. Veamos a continuación un ejemplo más completo basándonos en el ejemplo 6 del proyecto. \footnote{Se añade el código completo del ejemplo en el capítulo de anexos}
+
+Hablemos en primer lugar de la clase \textbf{Note} definida en el archivo:
+
+\codigofuente{TeX}{La clase Note}{codigo/CsoundJavaNote}
+
+Esta clase cumplirá dos funciones principales, contener la lista de notas que ejecutaremos y mostrar la información sobre las notas que se hagan sonar durante la ejecución del código de la misma manera que ocurre en Csound cada vez que ejecutamos un instrumento.
+\bigskip
+
+Posteriormente tenemos la función \textbf{generateScore()} que como su nombre indica nos servirá para generar los scores de ejecución de los instrumentos de Csound.
+
+\codigofuente{TeX}{La función generateScore()}{codigo/CsoundJavaScore}
+
+Esta función hará uso de la clase \textbf{Note} para generar notas aleatorias (línea 2 a línea 7) y construir el string que representará nuestras señales de salida (líneas 8 a 19). Podemos observar que únicamente se usa manejo de listas (el atributo pfields de Note) en este método.
+\bigskip
+
+Por último repasemos la parte \textbf{main()} del código (figura 6.9).
+
+En ella podemos observar la definición de la variable ``orc''\ en las líneas 5 a 16. Esta variable \textbf{orc}, diminutivo de \textbf{orchestra}, consiste en un string con el código Csound que iría colocado en la etiqueta \textless CsInstruments\textgreater. Donde damos valor a algunas de las palabras reservadas y escribimos el código de nuestros instrumentos. En esta ocasión definimos una onda sinoidal a la que aplicamos el filtro lowpass mediante el opcode moogladder.
+
+Posteriormente generamos el código de la etiqueta \textless CsScore\textgreater mediante una llamada a nuestro método \textbf{generateScope()} y realizamos una serie de llamadas al objeto Csound. 
+
+\begin{itemize}
+ \item \textbf{SetOption()}: Nos permite añadir alguna opción de código a la etiqueta \textless CsOptions\textgreater, se debe modificar una única opción por cada llamada al método.
+ \item \textbf{CompileOrc()}: Nos permite compilar un String como código de la etiqueta \textless CsInstruments\textgreater.
+ \item \textbf{ReadScore()}: Nos permite compilar un String como código de la etiqueta \textless CsScore\textgreater.
+ \item \textbf{Start()}: Inicia la ejecución de nuestro código Csound.
+ \item \textbf{PerformKdmps()}: Ejecuta nuestro código al ritmo k-rate, sería el código de nuestro loop de ejecución de instrumentos.
+ \item \textbf{Stop()}: Para totalmente la ejecución del código Csound.
+ \item \textbf{Cleanup()}: Limpia y vacía las variables y rastros de la ejecución. Útil si vamos a reutilizar una instancia del código.
+\end{itemize}
+
+\codigofuente{TeX}{La parte main()}{codigo/CsoundJavaMain}
+
+Con esto finaliza esta pequeña introducción a la programación de Csound en código java. La principal recomendación para seguir ahondando al respecto es seguir y comprender el resto de ejemplos disponibles en el repositorio mencionado al principio y seguir explorando en foros o wikis relacionados a éste puesto que la información en la red es algo escasa. Disponible casi exclusivamente de primera mano de los desarrolladores de Csound.
+
+
+
+

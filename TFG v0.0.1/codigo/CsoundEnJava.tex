@@ -1,0 +1,15 @@
+import csnd6.csnd6;
+import csnd6.Csound;
+
+public class Example1 {
+
+    public static void main(String[] args) {
+        csnd6.csoundInitialize(
+                csnd6.CSOUNDINIT_NO_ATEXIT | csnd6.CSOUNDINIT_NO_SIGNAL_HANDLER);
+
+        Csound c = new Csound();
+        c.Compile("/Users/rescu/CsoundExamples/externalCsound.csd");
+        c.Perform();               
+        c.Stop();                                                               
+    }
+}
