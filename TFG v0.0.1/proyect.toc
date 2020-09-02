@@ -65,12 +65,11 @@
 \contentsline {subsection}{\numberline {4.4.1}El trémolo}{31}%
 \contentsline {subsection}{\numberline {4.4.2}DC Offset}{32}%
 \contentsline {section}{\numberline {4.5}RM: La modulación en anillo}{32}%
-\contentsline {section}{\numberline {4.6}WAVESHAPING}{32}%
-\contentsline {section}{\numberline {4.7}Filtros de onda}{32}%
-\contentsline {subsection}{\numberline {4.7.1}Filtros Lowpass}{32}%
-\contentsline {subsection}{\numberline {4.7.2}Filtros Highpass}{34}%
-\contentsline {subsection}{\numberline {4.7.3}Filtros Bandpass}{35}%
-\contentsline {section}{\numberline {4.8}Reverberación}{36}%
+\contentsline {section}{\numberline {4.6}Filtros de onda}{32}%
+\contentsline {subsection}{\numberline {4.6.1}Filtros Lowpass}{32}%
+\contentsline {subsection}{\numberline {4.6.2}Filtros Highpass}{34}%
+\contentsline {subsection}{\numberline {4.6.3}Filtros Bandpass}{35}%
+\contentsline {section}{\numberline {4.7}Reverberación}{36}%
 \contentsline {chapter}{\numberline {5}Haciendo Música en Directo}{38}%
 \contentsline {section}{\numberline {5.1}Live Csound}{38}%
 \contentsline {subsection}{\numberline {5.1.1}Atajos de teclado}{38}%

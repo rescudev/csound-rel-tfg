@@ -46,13 +46,13 @@ Existen dos tipos de variables en csound que son algo más especiales que las vi
 
 Las variables contenidas en el código de un instrumento son generalmente de ámbito local, es decir, podría crear una variable con el mismo nombre dentro de todos mis instrumento sin que exista ningún tipo de conflicto.
 
-Las variables globales sin embargo deben ser únicas cada vez que escribamos un valor sobre ellas, su valor cambiará para cualquier futura lectura. Para hacer que una variable sea de tipo global debemos hacer que \textbf{g} sea la primera letra del nombre de esa variable. Algunos ejemplo de nombre de variable global serían: \textbf{gaGlobal}, \textbf{giConstante} o \textbf{gkResultado}.
+Las variables globales sin embargo deben ser únicas. Cada vez que escribamos un valor sobre ellas en cualquier parte del código, su valor cambiará para cualquier futura lectura. Para hacer que una variable sea de tipo global debemos hacer que \textbf{g} sea la primera letra del nombre de esa variable. Algunos ejemplo de nombre de variable global serían: \textbf{gaGlobal}, \textbf{giConstante} o \textbf{gkResultado}.
 
 Una alternativa al uso de las variables globales es el uso del opcode \textbf{chnget} para realizar conexiones de canal entre variables. Es el método usado en la etiqueta \textless Cabbage\textgreater para relacionar los widgets con el resto del código sin hacer uso de variables globales.
 
 \section{Las estructuras de control}
 
-En Csound como en la mayoría de lenguajes existen la estructuras de control: Sentencias \textbf{if-else}, bucles \textbf{while/until} y los llamados \textbf{timouts}. Vamos a explicarlas centrándonos en la peculiaridades de uso respecto al lenguaje.
+En Csound como en la mayoría de lenguajes existen la estructuras de control: Sentencias \textbf{if-else}, bucles \textbf{while/until} y los llamados \textbf{timouts}. Vamos a explicarlas centrándonos en las peculiaridades de uso respecto al lenguaje.
 
 \subsection{Sentencias if-else}
 
@@ -62,7 +62,7 @@ La forma más común de este tipo de sentencia en Csound es \textbf{If - then - 
 
 Lo único a destacar sería que la palabra \textbf{then} debe estar en la misma línea de código que la palabra \textbf{if}, pero no ahondaremos más en este tipo de sentencia al tratarse de nociones básicas de la programación.
 
-Csound permite también la sintaxis de lenguaje descriptivo \textbf{(a v b ? x : y)}: De ser verdadera la condición \textbf{a}, el valor devuelto es \textbf{x}. De ser falsa (y por tanto ser cierta \textbf{b}) el valor devuelto es \textbf{y}. Un ejemplo práctico de uso sería: \textbf{kRes = (kVar \textless 1 ? 0 : 1);}. Si kVar es menor que uno se devuelve 0, se no ser así se devuelve 1.
+Csound permite también la sintaxis de lenguaje descriptivo \textbf{(a v b ? x : y)}: De ser verdadera la condición \textbf{a}, el valor devuelto es \textbf{x}. De ser falsa (y por tanto ser cierta \textbf{b}) el valor devuelto es \textbf{y}. Un ejemplo práctico de uso sería: \textbf{kRes = (kVar \textless 1 ? 0 : 1);}. Si kVar es menor que uno se devuelve 0, de no ser así se devuelve 1.
 
 \subsection{Bucles While/Until}
 
@@ -106,8 +106,10 @@ En Csound podemos pensar en cinco propiedades características al definir un Arr
 Estos son algunos de los opcodes que podemos usar al trabajar con arrays:
 
 \begin{itemize}
- \item \textbf{init}: El opcode que usamos para inicializar un array, para su sintexis únicamente necesitamos aportar el tamaño de cada una de las dimensiones del array que estamos definiendo. Por ejemplo: \textbf{kArr[]   init 5} para un array unidimensional de longitud 5.
- \item \textbf{fillarray}: Para añadir una serie de valores a nuestro array. Veamos un ejemplo: \textbf{kArr[] fillarray 1, 2, 3, 4, 5} que añade los valores 1, 2, 3, 4 y 5 al array.
+ \item \textbf{init}: El opcode que usamos para inicializar un array. Para su sintaxis únicamente necesitamos aportar el tamaño de cada una de las dimensiones del array que estamos definiendo. Por ejemplo: \textbf{kArr[]   init 5} para un array unidimensional de longitud 5.
+ \item \textbf{fillarray}: Para añadir una serie de valores a nuestro array. Veamos un ejemplo:
+ 
+ \textbf{kArr[] fillarray 1, 2, 3, 4, 5} que añade los valores 1, 2, 3, 4 y 5 al array.
  \item \textbf{genarray}: Genera un array al que se le añaden los valores comprendidos entre los valores de entrada del opcode. Un ejemplo de uso: \textbf{kArr[] genarray   1, 5} que crea un array al que se le añaden los valores 1, 2, 3, 4 y 5.
  \item \textbf{lenarray}: Devuelve el tamaño actual de un array. \textbf{kTam  lenarray  kArr} devolvería el tamaño de kArr. 
  \item \textbf{slicearray}: Nos sirve para generar un subarray desde un índice inicial hasta un índice final del array original introducido como parámetro de entrada en el opcode. Su sintaxis base es: \textbf{kSlice[] slicearray kArr, iStart, iEnd}. Y un ejemplo de uso sería \textbf{kSub[]  slicearray kArr, 0, 2} que para el array \textbf{kArr=[4,3,2,1,0]} devolvería como resultado \textbf{kSub=[4,3,2]}
@@ -173,7 +175,7 @@ Muchos de los opcodes de Csound pueden expresarse mediante la sintaxis funcional
 
 \section{Creando un opcode (UDOs)}
 
-En Csound, un opcode creado por un usuario recibe el nombre de \textbf{UDO (User created opcode)}. Definir un \textbf{UDO} es simplemente escribir parte del código que incluiríamos en un instrumento, dentro de un bloque especial para luego poder usarlo a efectos prácticos de la misma manera que usamos cualquier opcode.
+En Csound, un opcode creado por un usuario recibe el nombre de \textbf{UDO (User created opcode)}. Definir un \textbf{UDO} es simplemente escribir parte del código que incluiríamos en un instrumento dentro de un bloque especial para luego poder usarlo a efectos prácticos de la misma manera que usamos cualquier opcode.
 
 La sintaxis base para definir un UDO es:
 
@@ -236,4 +238,4 @@ La sintaxis es idéntica al caso anterior así que veamos un ejemplo común de u
 
 \codigofuente{TeX}{Ejemplo de una macro en \textless CsScore\textgreater}{codigo/macroInScore}
 
-Imaginemos para el ejemplo un instrumento que genera una determinada nota y que usa p1, p2, p3 y p4; siendo p4 un parámetro que determina la frecuencia del tono de la nota de salida del instrumento. En nuestra macro realizamos tres \textbf{Event scores} (líneas 3, 4 y 5) usando ese instrumento, cuyos p2 (momento de inicio) y p4 (tono de la nota de salida) se ven modificados por \textbf{Start} y \textbf{Trans} que son los parámetros de entrada de nuestra macro. De esta manera podemos realizar esos tres \textbf{Score events} tantas veces como queramos y únicamente introduciendo los parámetros que consideramos importantes al definir la macro.
+Imaginemos para el ejemplo un instrumento que genera una determinada nota y que usa p1, p2, p3 y p4; siendo p4 un parámetro que determina la frecuencia del tono de la nota de salida del instrumento. En nuestra macro realizamos tres \textbf{Event scores} (líneas 3, 4 y 5) usando ese instrumento, cuyos p2 (momento de inicio) y p4 (tono de la nota de salida) se ven modificados por \textbf{Start} y \textbf{Trans} que son los parámetros de entrada de nuestra macro. De esta manera podemos realizar esos tres \textbf{Score events} tantas veces como queramos únicamente introduciendo los parámetros que consideramos importantes al definir la macro.

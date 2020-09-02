@@ -42,11 +42,11 @@ Veamos un ejemplo básico de uso:
 \codigofuente{TeX}{Sintaxis delayr y delayw}{codigo/delaySyntax}
 
 Donde \textbf{aSignIn} es la señal de entrada a la que queremos aplicar el delay y \textbf{aSignOut} es la señal de salida a la que ya se ha aplicado el efecto.
-El '1' que aparece como argumento es la cantidad de segundos que mide el buffer, en este caso un segundo y el hecho de definir aquí la longitud del buffer implica que tengamos que definir primero la variable de salida antes y después la variable de entrada, lo cual es en principio un poco confuso.
+El '1' que aparece como argumento es la cantidad de segundos que mide el buffer, en este caso un segundo. El hecho de definir aquí la longitud del buffer implica que tengamos que definir primero la variable de salida y después la variable de entrada, lo cual es en principio un poco confuso.
 
 \subsection{El Feedback}
 
-El delay tal y como lo hemos definido anteriormente acaba pareciendo una simple única repetición atenuada del sonido de entrada. Para encontrar el clásico sonido al que en el mundo de la edición musical nos referimos como delay debemos conocer el concepto de \textbf{feedback}.
+El delay tal y como lo hemos definido anteriormente acaba pareciendo una simple y única repetición atenuada del sonido de entrada. Para encontrar el clásico sonido al que en el mundo de la edición musical nos referimos como delay debemos conocer el concepto de \textbf{feedback}.
 
 El \textbf{feedback} será un valor residual de la señal del buffer que usaremos como parámetro de entrada del delay. Lo normal es que este valor decrezca con cada paso por el buffer de manera que el sonido acabe pareciendo cada vez más distante hasta apagarse por completo y no se produzca un bucle infinito.
 
@@ -61,7 +61,7 @@ En primer lugar podemos observar tres opcodes que no habíamos visto hasta el mo
 Expliquemos brevemente sus funcionamientos:
 
 \begin{itemize}
- \item \textbf{loopseg}: Genera una señal de control que puede usarse como envelope o envoltura. Tantovariable de salida como variables de entradas serán de tipo k-rate.
+ \item \textbf{loopseg}: Genera una señal de control que puede usarse como envelope o envoltura. Tanto variable de salida como variables de entradas serán de tipo k-rate.
  \item \textbf{randomh}: Genera valores aleatorios al igual que el opcode \textbf{random} pero mantiene estos valores guardados durante un periodo determinado de tiempo.
  \item \textbf{interp}: Sirve para convertir una variable de tipo k-rate a una variable de tipo a-rate.
 \end{itemize}
@@ -69,17 +69,17 @@ Expliquemos brevemente sus funcionamientos:
 Una vez sabido el funcionamiento básico de cada opcode presente veamos paso por paso lo que  se hace en el ejemplo:
 
 \begin{itemize}
- \item \textbf{Línea 13}: Hacemos uso de \textbf{ftgen} para tener preparada nuestra onda senuidad.
+ \item \textbf{Línea 13}: Hacemos uso de \textbf{ftgen} para tener preparada nuestra onda senoidad.
  \item \textbf{Líneas 15 a 19}: Definimos las primeras líneas de nuestro instrumento. El uso de estas líneas es el de acabar generando \textbf{aSig}, es decir, nuestra onda de entrada a la que aplicaremos el delay.
  \item \textbf{Línea 21}: Definimos \textbf{iFback} que tal y como explicamos en secciones anteriores hará las veces de valor de feedback, en este caso 0.7 (de ser un valor menor nuestro delay se apagaría antes).
- \item \textbf{Líneas 22 a 26}: Hacemos uso de \textbf{delayr} y \textbf{delayw}. Si prestamos especial atención a la línea 23 veremos que nuestro valor de entrada, \textbf{(aSig(aBufOut*iFdback))}, es efectivamente una operación en la que participan nuestra señal, su propio valor de salida (siguiente en el buffer) y el valor de feedback que acabará determinando el tiempo restante del delay.
+ \item \textbf{Líneas 22 a 26}: Hacemos uso de \textbf{delayr} y \textbf{delayw}. Si prestamos especial atención a la línea 23 veremos que nuestro valor de entrada, \textbf{(aSig(aBufOut*iFdback))}, es efectivamente una operación en la que participa nuestra señal, su propio valor de salida (siguiente en el buffer) y el valor de feedback que acabará determinando el tiempo restante del delay.
  
  Como vemos también en la línea 25, el sonido que nuestro instrumento producirá será una mezcla de la onda de salida con el valor de buffer.
 \end{itemize}
 
 \codigofuente{TeX}{Ejemplo completo del efecto Delay}{codigo/delayCompleto}
 
-Se invita al lector a que experimente con diversos valores en las variables mencionadas para comprender en mayor medida el concepto de delay y que posteriormente visite las referencias del documento en caso querer profundizar.
+Se invita al lector a que experimente con diversos valores en las variables mencionadas para comprender en mayor medida el concepto de delay y que posteriormente visite las referencias del documento en caso de querer profundizar.
 \pagebreak
 
 \section{FM: La modulación de frecuencia}
@@ -95,7 +95,7 @@ Veamos un ejemplo de \textbf{vibrato} implementado en Csound.
 
 Prestemos especial atención a las líneas 12 y 13 de la figura anterior. En primer lugar la línea \textbf{(aMod poscil 10, 5, 1)} produce una onda de 10Hz de amplitud y 5Hz de frecuencia. Esta será nuestra onda moduladora, la que aplicaremos sobre el sonido al que queremos añadir el efecto vibrato.
 
-En segundo lugar tenemos la línea \textbf{(aCar poscil 0.3, 440+aMod, 1)} que produce una onda de 440Hz de frecuencia y a la que sumamos el valor de \textbf{aMod}, nuestro modulador, que afecta al valor de la frecuencia de \textbf{aCar} haciéndolo oscilar periódicamente entre 450Hz y 430Hz.
+En segundo lugar tenemos la línea \textbf{(aCar poscil 0.3, 440+aMod, 1)} que produce una onda de 440Hz de frecuencia y a la que sumamos el valor de \textbf{aMod}, nuestro modulador, que afecta al valor de la frecuencia de \textbf{aCar} haciéndola oscilar periódicamente entre 450Hz y 430Hz.
 Si sustituimos la línea anterior por: \textbf{(aCar poscil 0.3, 440, 1)} comprobaremos que deja de producirse el efecto \textbf{vibrato}.
 
 Como podemos observar el efecto vibrato simple puede lograrse fácilmente en Csound, pero se invita a  experimentar con los valores de \textbf{aMod} para comprobar cómo afecta una onda moduladora con distintos valores de amplitud y frecuencia.
@@ -131,16 +131,16 @@ La modulación en anillo o \textbf{RM (Ring-Modulation)} es un caso especial de 
 
 Para tener un ejemplo básico de esto basta con que volvamos a la figura de código 4.6 y demos a \textbf{aDCOffset} un valor de 0.
 
-\section{WAVESHAPING}
-http://write.flossmanuals.net/csound/e-waveshaping/
 
 \section{Filtros de onda}
 Los \textbf{filtros de onda} son uno de los recursos más usados en la edición musical y sonora. Consisten principalmente en filtrar o cortar determinadas frecuencias en un sonido dejando pasar al resto. Hablemos de las tres principales categorías de \textbf{filtros de onda}.
-Con el concepto ``frecuencia cutoff'' nos referiremos a la frontera entre las frecuencias que pasan y las que corta el filtro.
+Con el concepto ``frecuencia cutoff'' \ nos referiremos a la frontera entre las frecuencias que pasan y las que corta el filtro.
 
 \subsection{Filtros Lowpass}
 
 Los filtros \textbf{Lowpass} dejan pasar las frecuencias de onda más bajas y filtran las más altas. Para implementar este tipo de filtros en Csound existen diversos opcodes, veamos un ejemplo con tres de ellos: \textbf{tone}, \textbf{butlp} y \textbf{moogladder}.
+
+\pagebreak
 
 \codigofuente{TeX}{Opcodes de filtro Lowpass}{codigo/lowpassCompleto}
 
@@ -148,8 +148,8 @@ En la figura anterior se definen tres instrumentos que empiezan generando la mis
 
 \begin{itemize}
  \item \textbf{tone}: Este opcode se caracteriza por usar una frecuencia de cutoff no demasiado estricta, es decir, que actúa como atenuador de las frecuencias más adyacente al cutoff en lugar de cortarlas abruptamente.
- \item \textbf{butlp}: Usa en cambio un cutoff más agresivo que \textbf{tone} por lo que quedarán menos residuos de la frecuencias más altas en nuestro sonido.
- \item \textbf{moogladder}: Este opcode se basa en filtros analógicos usados en sistetizadores de la marca ``Moog''. La mejor forma de describirlo sería por tanto en referencia a su contraparte original.
+ \item \textbf{butlp}: Usa en cambio un cutoff más agresivo que \textbf{tone} por lo que quedarán menos residuos de las frecuencias más altas en nuestro sonido.
+ \item \textbf{moogladder}: Este opcode se basa en filtros analógicos usados en sintetizadores de la marca ``Moog''. La mejor forma de describirlo sería por tanto en referencia a su contraparte original.
 \end{itemize}
 
 La mejor forma de comprender las diferencias entre estos opcodes es ejecutando el ejemplo anterior y tratando de analizar la diferencia sonora entre instrumentos.
@@ -160,12 +160,12 @@ Los filtros \textbf{Highpass} dejan pasar las frecuencias de onda más altas y f
 
 \codigofuente{TeX}{Opcodes de filtro Highpass}{codigo/highpassCompleto}
 
-De forma análoga a la saección anterior, se definen tres instrumentos. Veamos sus opcodes de filtro \textbf{Highpass}.
+De forma análoga a la sección anterior, se definen tres instrumentos. Veamos sus opcodes de filtro \textbf{Highpass}.
 \pagebreak
 \begin{itemize}
  \item \textbf{atone}: De manera análoga a \textbf{tone}, este opcode se caracteriza por usar una frecuencia de cutoff no demasiado estricta, es decir, que actúa como atenuador de las frecuencias más adyacente al cutoff en lugar de cortarlas abruptamente.
  \item \textbf{buthp}: De manera análoga a \textbf{butlp}, \textbf{buthp} usa un cutoff más agresivo que \textbf{atone} por lo que quedarán menos residuos de la frecuencias más bajas en nuestro sonido.
- \item \textbf{bqrez}: Este es un opcode con múltiples modos para seleccionar, en nuestro ejemplo usamos ``mode:1'' pero se invita a experimentar con otros modos para comprender mejor este opcode.
+ \item \textbf{bqrez}: Este es un opcode con múltiples modos para seleccionar, en nuestro ejemplo usamos ``mode:1'' pero se invita a experimentar con otros modos para comprenderlo mejor.
 \end{itemize}
 
 \subsection{Filtros Bandpass}
@@ -185,12 +185,12 @@ El opcode más común para conseguir el efecto \textbf{reverb} en Csound es \tex
 
 \codigofuente{TeX}{Opcodes de filtro Bandpass}{codigo/revCompleto}
 
-Vemos por primera vez el opcode \textbf{pinkish}, que genera una onda de ruido rosa o \textbf{pink noise}.
+Vemos por primera vez el opcode \textbf{pinkish}, que genera una onda de ruido rosa o \textbf{pink noise}\footnote{Más información en la sección ``Colores del sonido'' \ en el capítulo ``Fundamentos del sonido''}.
  
 En la figura de código anterior se definen dos instrumentos. El primero con el que generamos los golpes sonoros y el segundo con el generamos el efecto \textbf{reverb} del sonido anterior gracias al opcode \textbf{freeverb}. Si observamos mejor el instrumento 1 vemos que definimos una señal de audio sencilla \textbf{aSig} y definimos más tarde las características del \textbf{reverb} con la variable global \textbf{gaRvSend}. En el segundo instrumento es donde hacemos uso de \textbf{freeverb}, veamos su sintaxis en profundidad: 
 
 \textbf{(aoutL, aoutR freeverb ainL, ainR, kRoomSize, kHFDamp)}
 
-Siendo \textbf{ainL} y \textbf{ainR} las señales de entrada que, como en nuestro ejemplo, suelen ser la misma. El argumento \textbf{kRoomSize} representa el tamaño de la sala en la que se produce el reverb, es un valor de 0 a 1 y determina directamente la duración del reverb. Por último \textbf{kHFDamp} es la variable de control de altas frecuancias, a más se acerque a 1 este valor más se atenuarán las frecuencia mayores y con un valor de 0 la atenuación durante el efecto reverb será el mismo para todas las frecuencias.
+Siendo \textbf{ainL} y \textbf{ainR} las señales de entrada que, como en nuestro ejemplo, suelen ser la misma. El argumento \textbf{kRoomSize} representa el tamaño de la sala en la que se produce el reverb, es un valor de 0 a 1 y determina directamente la duración del reverb. Por último \textbf{kHFDamp} es la variable de control de altas frecuancias, a más se acerque a 1 este valor más se atenuarán las frecuencias mayores y con un valor de 0 la atenuación durante el efecto reverb será el mismo para todas las frecuencias.
 
 Se invita a experimentar con los valores de \textbf{iRvbSendAmt}, \textbf{kroomsize} y \textbf{kHFDamp} del ejemplo para comprender mejor el efecto reverb y el opcode freeverb.

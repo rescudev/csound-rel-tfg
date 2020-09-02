@@ -2,7 +2,7 @@
 
 \chapter{Haciendo Música en Directo}
 
-Este capítulo trata de dar una introducción al ``live coding''\ en Csound. Para ello se enplicarán algunos de sus fundamentos y se usará la página web \url{https://live.csound.com/} (Programada y mantenida por Steven Yi, desarrollador de Csound y blue), de ahora en adelante referida como \textbf{Live Csound}, para ejemplificar los conceptos.
+Este capítulo trata de dar una introducción al ``live coding''\ en Csound. Para ello se explicarán algunos de sus fundamentos y se usará la página web \url{https://live.csound.com/} (Programada y mantenida por Steven Yi, desarrollador de Csound y blue), de ahora en adelante referida como \textbf{Live Csound}, para ejemplificar los conceptos.
 
 \textbf{Live Csound} usa la librería \textbf{livecode.orc} de Csound y puede abrirse en cualquier navegador commplatible con \textbf{Javascript}, \textbf{WebAudio} y \textbf{WebAssembly}. Cualquiera de los navegadores modernos más usados (Chrome, Firefox, Safari, etc..) tiene estas capacidades. Es además una \textbf{PWA (Progressive Web Application)}\footnote{Revisar el anexo ``Cómo instalar un PWA en Chrome''} por lo que podemos instalar una versión offline de la misma en nuestro equipo y ejecutarla mediante nuestro navegador aunque no dispongamos de conexión a internet.
 
@@ -10,7 +10,7 @@ Este capítulo trata de dar una introducción al ``live coding''\ en Csound. Par
 
 \subsection{Atajos de teclado}
 
-Estos son los atajos de teclado más útiles al usar la aplicación \textbf{Live Csound}, es combeniente tenerlos en mente para hacer más dinámico nuestro ``Live Coding''.
+Estos son los atajos de teclado más útiles al usar la aplicación \textbf{Live Csound}, es conveniente tenerlos en mente para hacer más dinámico nuestro ``Live Coding''.
 
 \begin{itemize}
  \item \textbf{ctrl-e}: Evalúa y ejecuta el código seleccionado.
@@ -24,7 +24,7 @@ Estos son los atajos de teclado más útiles al usar la aplicación \textbf{Live
 
 \section{Los principales opcodes}
 
-La biblioteca \textbf{livecode.orc} usada por \textbf{Live Csound} aporta los opcodes \textbf{hexbeat()} y \textbf{hexplay()} que nos servirán generar los sonidos de forma rítmica mediante valores hexadecimales.
+La biblioteca \textbf{livecode.orc} usada por \textbf{Live Csound} aporta los opcodes \textbf{hexbeat()} y \textbf{hexplay()} que nos servirán para generar los sonidos de forma rítmica mediante valores hexadecimales.
 
 \subsection{schedule()}
 
@@ -45,7 +45,7 @@ Empecemos por lo tanto con un sencillo ejemplo al que iremos añadiendo dificult
 \subsection{Producir sonidos sencillos}
 
 Haremos uso del opcode \textbf{schedule()} del cual ya hemos aprendido la sintaxis.
-Vamos a la página \url{https://live.csound.com/}, seleccionamos todo (ctrl-a) y borramos todo el código que aparece como demos dejando la página en blanco. Después de eso podemos escribir la línea de código:
+Vamos a la página \url{https://live.csound.com/}, seleccionamos todo (ctrl-a) y borramos todo el código que aparece como demo dejando la página en blanco. Después de eso podemos escribir la línea de código:
 
  \codigofuente{TeX}{Ejemplo de schedule()}{codigo/scheduleEx}
  
@@ -64,9 +64,9 @@ No queremos vernos limitados a la librería predeterminada de instrumentos de \t
 
  \codigofuente{TeX}{Un instrumento funcional}{codigo/LiveInstr}
  
-En primer lugar vamos a definir un bloque de instrumento llamado \textbf(Add). En \textbf(Add) vamos a definir dos ondas sonoras mediante el opcode \textbf{oscili(xamp, xcps)} donde \textbf{xamp} es la amplitud de onda y \textbf{xcps} su frecuencia.La primerá se llamará |textbf{alfo} y le entregaremos como parámetros de entrada dos valores aleatorios mediante el opcode \textbf{random(min, max)}. 
+En primer lugar vamos a definir un bloque de instrumento llamado \textbf(Add). En \textbf(Add) vamos a definir dos ondas sonoras mediante el opcode \textbf{oscili(xamp, xcps)} donde \textbf{xamp} es la amplitud de onda y \textbf{xcps} su frecuencia.La primera se llamará \textbf{alfo} y le entregaremos como parámetros de entrada dos valores aleatorios mediante el opcode \textbf{random(min, max)}. 
 
-La segunda onda será \textbf{asig} cuyos valores de entrada dependerán de \textbf{alfo} y de otras operaciones realizadas a la onda bajo un criterio musical (Se invita a experimentar realizando diferentes oprecaiones para encontrar la síntesis de sonido que más de adecúe al gusto propio).
+La segunda onda será \textbf{asig} cuyos valores de entrada dependerán de \textbf{alfo} y de otras operaciones realizadas a la onda bajo un criterio musical (Se invita a experimentar realizando diferentes operaciones para encontrar la síntesis de sonido que más de adecúe al gusto propio).
 
 Una vez consigamos el sonido deseado vamos a crear el instrumento \textbf{Note}, en el que generando valores aleatorios de frecuencia, ejecutaremos el instrumento \textbf{Add} siempre en una misma tonalidad musical gracias al opcode \textbf{in\_ scale(ioct, idegree)} que genera una frecuencia válida de entre las notas pertenecientes a la octava \textbf{ioct}.
 
